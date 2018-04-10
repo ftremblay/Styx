@@ -24,7 +24,7 @@ To clone the Styx project on your computer, you need to go to **File -> Clone Re
 - Assets naming must be in english.
 
 
-### Hiearchy
+### hierarchy
 
 The hiearchy in the Styx project must be respected
 
@@ -50,10 +50,10 @@ The hiearchy in the Styx project must be respected
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Prefabs (.prefab files)**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Resources (if we need to instantiate a prefab during runtime, we need to put the .prefab file her**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Resources (if we need to instantiate a prefab during runtime, we need to put the .prefab file her)**
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Builds (.exe files)**
 
-The hiearchy in a Unity Scene must be clean all the time. We will add a hierarchy template for Unity scene soon.
+The hierarchy in a Unity Scene must be clean all the time. We will add a hierarchy template for Unity scene soon.
 
 
