@@ -8,8 +8,38 @@
 4. Now, you need to setup git kraken. Go to File -> Preferences.. -> Authentication. Then in the SSH Public key section, click on Browse and select your id_rsa.pub file C:/users/{YOUR_USER_NAME}/.ssh/id_rsa.pub and click the Copy to clipboard button. 
 5. Finally, add your brand new SSH key to your gitlab account. Go to your profile settings and click on the SSH Keys tab. Copy the content of your clipboard (CTRL + V) into the **Key** textarea in gitlab, and add a **Title** to it then click on the **Add key** button.
 
-## CLone the project with GitKraken
+## CLone the project with GitKraken 
+
+[Download GitKraken](https://www.gitkraken.com/)
 
 To clone the Styx project on your computer, you need to go to File -> Clone Repo, then select the Clone with URL tab and browse the folder where you want to download the project and also paste the SSH Url of the Styx project that you can found on gitlab **git@gitlab.com:ragecure/styx.git**
 
-## Naming conventions
+## Styx guidelines
+
+### Naming conventions
+
+- Folders and files name must be in english.
+- Source code is written in english.
+- Assets naming must be in english.
+
+### Hiearchy
+
+- The hiearchy in the Styx project must be respected
+    Assets
+        _Scenes (.unity)
+        _Scripts (.cs files)
+            Common (RageCure utilities)
+        _Arts 
+            2D (.png files)
+            3D (.fbx and .obj files)
+            Materials (.mat files)
+            Textures (.tga files)
+            Shaders (.shader files)
+        _Prefabs (.prefab files)
+        Resources (if we need to instantiate a prefab during runtime, we need to put the .prefab file here)
+    Builds (.exe files)
+
+- The hiearchy in a Unity Scene must be clean all the time. We will add a hierarchy template for Unity scene soon.
+        
+
+
