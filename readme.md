@@ -13,7 +13,7 @@
 
 [Download GitKraken](https://www.gitkraken.com/)
 
-To clone the Styx project on your computer, you need to go to File -> Clone Repo, then select the Clone with URL tab and browse the folder where you want to download the project and also paste the SSH Url of the Styx project that you can found on gitlab **git@gitlab.com:ragecure/styx.git**
+To clone the Styx project on your computer, you need to go to **File -> Clone Repo**, then select the Clone with URL tab and browse the folder where you want to download the project and also paste the SSH Url of the Styx project that you can found on gitlab **git@gitlab.com:ragecure/styx.git**
 
 ## Styx guidelines
 
@@ -23,24 +23,37 @@ To clone the Styx project on your computer, you need to go to File -> Clone Repo
 - Source code is written in english.
 - Assets naming must be in english.
 
+
 ### Hiearchy
 
 The hiearchy in the Styx project must be respected
-    Assets
-        _Scenes (.unity)
-        _Scripts (.cs files)
-            Common (RageCure utilities)
-        _Arts 
-            2D (.png files)
-            3D (.fbx and .obj files)
-            Materials (.mat files)
-            Textures (.tga files)
-            Shaders (.shader files)
-        _Prefabs (.prefab files)
-        Resources (if we need to instantiate a prefab during runtime, we need to put the .prefab file here)
-    Builds (.exe files)
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Assets**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Scenes (.unity)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Scripts (.cs files)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Common (RageCure utilities)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Arts** 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2D (.png files)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**3D (.fbx and .obj files)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Materials (.mat files)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Textures (.tga files)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Shaders (.shader files)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Prefabs (.prefab files)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Resources (if we need to instantiate a prefab during runtime, we need to put the .prefab file her**
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Builds (.exe files)**
 
 The hiearchy in a Unity Scene must be clean all the time. We will add a hierarchy template for Unity scene soon.
-        
 
 
