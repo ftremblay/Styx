@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CB7E6EA6-25F1-4C7D-B924-DC199D42A83A}" SchemaVersion="85">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{CB7E6EA6-25F1-4C7D-B924-DC199D42A83A}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Tests" ID="{F00FB5EA-78F8-4BC1-A47D-A1F749DE8EEF}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="StartGame" ID="{BDCE8A27-9456-4948-B821-F9307ADBBF8A}" WorkUnitID="{196E24AF-A484-4ECE-BA7F-6B6352D0BF0C}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SkateLoop" ID="{DE0A5B0B-0695-4350-9945-3BBAE6C04D60}" WorkUnitID="{196E24AF-A484-4ECE-BA7F-6B6352D0BF0C}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PassReceived" ID="{D11AC8FF-6B3F-4E27-A638-A462B7D18A35}" WorkUnitID="{196E24AF-A484-4ECE-BA7F-6B6352D0BF0C}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PuckPickup" ID="{C4C7FF28-FE24-4A96-90E9-DF29497CEFB5}" WorkUnitID="{196E24AF-A484-4ECE-BA7F-6B6352D0BF0C}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

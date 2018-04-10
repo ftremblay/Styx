@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{196E24AF-A484-4ECE-BA7F-6B6352D0BF0C}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{196E24AF-A484-4ECE-BA7F-6B6352D0BF0C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Player" ID="{9FB3E426-4AF9-4D3C-8E56-AFEEE7F3367B}" ShortID="190355715">
+					<ChildrenList>
+						<Folder Name="Movements" ID="{2549E1C7-3B35-4299-8301-6E1AF4B42CD1}" ShortID="1000322356">
+							<ChildrenList>
+								<Event Name="Skate" ID="{E427676A-36CE-473F-9ED1-4E9E7A69A403}">
+									<ChildrenList>
+										<Action Name="" ID="{7A882F5B-40E6-4C01-B8A3-890D3B2763E9}" ShortID="1042531900">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SkateLoop" ID="{DE0A5B0B-0695-4350-9945-3BBAE6C04D60}">
+									<ChildrenList>
+										<Action Name="" ID="{12D32BA0-C98C-48B4-9BAA-BDBAEE0A93B5}" ShortID="143293558">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{7B6D2B26-F2B7-4795-B478-014F80ACA107}" ShortID="614924443">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="0.4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{6A1EF9A7-3FD4-4B8B-B1B3-01D083F59EFB}" ShortID="860209015">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="0.8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9E5A2514-99F6-44E1-B37A-06DFFA49B5AB}" ShortID="288863084">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="1.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{363C8620-26D6-4382-BCE9-F3898A8A7D08}" ShortID="262463559">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="1.6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{B2EE1FA2-2FC8-456D-B929-2939E5E41127}" ShortID="213325668">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{3E168A10-B7D1-4D59-98F8-9405485BA83A}" ShortID="869496117">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="2.4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{8383342F-4F33-4BA4-9DCE-DF101092D996}" ShortID="730860795">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="2.8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{7C371BE7-B60B-4628-B28B-3710320B1AC0}" ShortID="284692190">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="3.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{2E17CDAB-BA5D-41E0-8B66-29E2A85454E7}" ShortID="875838458">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="3.6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{22E66F02-E8B4-4E5D-AEEB-048AC1C6E314}" ShortID="638264997">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{45B65F95-E933-4CE9-8B8D-FBD91C30A415}" ShortID="754183996">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="4.4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F5C07C28-D0F9-4BAD-893F-C5C2522A87DB}" ShortID="995540373">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="4.8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{0F5B18CB-3123-40FC-ABCB-5FDC0170C1A2}" ShortID="628635998">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="5.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{3D25C87A-168F-49C7-91AA-579F3AC6664D}" ShortID="279601937">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="5.6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A054FE44-4589-42EF-BEF0-A6E1E263CBC3}" ShortID="536276263">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D2C5B47D-7B02-4811-A381-301583A980D8}" ShortID="1062519482">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="6.4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{43B25011-6B1C-4031-913E-9AFE474B6282}" ShortID="533057291">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="6.8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{1F70AF82-57A5-40D6-A209-3104D9D9433D}" ShortID="722502575">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="7.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{8CA9E4D1-D5A4-4EF6-94BE-9452DF5B1384}" ShortID="490756697">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="7.6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E9E06A64-F31A-4A0C-9185-592A7E20F1FF}" ShortID="687988437">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{AAE2F156-1A88-440B-AF51-4A43289F76BA}" ShortID="65535141">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="8.4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{DC355FB7-4BC4-4671-8FE5-D8E1F8D303CC}" ShortID="854021006">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="8.8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{1C9DAFB3-2BDF-4556-9991-6296A62C3DCB}" ShortID="217148457">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="9.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{71190D56-F5A3-4B29-A6EB-61DD10ADA4CA}" ShortID="55847607">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="9.6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{BC05BEAB-0DF2-4166-A8C7-F6C98364CFD0}" ShortID="497595911">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="10"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{C519B388-B6C8-40EC-A0D9-146053BB4515}" ShortID="229406273">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="10.4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9A5BCB1B-B50F-4BBB-B270-8D492C9C16CF}" ShortID="974467598">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="10.8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EFFED807-5E7F-460F-A114-6DA405B385B0}" ShortID="707607644">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="11.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D847D367-D45F-4C02-B6A7-5105FEB1BD48}" ShortID="288648092">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="11.6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{AD09DA8C-0F0B-4DC2-93CC-28CCD2C532E7}" ShortID="1026676098">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="12"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{24A58531-68FA-4482-A24D-46A1E3FA9039}" ShortID="839698415">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="12.4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{7DA44915-E230-4E1B-A43C-3384F882E230}" ShortID="273402828">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="12.8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{08500C4B-3B5B-4CAF-998A-2141FDCFC98E}" ShortID="209791788">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="13.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{28C02EAC-F3E0-478F-9C5F-14D21D18EB49}" ShortID="732253804">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="13.6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{ED4D7FD0-9605-4F7F-8EEA-60A8C80039B4}" ShortID="371441206">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="14"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{278A1BBF-F0D5-4482-AED6-47CA681CE662}" ShortID="565199085">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="14.4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E555EB70-EDF5-4AE8-89CA-68C86D4E0FEC}" ShortID="563946972">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="14.8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A5F7F683-4136-4ECF-B6D2-3358222BCBB7}" ShortID="922347946">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="15.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{CF8D2F7F-74EE-4F34-980B-F99C3D3AC722}" ShortID="128368846">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="15.6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{FBB7080F-E7A9-4BE2-9FBF-14B0B921F851}" ShortID="718652943">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="16"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{4B19591A-8861-4BEB-BE58-CB23E325AA79}" ShortID="136091499">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="16.4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{2BAE0DC4-3ABC-4B11-A068-FC8C29A2E819}" ShortID="663247523">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="16.8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{405926D2-763F-4E35-8E44-05561B21E636}" ShortID="180240200">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="17.2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{DF46115E-D670-4858-B71E-264ED520A892}" ShortID="960588646">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="17.6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{7D473B33-424A-433B-93DD-09A86F445507}" ShortID="299992707">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="18"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{FD9E6347-6E26-4733-AFEE-327DE3C7D2D8}" ShortID="947297806">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="18.4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D87C8AAE-D3E8-443D-9015-CFAC2FF8CC08}" ShortID="560778541">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="18.8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F8E24DB9-0D64-4CA7-ADCF-3AEB93EA38F3}" ShortID="227942729">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SkatingGlide" ID="{13FDDDD1-0797-47D6-A0E0-F60BA1B63A1B}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Actions" ID="{2963F890-2A9A-4703-9F46-3307061B4BC1}" ShortID="501731294">
+							<ChildrenList>
+								<Event Name="PuckPickup" ID="{C4C7FF28-FE24-4A96-90E9-DF29497CEFB5}">
+									<ChildrenList>
+										<Action Name="" ID="{B27D0FDB-C219-44E4-9092-57081A05A4E6}" ShortID="210884231">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PuckPickup" ID="{1DC30E2B-288E-4867-84FE-6E4CFFDB7E39}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="PassReceived" ID="{D11AC8FF-6B3F-4E27-A638-A462B7D18A35}">
+									<ChildrenList>
+										<Action Name="" ID="{0ED2E1EC-EC8B-4637-A7CA-C07856CF7583}" ShortID="275372297">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PassReceived" ID="{DCC348CD-89AD-4A68-804E-4FF0F852257F}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Event Name="StartGame" ID="{BDCE8A27-9456-4948-B821-F9307ADBBF8A}">
+					<ChildrenList>
+						<Action Name="" ID="{EF170E28-9992-469C-8D23-F295D296E586}" ShortID="8678254">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Styx-music" ID="{531851A1-64AD-4289-A85C-AFF1A2CA9C1E}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0E3174D7-93A0-42F1-A84B-59275502BC4B}" ShortID="1020442370">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ArenaAmbience" ID="{FE1D8A46-CF4C-492F-A589-717876F8878E}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

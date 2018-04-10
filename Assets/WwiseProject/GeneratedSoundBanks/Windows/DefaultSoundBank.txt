@@ -1,0 +1,73 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1521187885	StartGame			\Default Work Unit\StartGame	
+	1553159799	SkateLoop			\Default Work Unit\Player\SkateLoop	
+	3759749381	Skate			\Default Work Unit\Player\Skate	
+
+Effect plug-ins	ID	Name	Type				Notes
+	333875072	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	7567365	skating_10	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_10_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_10		5824
+	19145722	gliding_08	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_08_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_08		29980
+	35914376	skating-rough_16	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating-rough_16_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating-rough_16		2728
+	70777395	Styx-Mademoiselle	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\Styx-Mademoiselle_EB6DD913.wem		\Actor-Mixer Hierarchy\Default Work Unit\Temp-Music_STYX\Styx-music\Styx-Mademoiselle		3656680
+	76995800	gliding_03	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_03_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_03		16516
+	108817051	skating_11	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_11_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_11		6256
+	110741779	gliding_25	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_25_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_25		33040
+	148481927	Styx-Babe-1980	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\Styx-Babe-1980_8AA45720.wem		\Actor-Mixer Hierarchy\Default Work Unit\Temp-Music_STYX\Styx-music\Styx-Babe-1980		1950416
+	160988101	ambience-arena_01	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\ambience-arena_01_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_01		71920
+	195017422	gliding_24	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_24_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_24		29548
+	235669072	ambience-arena_04	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\ambience-arena_04_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_04		116920
+	280723244	ambience-arena_09	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\ambience-arena_09_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_09		112528
+	289022638	skating_02	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_02_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_02		8344
+	294223798	gliding_06	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_06_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_06		35416
+	294411486	skating_05	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_05_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_05		4168
+	300453644	skating_08	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_08_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_08		5824
+	337096209	Styx-Mr-Roboto-Relaid-Audio	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\Styx-Mr-Roboto-Relaid-Audio_DB38DE36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Temp-Music_STYX\Styx-music\Styx-Mr-Roboto-Relaid-Audio		3659549
+	340054880	ambience-arena_10	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\ambience-arena_10_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_10		65080
+	348315603	gliding_11	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_11_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_11		19540
+	356615417	gliding_13	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_13_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_13		24292
+	359057918	gliding_04	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_04_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_04		23788
+	373587485	gliding_26	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_26_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_26		36604
+	431762514	skating-rough_18	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating-rough_18_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating-rough_18		7192
+	445467223	skating_06	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_06_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_06		3700
+	466550563	skating_13	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_13_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_13		7804
+	471107129	ambience-arena_07	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\ambience-arena_07_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_07		113824
+	476421981	ambience-arena_06	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\ambience-arena_06_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_06		158968
+	476867656	gliding_16	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_16_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_16		17308
+	482389314	skating_07	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_07_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_07		6544
+	491409693	skating-rough_15	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating-rough_15_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating-rough_15		7732
+	491536818	gliding_05	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_05_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_05		33868
+	503072477	skating-rough_19	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating-rough_19_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating-rough_19		4420
+	513095914	gliding_18	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_18_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_18		20188
+	540141096	gliding_02	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_02_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_02		31924
+	544697470	gliding_23	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_23_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_23		31888
+	544967676	gliding_20	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_20_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_20		41248
+	566736106	gliding_10	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_10_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_10		18640
+	592304987	gliding_14	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_14_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_14		16120
+	592807267	gliding_09	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_09_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_09		25228
+	594401561	gliding_17	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_17_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_17		36640
+	608703240	gliding_28	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_28_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_28		31492
+	610877239	gliding_21	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_21_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_21		33976
+	633720667	gliding_01	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_01_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_01		21664
+	646395082	skating_09	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_09_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_09		5752
+	654537743	Styx-Suite-Madam-Blue	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\Styx-Suite-Madam-Blue_374AE80A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Temp-Music_STYX\Styx-music\Styx-Suite-Madam-Blue		5032727
+	688195390	gliding_22	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_22_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_22		33760
+	753243642	skating_12	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_12_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_12		6688
+	778163851	skating_14	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_14_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_14		3160
+	779489019	ambience-arena_03	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\ambience-arena_03_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_03		49240
+	797033609	ambience-arena_08	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\ambience-arena_08_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_08		56008
+	825115790	gliding_12	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_12_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_12		23176
+	861507772	skating_01	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_01_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_01		7732
+	864270197	skating_03	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_03_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_03		9712
+	866344460	skating-rough_17	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating-rough_17_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating-rough_17		6112
+	901327506	ambience-arena_05	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\ambience-arena_05_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_05		120952
+	908852665	gliding_15	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_15_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_15		24220
+	976850887	skating_04	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating_04_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_04		8236
+	989459631	gliding_19	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_19_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_19		31672
+	1000965181	skating-rough_20	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\skating-rough_20_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating-rough_20		4024
+	1050899473	gliding_27	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_27_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_27		41068
+	1060866081	gliding_07	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\gliding_07_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_07		24652
+	1065579094	ambience-arena_02	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\ambience-arena_02_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_02		62560
+	1071139519	Styx-Come-Sail-Away	F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\SFX\Styx-Come-Sail-Away_42D3AF27.wem		\Actor-Mixer Hierarchy\Default Work Unit\Temp-Music_STYX\Styx-music\Styx-Come-Sail-Away		1710783
+

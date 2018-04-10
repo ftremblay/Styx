@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{32EC8EAE-889A-4C46-8C5F-329BFEEDA8C4}" SchemaVersion="85">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{32EC8EAE-889A-4C46-8C5F-329BFEEDA8C4}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="DefaultSoundBank" ID="{C72189EC-377F-4BEE-A960-7415A576DCF1}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Movements" ID="{A0BA7AD9-144E-4034-B737-44EBBE639E31}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Styx-music" ID="{531851A1-64AD-4289-A85C-AFF1A2CA9C1E}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ArenaAmbience" ID="{FE1D8A46-CF4C-492F-A589-717876F8878E}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

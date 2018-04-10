@@ -1,0 +1,2410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}" SchemaVersion="85">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Players" ID="{C2B272EB-2D7A-423B-92AC-BD0FCADB6FD8}" ShortID="731614475">
+					<ChildrenList>
+						<BlendContainer Name="Movements" ID="{A0BA7AD9-144E-4034-B737-44EBBE639E31}" ShortID="436455316">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Spatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="SkatingBite" ID="{434F77DF-66EF-418D-A81F-62E01BD709C6}" ShortID="1031493322">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+										<Property Name="Spatialization" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="skating_01" ID="{A81AC1D1-A6DE-4467-96FA-08EADD6CB998}" ShortID="250851178">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{38229EFF-8274-40B8-96BC-B7DEB3FB7314}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5A028B3D-BEC2-456D-AA58-18228E8494D4}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_01" ID="{BAC7764C-9876-4D94-BC4B-5CEF08A4725B}" ShortID="861507772">
+													<Language>SFX</Language>
+													<AudioFile>skating_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_01" ID="{BAC7764C-9876-4D94-BC4B-5CEF08A4725B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_02" ID="{236F0EBC-CF4A-4FFF-A14A-CB52AA582D32}" ShortID="1000513189">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4E5385E8-D58F-49B9-A0BD-33A79F640F62}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E8C70BA9-8149-4B35-985A-D2F7F7C50830}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_02" ID="{37302989-8153-44B4-993B-582B47E059EF}" ShortID="289022638">
+													<Language>SFX</Language>
+													<AudioFile>skating_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_02" ID="{37302989-8153-44B4-993B-582B47E059EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_03" ID="{5614C36B-3A55-4230-B486-2F30BF992DAF}" ShortID="151962913">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3369A462-221C-4BC4-A6AA-BA75D3CD7105}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{DFFC9900-AB06-40E8-8D5F-80B41E3A1809}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_03" ID="{4E97D15E-C271-45A0-9108-63991B1D8629}" ShortID="864270197">
+													<Language>SFX</Language>
+													<AudioFile>skating_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_03" ID="{4E97D15E-C271-45A0-9108-63991B1D8629}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_04" ID="{37ADF2BC-CB3D-4C74-B694-8FFA8F92337F}" ShortID="422200751">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{40E9D91E-E797-4D2B-B7C8-35B7AE678680}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="500"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{64E005FC-9111-4F4C-BDAD-9F88568E4C6D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_04" ID="{172D0893-25DD-43E9-82AC-D4B35C0ECC0F}" ShortID="976850887">
+													<Language>SFX</Language>
+													<AudioFile>skating_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_04" ID="{172D0893-25DD-43E9-82AC-D4B35C0ECC0F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_05" ID="{B99F93D3-3EEF-492D-B499-F9DE01B4533C}" ShortID="784556664">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A2D01BE7-B1FC-4750-B9F0-2396BEE79649}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9CE2C871-4719-4507-848B-03ED518FC88E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_05" ID="{531521EE-4506-40A4-8A41-1F72E70D4A4D}" ShortID="294411486">
+													<Language>SFX</Language>
+													<AudioFile>skating_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_05" ID="{531521EE-4506-40A4-8A41-1F72E70D4A4D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_06" ID="{DA9DF3F3-805E-4A5A-A9C0-C871F97D84E3}" ShortID="372014064">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{28243928-D37F-4970-BD68-9A87A9F3905E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{814AD9FD-74A4-469F-82B7-4F4ABCD0B292}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_06" ID="{972017CC-D5D2-42A7-82F8-CA7E698DDED5}" ShortID="445467223">
+													<Language>SFX</Language>
+													<AudioFile>skating_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_06" ID="{972017CC-D5D2-42A7-82F8-CA7E698DDED5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_07" ID="{18F5D0FB-3B76-4E11-B8C9-C7271FE550ED}" ShortID="572787644">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{08B10640-1BF3-4F09-A8CA-E6B4F7432AD2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{19BFA81D-DA6F-4F58-8D95-C1A6A22C1F94}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_07" ID="{64F8FD33-9992-4165-95B9-1AB1601EB38E}" ShortID="482389314">
+													<Language>SFX</Language>
+													<AudioFile>skating_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_07" ID="{64F8FD33-9992-4165-95B9-1AB1601EB38E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_08" ID="{4CEE517F-2A48-4670-B25D-B4A7C17961AD}" ShortID="247279346">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{37401345-70D9-4C7E-A144-3C20E2863423}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{38A24227-69F8-421F-A8FF-20627CBEB99F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_08" ID="{40AE7BBE-3DD5-49CC-8AEB-1D3956E8F277}" ShortID="300453644">
+													<Language>SFX</Language>
+													<AudioFile>skating_08.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_08" ID="{40AE7BBE-3DD5-49CC-8AEB-1D3956E8F277}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_09" ID="{A49CA7BB-8383-48CE-A30A-34EB194ABD4A}" ShortID="247146418">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{163BAE32-1573-4984-BB74-319EFF6CFE37}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{14DA847F-6681-4D0B-A4B2-0BB387FD31AF}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_09" ID="{42889BD7-ACA1-45DF-B5F4-6CF54D3F5A56}" ShortID="646395082">
+													<Language>SFX</Language>
+													<AudioFile>skating_09.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_09" ID="{42889BD7-ACA1-45DF-B5F4-6CF54D3F5A56}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_10" ID="{97CCF118-E2EC-408A-8AD3-344A9C9404E2}" ShortID="72836522">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5F6DC2EF-04C0-4BFD-8B4B-ACCAC63E241B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AA04DC80-8AD2-4AC5-AA54-A2A518E1005E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_10" ID="{E97FD43A-EEDE-4EC7-AF17-9362A00580BB}" ShortID="7567365">
+													<Language>SFX</Language>
+													<AudioFile>skating_10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_10" ID="{E97FD43A-EEDE-4EC7-AF17-9362A00580BB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_11" ID="{F6FA9A99-327D-4B81-8E6E-FE8FE27458AE}" ShortID="452214932">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3C76F645-63DD-4318-B8FA-475FE70E9244}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{537B8558-910D-4FCB-A210-84DF02D2E461}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_11" ID="{F9F70481-4BA0-4F8D-8D09-FA8AB488B77F}" ShortID="108817051">
+													<Language>SFX</Language>
+													<AudioFile>skating_11.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_11" ID="{F9F70481-4BA0-4F8D-8D09-FA8AB488B77F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_12" ID="{FD56587A-1175-4FF7-8E7D-18FE873A9C80}" ShortID="788623597">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C45DA1FF-C51E-48BB-B78B-56868130384A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{48847B18-E149-47EA-9C7B-544CA86159AB}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_12" ID="{D3739715-86F0-4236-9C22-7C4B98F548E7}" ShortID="753243642">
+													<Language>SFX</Language>
+													<AudioFile>skating_12.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_12" ID="{D3739715-86F0-4236-9C22-7C4B98F548E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_13" ID="{5ADD60A1-9D7F-47D0-B79C-1237F0AA6A82}" ShortID="1021510907">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{359481BB-19FB-4760-9FA3-C744EB5CF16E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{41E6F472-511A-43E4-8034-A341B16A9904}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_13" ID="{DA725E6D-8D3D-48D0-9BAC-76A4FFAAD97D}" ShortID="466550563">
+													<Language>SFX</Language>
+													<AudioFile>skating_13.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_13" ID="{DA725E6D-8D3D-48D0-9BAC-76A4FFAAD97D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating_14" ID="{07603292-621B-4402-8E64-2B2C64B5781F}" ShortID="914495131">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3A267979-0E42-4716-9DF0-D6941F804EC6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{2FAE352B-07FC-4345-9454-E82072BB3F56}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating_14" ID="{00605970-E5E4-46F5-A3CA-79CA7D085C67}" ShortID="778163851">
+													<Language>SFX</Language>
+													<AudioFile>skating_14.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating_14" ID="{00605970-E5E4-46F5-A3CA-79CA7D085C67}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating-rough_15" ID="{96919887-FBA1-4F99-AB4E-01198DE2CB92}" ShortID="295783644">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A12CC334-BDF1-4CD6-884F-4144FD6C0A50}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{110A3664-2200-401A-A5F2-4ADD91309F2F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating-rough_15" ID="{93F22E16-58A5-4211-BB00-2B6025B0FDED}" ShortID="491409693">
+													<Language>SFX</Language>
+													<AudioFile>skating-rough_15.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating-rough_15" ID="{93F22E16-58A5-4211-BB00-2B6025B0FDED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating-rough_16" ID="{E20F80E2-B7D3-4808-8C08-C4D2D7498152}" ShortID="704088556">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{25044FB0-1CA2-4AF2-BBD2-BDD692132225}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1A0749FC-2791-4773-A023-E6447DB7F702}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating-rough_16" ID="{2507CE0C-BE25-4EAB-AB2C-AB298F8579B6}" ShortID="35914376">
+													<Language>SFX</Language>
+													<AudioFile>skating-rough_16.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating-rough_16" ID="{2507CE0C-BE25-4EAB-AB2C-AB298F8579B6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating-rough_17" ID="{B76CA84E-DF2F-4CA7-943E-2BD59477422F}" ShortID="1026474424">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3DEA4B5E-B80C-4A25-9A86-4ECA8478533F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{7F86B824-042F-49CE-8077-4F6FBD541E4E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating-rough_17" ID="{8DECB77B-11DC-49C0-9CB4-4BEDF11BF490}" ShortID="866344460">
+													<Language>SFX</Language>
+													<AudioFile>skating-rough_17.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating-rough_17" ID="{8DECB77B-11DC-49C0-9CB4-4BEDF11BF490}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating-rough_18" ID="{D4CCAAB7-6184-4449-BCAE-9FA403B72858}" ShortID="684645028">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{850EC963-8C71-4674-802A-84AE59D1D948}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B83CEC32-3F32-484C-9835-686A74EB7FD5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating-rough_18" ID="{C3470DE2-5015-4E0A-823F-53A60A60C303}" ShortID="431762514">
+													<Language>SFX</Language>
+													<AudioFile>skating-rough_18.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating-rough_18" ID="{C3470DE2-5015-4E0A-823F-53A60A60C303}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating-rough_19" ID="{B750A23C-FA62-4D42-9511-D1F8857E4BFB}" ShortID="97036507">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E6BDD3FC-82DB-4F3A-8CE1-A7CA0E26E4CB}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{41FBDCE0-A89C-4ECF-A3EC-36BE942A38D9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating-rough_19" ID="{8E9F10A4-EB83-46A3-ADA9-E801C21D04AD}" ShortID="503072477">
+													<Language>SFX</Language>
+													<AudioFile>skating-rough_19.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating-rough_19" ID="{8E9F10A4-EB83-46A3-ADA9-E801C21D04AD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="skating-rough_20" ID="{8153CD74-B2C7-4A91-B13B-143BE369760A}" ShortID="706097100">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{77D226D7-8603-4A69-A403-3D84C838103E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{165E9CAD-47AD-4C86-B593-1B55451064B2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="skating-rough_20" ID="{99E219CD-F434-46A4-A64F-7780AC85BD10}" ShortID="1000965181">
+													<Language>SFX</Language>
+													<AudioFile>skating-rough_20.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="skating-rough_20" ID="{99E219CD-F434-46A4-A64F-7780AC85BD10}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SkatingGlide" ID="{13FDDDD1-0797-47D6-A0E0-F60BA1B63A1B}" ShortID="947080171">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5586941F-3A02-48B5-AE2F-C49AF59ECBE5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.4"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="gliding_01" ID="{1B79190F-A8A1-4174-A2C7-3C917C061FCA}" ShortID="291110817">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_01" ID="{6F103911-5B82-441C-8DBD-D4C51992D67E}" ShortID="633720667">
+													<Language>SFX</Language>
+													<AudioFile>gliding_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_01" ID="{6F103911-5B82-441C-8DBD-D4C51992D67E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_02" ID="{23FF7FA6-08D6-4964-9736-ED26A55BAA21}" ShortID="352094437">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_02" ID="{159317E9-F8F1-4BE2-BB15-9B1D80ACA580}" ShortID="540141096">
+													<Language>SFX</Language>
+													<AudioFile>gliding_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_02" ID="{159317E9-F8F1-4BE2-BB15-9B1D80ACA580}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_03" ID="{76D64971-A7FC-418B-A86E-DE66F4C44E5E}" ShortID="425372871">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_03" ID="{603C601F-7DE2-43AF-A21D-05C574821D7A}" ShortID="76995800">
+													<Language>SFX</Language>
+													<AudioFile>gliding_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_03" ID="{603C601F-7DE2-43AF-A21D-05C574821D7A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_04" ID="{94CF5F94-FF42-4FE0-9FBE-934B6EB23EE3}" ShortID="966702471">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_04" ID="{B0CAC1B9-0977-493E-8D76-F7EEBA19563F}" ShortID="359057918">
+													<Language>SFX</Language>
+													<AudioFile>gliding_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_04" ID="{B0CAC1B9-0977-493E-8D76-F7EEBA19563F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_05" ID="{36CFD57A-80FE-4831-9D0D-FB64555AE149}" ShortID="1022647697">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_05" ID="{3C7D6C2B-12C8-413D-A891-37F57BC87D1F}" ShortID="491536818">
+													<Language>SFX</Language>
+													<AudioFile>gliding_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_05" ID="{3C7D6C2B-12C8-413D-A891-37F57BC87D1F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_06" ID="{EBE54763-4B48-41E9-A456-2EDAE31660D3}" ShortID="537995089">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_06" ID="{E030E512-8661-48A8-909B-624BF0004AF2}" ShortID="294223798">
+													<Language>SFX</Language>
+													<AudioFile>gliding_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_06" ID="{E030E512-8661-48A8-909B-624BF0004AF2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_07" ID="{A33164DB-8EF5-4F44-BB4A-CE2D4DBB7D4E}" ShortID="201612786">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_07" ID="{2D3C6D0F-2195-49E2-9290-0CD7303913D7}" ShortID="1060866081">
+													<Language>SFX</Language>
+													<AudioFile>gliding_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_07" ID="{2D3C6D0F-2195-49E2-9290-0CD7303913D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_08" ID="{F160755E-9E67-4C21-8B24-360B2971C2D0}" ShortID="508714477">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_08" ID="{F11A6B8D-C5BF-43D5-B90F-3216ED8F86FC}" ShortID="19145722">
+													<Language>SFX</Language>
+													<AudioFile>gliding_08.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_08" ID="{F11A6B8D-C5BF-43D5-B90F-3216ED8F86FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_09" ID="{B5788E04-CA6A-47DA-95DF-0BD0A7B5BB04}" ShortID="252635415">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_09" ID="{5D78A046-819C-4A32-BBA3-9B815F59E74C}" ShortID="592807267">
+													<Language>SFX</Language>
+													<AudioFile>gliding_09.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_09" ID="{5D78A046-819C-4A32-BBA3-9B815F59E74C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_10" ID="{E21D31B2-C5D3-4B85-B775-6123ADD3578D}" ShortID="220053805">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_10" ID="{31CA56C8-1C12-4DA7-97D6-D97433D6AAA2}" ShortID="566736106">
+													<Language>SFX</Language>
+													<AudioFile>gliding_10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_10" ID="{31CA56C8-1C12-4DA7-97D6-D97433D6AAA2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_11" ID="{62FEF7A7-D195-4F18-9C9D-B0F36A772E50}" ShortID="311080247">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_11" ID="{160D2242-1204-49AD-A718-820855162F53}" ShortID="348315603">
+													<Language>SFX</Language>
+													<AudioFile>gliding_11.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_11" ID="{160D2242-1204-49AD-A718-820855162F53}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_12" ID="{DB020A90-EEAD-4288-BD07-410395E5A932}" ShortID="643819007">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_12" ID="{C0E08D52-9402-4040-AF7B-04153CDB1E85}" ShortID="825115790">
+													<Language>SFX</Language>
+													<AudioFile>gliding_12.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_12" ID="{C0E08D52-9402-4040-AF7B-04153CDB1E85}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_13" ID="{CDFF23A6-E27E-402D-93EF-813796C05E7E}" ShortID="533120290">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_13" ID="{CC395696-87BE-4012-AE97-596F6382E6AB}" ShortID="356615417">
+													<Language>SFX</Language>
+													<AudioFile>gliding_13.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_13" ID="{CC395696-87BE-4012-AE97-596F6382E6AB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_14" ID="{8B845F00-FBAE-4DF9-A4BE-A4FC6E56DEC7}" ShortID="772427607">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_14" ID="{8BBCF35C-31A2-4B1D-8BA8-BAEC3D0B0E29}" ShortID="592304987">
+													<Language>SFX</Language>
+													<AudioFile>gliding_14.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_14" ID="{8BBCF35C-31A2-4B1D-8BA8-BAEC3D0B0E29}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_15" ID="{5C630C7F-BAB6-4A5C-A29B-5FA84170AE07}" ShortID="234270183">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_15" ID="{961AE75B-B3B4-4DC0-86A6-E4E45F3D159F}" ShortID="908852665">
+													<Language>SFX</Language>
+													<AudioFile>gliding_15.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_15" ID="{961AE75B-B3B4-4DC0-86A6-E4E45F3D159F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_16" ID="{35DF1F6C-388F-4F8F-A19E-D6CB3B32B52B}" ShortID="368679582">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_16" ID="{C78D6829-E9CF-4CA9-91D4-B0ADA52C9455}" ShortID="476867656">
+													<Language>SFX</Language>
+													<AudioFile>gliding_16.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_16" ID="{C78D6829-E9CF-4CA9-91D4-B0ADA52C9455}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_17" ID="{EB2C36DE-386B-42D7-BF2E-ADD0F6A266B1}" ShortID="587860688">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_17" ID="{45F91479-288D-4034-A06A-3F9BFFA5CE8A}" ShortID="594401561">
+													<Language>SFX</Language>
+													<AudioFile>gliding_17.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_17" ID="{45F91479-288D-4034-A06A-3F9BFFA5CE8A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_18" ID="{BE71FE71-79D3-4EEC-863A-4A249A96D09E}" ShortID="1072350274">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_18" ID="{B5CA4F6A-BF6B-4E4B-BF88-0BB191B651B9}" ShortID="513095914">
+													<Language>SFX</Language>
+													<AudioFile>gliding_18.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_18" ID="{B5CA4F6A-BF6B-4E4B-BF88-0BB191B651B9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_19" ID="{86B8F50B-58D4-4720-8BED-E954D7E54556}" ShortID="782186555">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_19" ID="{C3242537-E362-4D9C-B435-7026226C37C8}" ShortID="989459631">
+													<Language>SFX</Language>
+													<AudioFile>gliding_19.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_19" ID="{C3242537-E362-4D9C-B435-7026226C37C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_20" ID="{B97B8F47-5C6E-43F4-957D-9F1AB90B2010}" ShortID="859320486">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_20" ID="{5D2225E1-AE90-43F2-9BE5-F63A0E79A844}" ShortID="544967676">
+													<Language>SFX</Language>
+													<AudioFile>gliding_20.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_20" ID="{5D2225E1-AE90-43F2-9BE5-F63A0E79A844}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_21" ID="{C4611F53-2BCC-4E7D-BB06-CBB339D6E4F6}" ShortID="653414692">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_21" ID="{CD4CD8BA-7EE3-4CD3-AAAC-B107AD225AEE}" ShortID="610877239">
+													<Language>SFX</Language>
+													<AudioFile>gliding_21.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_21" ID="{CD4CD8BA-7EE3-4CD3-AAAC-B107AD225AEE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_22" ID="{5CA6DED7-FC53-4955-880E-6D62C46647F9}" ShortID="790253601">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_22" ID="{665356AE-C8FE-46BC-B982-943314350E3B}" ShortID="688195390">
+													<Language>SFX</Language>
+													<AudioFile>gliding_22.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_22" ID="{665356AE-C8FE-46BC-B982-943314350E3B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_23" ID="{8AACA162-F998-468E-B9DA-B2B7875C0636}" ShortID="488254385">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_23" ID="{56509D39-1D07-40A7-8004-57D4226B973B}" ShortID="544697470">
+													<Language>SFX</Language>
+													<AudioFile>gliding_23.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_23" ID="{56509D39-1D07-40A7-8004-57D4226B973B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_24" ID="{BE80AACB-F9C4-4EE0-9D87-5BE58F636CFF}" ShortID="942681361">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_24" ID="{01E96275-1496-482B-A116-0DE0CFF2581B}" ShortID="195017422">
+													<Language>SFX</Language>
+													<AudioFile>gliding_24.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_24" ID="{01E96275-1496-482B-A116-0DE0CFF2581B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_25" ID="{4D914423-95E0-4CCB-A394-D895F233DE62}" ShortID="338187404">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_25" ID="{41459054-887D-49AB-A795-08227B34C91F}" ShortID="110741779">
+													<Language>SFX</Language>
+													<AudioFile>gliding_25.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_25" ID="{41459054-887D-49AB-A795-08227B34C91F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_26" ID="{ED707416-2D86-4FF6-AF46-33E13CDB4CB8}" ShortID="654984113">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_26" ID="{E3FC2628-CD00-4CF9-A4EA-1B2B5A1B22ED}" ShortID="373587485">
+													<Language>SFX</Language>
+													<AudioFile>gliding_26.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_26" ID="{E3FC2628-CD00-4CF9-A4EA-1B2B5A1B22ED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_27" ID="{9D2233FB-76A9-4EBB-BC6D-6F455A489EAD}" ShortID="945820134">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_27" ID="{CB5AD4B8-8E1A-4DC9-B988-01F67E623012}" ShortID="1050899473">
+													<Language>SFX</Language>
+													<AudioFile>gliding_27.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_27" ID="{CB5AD4B8-8E1A-4DC9-B988-01F67E623012}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="gliding_28" ID="{3CA27EE1-A8CE-42F3-8AED-DAA94A2CAD2D}" ShortID="340512836">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="gliding_28" ID="{B0B036C0-988C-4EDA-B610-1107E8519799}" ShortID="608703240">
+													<Language>SFX</Language>
+													<AudioFile>gliding_28.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="gliding_28" ID="{B0B036C0-988C-4EDA-B610-1107E8519799}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Actions" ID="{6BDBBE62-0799-41FD-83D3-A07255D8E31B}" ShortID="833696950">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="PuckPickup" ID="{1DC30E2B-288E-4867-84FE-6E4CFFDB7E39}" ShortID="828201372">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{33C87C5E-46EE-4138-8DB4-102AFBE5C239}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{27CBBC2A-91E3-451A-9185-C0565F69F8D4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="puck-pickup_01" ID="{121DFB58-66F9-4B83-BD7E-72B6252BD81A}" ShortID="188393416">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="puck-pickup_01" ID="{3D779A53-0FC9-4036-9BB3-968411A6D5D6}" ShortID="218583357">
+													<Language>SFX</Language>
+													<AudioFile>puck-pickup_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="puck-pickup_01" ID="{3D779A53-0FC9-4036-9BB3-968411A6D5D6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="puck-pickup_02" ID="{E7AAFD8D-AA01-42F4-9334-7E4D36D31C76}" ShortID="708768656">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="puck-pickup_02" ID="{A5FE087E-F265-4165-82E4-53A87187486C}" ShortID="272333425">
+													<Language>SFX</Language>
+													<AudioFile>puck-pickup_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="puck-pickup_02" ID="{A5FE087E-F265-4165-82E4-53A87187486C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="puck-pickup_03" ID="{D622C4F0-75D2-49CB-82D5-A35566A30B7F}" ShortID="239425091">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="puck-pickup_03" ID="{08DC85CC-BE81-4877-A4DC-5FDEDBEB3650}" ShortID="168274328">
+													<Language>SFX</Language>
+													<AudioFile>puck-pickup_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="puck-pickup_03" ID="{08DC85CC-BE81-4877-A4DC-5FDEDBEB3650}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="puck-pickup_04" ID="{57638E8F-5329-4C85-9A94-83404D1A1C58}" ShortID="604392785">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="puck-pickup_04" ID="{06D6DD87-B3D7-4CDD-A4EB-DD79EC6801E3}" ShortID="1017917129">
+													<Language>SFX</Language>
+													<AudioFile>puck-pickup_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="puck-pickup_04" ID="{06D6DD87-B3D7-4CDD-A4EB-DD79EC6801E3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="puck-pickup_05" ID="{D555DBD8-F0DD-49AA-91A5-9FA8CA3B5CBB}" ShortID="663483022">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="puck-pickup_05" ID="{CEF31A6F-217D-43F3-80EC-97A223095EA9}" ShortID="1028662537">
+													<Language>SFX</Language>
+													<AudioFile>puck-pickup_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="puck-pickup_05" ID="{CEF31A6F-217D-43F3-80EC-97A223095EA9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="puck-pickup_06" ID="{C7C1B263-FD11-4CF6-9754-4B145FA65F90}" ShortID="986217638">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="puck-pickup_06" ID="{544F2773-3D22-4DBE-872E-C6750C214353}" ShortID="511855411">
+													<Language>SFX</Language>
+													<AudioFile>puck-pickup_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="puck-pickup_06" ID="{544F2773-3D22-4DBE-872E-C6750C214353}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="puck-pickup_07" ID="{5655E407-87FE-4357-85BF-8E5EB19EFE24}" ShortID="281103234">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="puck-pickup_07" ID="{2FA7495C-1938-46A9-AA46-6A5EECE430A3}" ShortID="1068503388">
+													<Language>SFX</Language>
+													<AudioFile>puck-pickup_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="puck-pickup_07" ID="{2FA7495C-1938-46A9-AA46-6A5EECE430A3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="puck-pickup_08" ID="{3EFB1F18-386D-46ED-A20B-A69E68059F42}" ShortID="656339998">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="puck-pickup_08" ID="{4374B05E-A14C-418C-806C-00B10AF12CA4}" ShortID="41701200">
+													<Language>SFX</Language>
+													<AudioFile>puck-pickup_08.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="puck-pickup_08" ID="{4374B05E-A14C-418C-806C-00B10AF12CA4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="PassReceived" ID="{DCC348CD-89AD-4A68-804E-4FF0F852257F}" ShortID="116157236">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{23C36701-A5FB-477E-B303-10DF87BC85C3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{13C9D2A1-D5FB-4AE1-B037-71410ADEA71E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="pass-received_01" ID="{B41C68A4-38BF-4D1E-A121-B78B1BAFC2FB}" ShortID="384691590">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pass-received_01" ID="{6D916EF6-2910-4A4B-A057-EE35DE418F4E}" ShortID="161701344">
+													<Language>SFX</Language>
+													<AudioFile>pass-received_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pass-received_01" ID="{6D916EF6-2910-4A4B-A057-EE35DE418F4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pass-received_02" ID="{7389D6A0-66C0-4B47-9AB3-AF855CA367F5}" ShortID="735183184">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pass-received_02" ID="{428172D0-EECF-42E5-B310-5BE957540E17}" ShortID="726937893">
+													<Language>SFX</Language>
+													<AudioFile>pass-received_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pass-received_02" ID="{428172D0-EECF-42E5-B310-5BE957540E17}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pass-received_03" ID="{AD8F6036-3B2F-4C2C-8C45-6499CDA9CAE6}" ShortID="416161431">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pass-received_03" ID="{FE6A6410-2265-4BEB-ACC5-3B5805EB4B45}" ShortID="535369489">
+													<Language>SFX</Language>
+													<AudioFile>pass-received_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pass-received_03" ID="{FE6A6410-2265-4BEB-ACC5-3B5805EB4B45}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pass-received_04" ID="{02BC29FA-E262-4BE5-AD77-EFBBD0879B04}" ShortID="154086439">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pass-received_04" ID="{15AE5432-076A-4098-BF00-436DF09C9A1A}" ShortID="357261498">
+													<Language>SFX</Language>
+													<AudioFile>pass-received_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pass-received_04" ID="{15AE5432-076A-4098-BF00-436DF09C9A1A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pass-received_05" ID="{0B30C73C-7AD7-4F8C-AF1B-43C10D8ABDBF}" ShortID="369198890">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pass-received_05" ID="{8F98554E-C737-492A-AF58-62D438B9B040}" ShortID="124923744">
+													<Language>SFX</Language>
+													<AudioFile>pass-received_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pass-received_05" ID="{8F98554E-C737-492A-AF58-62D438B9B040}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Temp-Music_STYX" ID="{D657B0FE-7A3E-4F5B-A6CC-F5A34EE4E233}" ShortID="1029378209">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Styx-music" ID="{531851A1-64AD-4289-A85C-AFF1A2CA9C1E}" ShortID="699905922">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A8911544-9E72-43EA-9EC7-7DE31B90908C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Parametric EQ (Custom)" ID="{D49038AD-88AC-43E4-BF7A-75A3C2B67C28}" ShortID="333875072" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand1" Type="Real32" Value="400"/>
+												<Property Name="FrequencyBand2" Type="Real32" Value="2000"/>
+												<Property Name="FrequencyBand3" Type="Real32" Value="6000"/>
+												<Property Name="GainBand1" Type="Real32" Value="-10"/>
+												<Property Name="GainBand2" Type="Real32" Value="6"/>
+												<Property Name="GainBand3" Type="Real32" Value="-12"/>
+												<Property Name="QFactorBand2" Type="Real32" Value="4"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Styx-Babe-1980" ID="{77BA046D-E1ED-42D6-84F3-5E288AD860E6}" ShortID="1017343127">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Styx-Babe-1980" ID="{E394BD3E-DE42-4030-8351-4529EB72E3EF}" ShortID="148481927">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.05936653395528"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="4.80445624049906"/>
+												<Property Name="LoopBegin" Type="Real64" Value="82.6927037058604"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="82.6713023617401"/>
+												<Property Name="TrimEnd" Type="Real64" Value="244.214812946866"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Styx-Babe-1980.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Styx-Babe-1980" ID="{E394BD3E-DE42-4030-8351-4529EB72E3EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Styx-Come-Sail-Away" ID="{D930B2D0-C13D-4D52-BF77-9B41B9CA4E82}" ShortID="75882518">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Styx-Come-Sail-Away" ID="{DD2DAFA0-FAAF-44A4-AE0D-274F893E0349}" ShortID="1071139519">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.05645682977948"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.93779547111353"/>
+												<Property Name="TrimBegin" Type="Real64" Value="144.980206499453"/>
+												<Property Name="TrimEnd" Type="Real64" Value="264.548482173774"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Styx-Come-Sail-Away.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Styx-Come-Sail-Away" ID="{DD2DAFA0-FAAF-44A4-AE0D-274F893E0349}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Styx-Mademoiselle" ID="{06D26C96-4D44-44CC-8A78-E828AF87C9D3}" ShortID="725501523">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Styx-Mademoiselle" ID="{C47FEE2C-C5B2-4EDD-8457-57B7AF9EDBC6}" ShortID="70777395">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="5.87326877164207"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.53843495990523"/>
+												<Property Name="TrimEnd" Type="Real64" Value="233.462433672772"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Styx-Mademoiselle.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Styx-Mademoiselle" ID="{C47FEE2C-C5B2-4EDD-8457-57B7AF9EDBC6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Styx-Mr-Roboto-Relaid-Audio" ID="{333DEECA-024B-486A-8BE6-314ED3C3218A}" ShortID="848084514">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Styx-Mr-Roboto-Relaid-Audio" ID="{FD8F49D7-30D9-4150-B65A-C49AA9D0D4DC}" ShortID="337096209">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="3.1058532554219"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="5.48091750956809"/>
+												<Property Name="TrimBegin" Type="Real64" Value="38.5491198172954"/>
+												<Property Name="TrimEnd" Type="Real64" Value="265.093710212776"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Styx-Mr-Roboto-Relaid-Audio.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Styx-Mr-Roboto-Relaid-Audio" ID="{FD8F49D7-30D9-4150-B65A-C49AA9D0D4DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Styx-Suite-Madam-Blue" ID="{EE966049-D0C7-4484-8BD8-2F91CAA6C62C}" ShortID="642200469">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Styx-Suite-Madam-Blue" ID="{FDFD6C91-0934-41F1-BA08-2FC5D116CF29}" ShortID="654537743">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="5.36391129032258"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.643669354838721"/>
+												<Property Name="TrimBegin" Type="Real64" Value="59.0030241935484"/>
+												<Property Name="TrimEnd" Type="Real64" Value="389.634516129032"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>-5.5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Styx-Suite-Madam-Blue.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Styx-Suite-Madam-Blue" ID="{FDFD6C91-0934-41F1-BA08-2FC5D116CF29}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambience" ID="{D84A8431-69E7-4A56-9577-4740549C8E39}" ShortID="57143372">
+					<ChildrenList>
+						<RandomSequenceContainer Name="ArenaAmbience" ID="{FE1D8A46-CF4C-492F-A589-717876F8878E}" ShortID="998402901">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.2"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ambience-arena_01" ID="{268277ED-C6D3-4619-93E7-CFFC04597749}" ShortID="782782218">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience-arena_01" ID="{E969506C-60C2-4B81-9A20-38F392264A7B}" ShortID="160988101">
+											<Language>SFX</Language>
+											<AudioFile>ambience-arena_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience-arena_01" ID="{E969506C-60C2-4B81-9A20-38F392264A7B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience-arena_02" ID="{5A82F470-84CB-4653-ADED-886FFAE3C96E}" ShortID="1059212348">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience-arena_02" ID="{D42A705D-7708-4FC1-96D3-A4DF3B773298}" ShortID="1065579094">
+											<Language>SFX</Language>
+											<AudioFile>ambience-arena_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience-arena_02" ID="{D42A705D-7708-4FC1-96D3-A4DF3B773298}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience-arena_03" ID="{62F02F85-28C4-44F3-BEA4-29C841AF763E}" ShortID="512007109">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience-arena_03" ID="{2109554E-672A-4D4E-8D40-3ACBC910CAAB}" ShortID="779489019">
+											<Language>SFX</Language>
+											<AudioFile>ambience-arena_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience-arena_03" ID="{2109554E-672A-4D4E-8D40-3ACBC910CAAB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience-arena_04" ID="{8670189E-9D0B-4658-AAE2-3B7B922F5C57}" ShortID="169357863">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience-arena_04" ID="{550579FA-BEC3-4759-860C-C1DB58CF926F}" ShortID="235669072">
+											<Language>SFX</Language>
+											<AudioFile>ambience-arena_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience-arena_04" ID="{550579FA-BEC3-4759-860C-C1DB58CF926F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience-arena_05" ID="{0CEA1297-4FB1-4B4B-BE79-BFECDED9D0C6}" ShortID="84267698">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience-arena_05" ID="{F0948F8D-8074-4477-B249-520216144C19}" ShortID="901327506">
+											<Language>SFX</Language>
+											<AudioFile>ambience-arena_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience-arena_05" ID="{F0948F8D-8074-4477-B249-520216144C19}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience-arena_06" ID="{77D1F4B3-C370-406A-A9DD-DBEE55A77EAB}" ShortID="995487431">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience-arena_06" ID="{FC2BEEDD-27C0-4584-BE42-C401762BC351}" ShortID="476421981">
+											<Language>SFX</Language>
+											<AudioFile>ambience-arena_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience-arena_06" ID="{FC2BEEDD-27C0-4584-BE42-C401762BC351}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience-arena_07" ID="{66571BF7-0BAA-4BAD-819E-2D788C104A32}" ShortID="589992322">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience-arena_07" ID="{0133C17F-3AA6-49E4-9C00-0F1EF5993F2C}" ShortID="471107129">
+											<Language>SFX</Language>
+											<AudioFile>ambience-arena_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience-arena_07" ID="{0133C17F-3AA6-49E4-9C00-0F1EF5993F2C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience-arena_08" ID="{5D4C84AF-332D-4D18-9CFE-5AD55ECB88AA}" ShortID="918833239">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience-arena_08" ID="{0806ACFE-CDC6-4A50-A73B-AAAC2E595BA2}" ShortID="797033609">
+											<Language>SFX</Language>
+											<AudioFile>ambience-arena_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience-arena_08" ID="{0806ACFE-CDC6-4A50-A73B-AAAC2E595BA2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience-arena_09" ID="{469CA175-25E3-4B39-920D-1394CD490398}" ShortID="343342958">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience-arena_09" ID="{D067B05B-A5B2-4540-8741-D69F7C480F98}" ShortID="280723244">
+											<Language>SFX</Language>
+											<AudioFile>ambience-arena_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience-arena_09" ID="{D067B05B-A5B2-4540-8741-D69F7C480F98}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ambience-arena_10" ID="{D9B707F2-7820-4D52-B073-E240AF2FA583}" ShortID="325873433">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience-arena_10" ID="{D62D5411-D7CA-4C99-A295-7366A622DE61}" ShortID="340054880">
+											<Language>SFX</Language>
+											<AudioFile>ambience-arena_10.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ambience-arena_10" ID="{D62D5411-D7CA-4C99-A295-7366A622DE61}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

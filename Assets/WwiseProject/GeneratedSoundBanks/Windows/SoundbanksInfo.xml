@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>F:\RageCure\styx\work\wwise-temp\styx\</ProjectRoot>
+		<SourceFilesRoot>F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\RageCure\styx\work\wwise-temp\styx\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\RageCure\styx\work\wwise-temp\styx\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1675065207" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\DefaultSoundBank</ObjectPath>
+			<ShortName>DefaultSoundBank</ShortName>
+			<Path>DefaultSoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3759749381" Name="Skate" ObjectPath="\Events\Default Work Unit\Player\Skate"/>
+				<Event Id="1553159799" Name="SkateLoop" ObjectPath="\Events\Default Work Unit\Player\SkateLoop"/>
+				<Event Id="1521187885" Name="StartGame" ObjectPath="\Events\Default Work Unit\StartGame"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="7567365" Language="SFX">
+					<ShortName>skating_10.wav</ShortName>
+					<Path>SFX\skating_10_31D213C5.wem</Path>
+				</File>
+				<File Id="19145722" Language="SFX">
+					<ShortName>gliding_08.wav</ShortName>
+					<Path>SFX\gliding_08_31D213C5.wem</Path>
+				</File>
+				<File Id="35914376" Language="SFX">
+					<ShortName>skating-rough_16.wav</ShortName>
+					<Path>SFX\skating-rough_16_31D213C5.wem</Path>
+				</File>
+				<File Id="70777395" Language="SFX">
+					<ShortName>Styx-Mademoiselle.wav</ShortName>
+					<Path>SFX\Styx-Mademoiselle_EB6DD913.wem</Path>
+				</File>
+				<File Id="76995800" Language="SFX">
+					<ShortName>gliding_03.wav</ShortName>
+					<Path>SFX\gliding_03_31D213C5.wem</Path>
+				</File>
+				<File Id="108817051" Language="SFX">
+					<ShortName>skating_11.wav</ShortName>
+					<Path>SFX\skating_11_31D213C5.wem</Path>
+				</File>
+				<File Id="110741779" Language="SFX">
+					<ShortName>gliding_25.wav</ShortName>
+					<Path>SFX\gliding_25_31D213C5.wem</Path>
+				</File>
+				<File Id="148481927" Language="SFX">
+					<ShortName>Styx-Babe-1980.wav</ShortName>
+					<Path>SFX\Styx-Babe-1980_8AA45720.wem</Path>
+				</File>
+				<File Id="160988101" Language="SFX">
+					<ShortName>ambience-arena_01.wav</ShortName>
+					<Path>SFX\ambience-arena_01_31D213C5.wem</Path>
+				</File>
+				<File Id="195017422" Language="SFX">
+					<ShortName>gliding_24.wav</ShortName>
+					<Path>SFX\gliding_24_31D213C5.wem</Path>
+				</File>
+				<File Id="235669072" Language="SFX">
+					<ShortName>ambience-arena_04.wav</ShortName>
+					<Path>SFX\ambience-arena_04_31D213C5.wem</Path>
+				</File>
+				<File Id="280723244" Language="SFX">
+					<ShortName>ambience-arena_09.wav</ShortName>
+					<Path>SFX\ambience-arena_09_31D213C5.wem</Path>
+				</File>
+				<File Id="289022638" Language="SFX">
+					<ShortName>skating_02.wav</ShortName>
+					<Path>SFX\skating_02_31D213C5.wem</Path>
+				</File>
+				<File Id="294223798" Language="SFX">
+					<ShortName>gliding_06.wav</ShortName>
+					<Path>SFX\gliding_06_31D213C5.wem</Path>
+				</File>
+				<File Id="294411486" Language="SFX">
+					<ShortName>skating_05.wav</ShortName>
+					<Path>SFX\skating_05_31D213C5.wem</Path>
+				</File>
+				<File Id="300453644" Language="SFX">
+					<ShortName>skating_08.wav</ShortName>
+					<Path>SFX\skating_08_31D213C5.wem</Path>
+				</File>
+				<File Id="337096209" Language="SFX">
+					<ShortName>Styx-Mr-Roboto-Relaid-Audio.wav</ShortName>
+					<Path>SFX\Styx-Mr-Roboto-Relaid-Audio_DB38DE36.wem</Path>
+				</File>
+				<File Id="340054880" Language="SFX">
+					<ShortName>ambience-arena_10.wav</ShortName>
+					<Path>SFX\ambience-arena_10_31D213C5.wem</Path>
+				</File>
+				<File Id="348315603" Language="SFX">
+					<ShortName>gliding_11.wav</ShortName>
+					<Path>SFX\gliding_11_31D213C5.wem</Path>
+				</File>
+				<File Id="356615417" Language="SFX">
+					<ShortName>gliding_13.wav</ShortName>
+					<Path>SFX\gliding_13_31D213C5.wem</Path>
+				</File>
+				<File Id="359057918" Language="SFX">
+					<ShortName>gliding_04.wav</ShortName>
+					<Path>SFX\gliding_04_31D213C5.wem</Path>
+				</File>
+				<File Id="373587485" Language="SFX">
+					<ShortName>gliding_26.wav</ShortName>
+					<Path>SFX\gliding_26_31D213C5.wem</Path>
+				</File>
+				<File Id="431762514" Language="SFX">
+					<ShortName>skating-rough_18.wav</ShortName>
+					<Path>SFX\skating-rough_18_31D213C5.wem</Path>
+				</File>
+				<File Id="445467223" Language="SFX">
+					<ShortName>skating_06.wav</ShortName>
+					<Path>SFX\skating_06_31D213C5.wem</Path>
+				</File>
+				<File Id="466550563" Language="SFX">
+					<ShortName>skating_13.wav</ShortName>
+					<Path>SFX\skating_13_31D213C5.wem</Path>
+				</File>
+				<File Id="471107129" Language="SFX">
+					<ShortName>ambience-arena_07.wav</ShortName>
+					<Path>SFX\ambience-arena_07_31D213C5.wem</Path>
+				</File>
+				<File Id="476421981" Language="SFX">
+					<ShortName>ambience-arena_06.wav</ShortName>
+					<Path>SFX\ambience-arena_06_31D213C5.wem</Path>
+				</File>
+				<File Id="476867656" Language="SFX">
+					<ShortName>gliding_16.wav</ShortName>
+					<Path>SFX\gliding_16_31D213C5.wem</Path>
+				</File>
+				<File Id="482389314" Language="SFX">
+					<ShortName>skating_07.wav</ShortName>
+					<Path>SFX\skating_07_31D213C5.wem</Path>
+				</File>
+				<File Id="491409693" Language="SFX">
+					<ShortName>skating-rough_15.wav</ShortName>
+					<Path>SFX\skating-rough_15_31D213C5.wem</Path>
+				</File>
+				<File Id="491536818" Language="SFX">
+					<ShortName>gliding_05.wav</ShortName>
+					<Path>SFX\gliding_05_31D213C5.wem</Path>
+				</File>
+				<File Id="503072477" Language="SFX">
+					<ShortName>skating-rough_19.wav</ShortName>
+					<Path>SFX\skating-rough_19_31D213C5.wem</Path>
+				</File>
+				<File Id="513095914" Language="SFX">
+					<ShortName>gliding_18.wav</ShortName>
+					<Path>SFX\gliding_18_31D213C5.wem</Path>
+				</File>
+				<File Id="540141096" Language="SFX">
+					<ShortName>gliding_02.wav</ShortName>
+					<Path>SFX\gliding_02_31D213C5.wem</Path>
+				</File>
+				<File Id="544697470" Language="SFX">
+					<ShortName>gliding_23.wav</ShortName>
+					<Path>SFX\gliding_23_31D213C5.wem</Path>
+				</File>
+				<File Id="544967676" Language="SFX">
+					<ShortName>gliding_20.wav</ShortName>
+					<Path>SFX\gliding_20_31D213C5.wem</Path>
+				</File>
+				<File Id="566736106" Language="SFX">
+					<ShortName>gliding_10.wav</ShortName>
+					<Path>SFX\gliding_10_31D213C5.wem</Path>
+				</File>
+				<File Id="592304987" Language="SFX">
+					<ShortName>gliding_14.wav</ShortName>
+					<Path>SFX\gliding_14_31D213C5.wem</Path>
+				</File>
+				<File Id="592807267" Language="SFX">
+					<ShortName>gliding_09.wav</ShortName>
+					<Path>SFX\gliding_09_31D213C5.wem</Path>
+				</File>
+				<File Id="594401561" Language="SFX">
+					<ShortName>gliding_17.wav</ShortName>
+					<Path>SFX\gliding_17_31D213C5.wem</Path>
+				</File>
+				<File Id="608703240" Language="SFX">
+					<ShortName>gliding_28.wav</ShortName>
+					<Path>SFX\gliding_28_31D213C5.wem</Path>
+				</File>
+				<File Id="610877239" Language="SFX">
+					<ShortName>gliding_21.wav</ShortName>
+					<Path>SFX\gliding_21_31D213C5.wem</Path>
+				</File>
+				<File Id="633720667" Language="SFX">
+					<ShortName>gliding_01.wav</ShortName>
+					<Path>SFX\gliding_01_31D213C5.wem</Path>
+				</File>
+				<File Id="646395082" Language="SFX">
+					<ShortName>skating_09.wav</ShortName>
+					<Path>SFX\skating_09_31D213C5.wem</Path>
+				</File>
+				<File Id="654537743" Language="SFX">
+					<ShortName>Styx-Suite-Madam-Blue.wav</ShortName>
+					<Path>SFX\Styx-Suite-Madam-Blue_374AE80A.wem</Path>
+				</File>
+				<File Id="688195390" Language="SFX">
+					<ShortName>gliding_22.wav</ShortName>
+					<Path>SFX\gliding_22_31D213C5.wem</Path>
+				</File>
+				<File Id="753243642" Language="SFX">
+					<ShortName>skating_12.wav</ShortName>
+					<Path>SFX\skating_12_31D213C5.wem</Path>
+				</File>
+				<File Id="778163851" Language="SFX">
+					<ShortName>skating_14.wav</ShortName>
+					<Path>SFX\skating_14_31D213C5.wem</Path>
+				</File>
+				<File Id="779489019" Language="SFX">
+					<ShortName>ambience-arena_03.wav</ShortName>
+					<Path>SFX\ambience-arena_03_31D213C5.wem</Path>
+				</File>
+				<File Id="797033609" Language="SFX">
+					<ShortName>ambience-arena_08.wav</ShortName>
+					<Path>SFX\ambience-arena_08_31D213C5.wem</Path>
+				</File>
+				<File Id="825115790" Language="SFX">
+					<ShortName>gliding_12.wav</ShortName>
+					<Path>SFX\gliding_12_31D213C5.wem</Path>
+				</File>
+				<File Id="861507772" Language="SFX">
+					<ShortName>skating_01.wav</ShortName>
+					<Path>SFX\skating_01_31D213C5.wem</Path>
+				</File>
+				<File Id="864270197" Language="SFX">
+					<ShortName>skating_03.wav</ShortName>
+					<Path>SFX\skating_03_31D213C5.wem</Path>
+				</File>
+				<File Id="866344460" Language="SFX">
+					<ShortName>skating-rough_17.wav</ShortName>
+					<Path>SFX\skating-rough_17_31D213C5.wem</Path>
+				</File>
+				<File Id="901327506" Language="SFX">
+					<ShortName>ambience-arena_05.wav</ShortName>
+					<Path>SFX\ambience-arena_05_31D213C5.wem</Path>
+				</File>
+				<File Id="908852665" Language="SFX">
+					<ShortName>gliding_15.wav</ShortName>
+					<Path>SFX\gliding_15_31D213C5.wem</Path>
+				</File>
+				<File Id="976850887" Language="SFX">
+					<ShortName>skating_04.wav</ShortName>
+					<Path>SFX\skating_04_31D213C5.wem</Path>
+				</File>
+				<File Id="989459631" Language="SFX">
+					<ShortName>gliding_19.wav</ShortName>
+					<Path>SFX\gliding_19_31D213C5.wem</Path>
+				</File>
+				<File Id="1000965181" Language="SFX">
+					<ShortName>skating-rough_20.wav</ShortName>
+					<Path>SFX\skating-rough_20_31D213C5.wem</Path>
+				</File>
+				<File Id="1050899473" Language="SFX">
+					<ShortName>gliding_27.wav</ShortName>
+					<Path>SFX\gliding_27_31D213C5.wem</Path>
+				</File>
+				<File Id="1060866081" Language="SFX">
+					<ShortName>gliding_07.wav</ShortName>
+					<Path>SFX\gliding_07_31D213C5.wem</Path>
+				</File>
+				<File Id="1065579094" Language="SFX">
+					<ShortName>ambience-arena_02.wav</ShortName>
+					<Path>SFX\ambience-arena_02_31D213C5.wem</Path>
+				</File>
+				<File Id="1071139519" Language="SFX">
+					<ShortName>Styx-Come-Sail-Away.wav</ShortName>
+					<Path>SFX\Styx-Come-Sail-Away_42D3AF27.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
