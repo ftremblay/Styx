@@ -25,7 +25,7 @@ To clone the Styx project on your computer, you need to go to File -> Clone Repo
 
 ### Hiearchy
 
-- The hiearchy in the Styx project must be respected
+The hiearchy in the Styx project must be respected
     Assets
         _Scenes (.unity)
         _Scripts (.cs files)
@@ -40,7 +40,7 @@ To clone the Styx project on your computer, you need to go to File -> Clone Repo
         Resources (if we need to instantiate a prefab during runtime, we need to put the .prefab file here)
     Builds (.exe files)
 
-- The hiearchy in a Unity Scene must be clean all the time. We will add a hierarchy template for Unity scene soon.
+The hiearchy in a Unity Scene must be clean all the time. We will add a hierarchy template for Unity scene soon.
         
 
 
