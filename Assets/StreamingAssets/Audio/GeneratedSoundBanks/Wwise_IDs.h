@@ -18,6 +18,11 @@ namespace AK
         static const AkUniqueID STARTGAME = 1521187885U;
     } // namespace EVENTS
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PLAYERVELOCITY = 2886637823U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
