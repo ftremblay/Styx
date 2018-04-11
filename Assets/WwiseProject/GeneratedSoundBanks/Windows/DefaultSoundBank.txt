@@ -3,6 +3,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1553159799	SkateLoop			\Default Work Unit\Player\Movements\SkateLoop	
 	3759749381	Skate			\Default Work Unit\Player\Movements\Skate	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2886637823	PlayerVelocity			\Default Work Unit\Player\PlayerVelocity	
+
 Effect plug-ins	ID	Name	Type				Notes
 	333875072	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 
