@@ -21,8 +21,8 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   AuxBusWwu:
   - Guid: '{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}'
-    m_lastTimePart2: -1999270980
-    m_lastTimePsrt1: -1198539359
+    m_lastTimePart2: -1999265976
+    m_lastTimePsrt1: -1252287679
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     List:
@@ -142,6 +142,8 @@ MonoBehaviour:
       minDuration: 0
   ExpandedItems:
   - /styx
+  - /styx/Events
+  - /styx/Events/Default Work Unit
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0
@@ -150,11 +152,22 @@ MonoBehaviour:
   preparePoolSize: 0
   RtpcWwu:
   - Guid: '{FF001B0F-DCC0-4C1C-B5C6-A07B6D3083F3}'
-    m_lastTimePart2: -1999271005
-    m_lastTimePsrt1: -2068053428
+    m_lastTimePart2: -1999265977
+    m_lastTimePsrt1: 671229601
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters\Default Work Unit.wwu
-    List: []
+    List:
+    - Guid: 0fbb4f27915ff543aa6af050b517c43c
+      ID: -1408329473
+      Name: PlayerVelocity
+      Path: Default Work Unit\Player\PlayerVelocity
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: PlayerVelocity
+        ObjectType: 13
   StateWwu:
   - Guid: '{675F9333-4CDE-4E4C-BCB2-67EEE30E5760}'
     m_lastTimePart2: -1999271005
