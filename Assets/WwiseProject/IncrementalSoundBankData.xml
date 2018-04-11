@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<IncrementalBankBuild Version="6" Flags="601859981">
+<IncrementalBankBuild Version="6" Flags="878078161">
 	<Platform GUID="{8B531E4D-EFE0-4FE1-9BAD-FBB3B8B19439}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="DefaultSoundBank" Hash="3067277322" Timestamp="1521502663"/>
+				<File Name="DefaultSoundBank" Hash="3361257489" Timestamp="1523405654"/>
 				<File Name="Init" Hash="3428346463" Timestamp="1521502663"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1653162184" Timestamp="1521502663"/>
+				<File Name="" Hash="4096226764" Timestamp="1523405654"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
 	<RootPaths>
-		<ProjectRoot>F:\RageCure\styx\work\wwise-temp\styx\</ProjectRoot>
-		<SourceFilesRoot>F:\RageCure\styx\work\wwise-temp\styx\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>F:\RageCure\styx\work\wwise-temp\styx\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>F:\RageCure\styx\work\wwise-temp\styx\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,8 +21,8 @@
 			<ShortName>DefaultSoundBank</ShortName>
 			<Path>DefaultSoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3759749381" Name="Skate" ObjectPath="\Events\Default Work Unit\Player\Skate"/>
-				<Event Id="1553159799" Name="SkateLoop" ObjectPath="\Events\Default Work Unit\Player\SkateLoop"/>
+				<Event Id="3759749381" Name="Skate" ObjectPath="\Events\Default Work Unit\Player\Movements\Skate"/>
+				<Event Id="1553159799" Name="SkateLoop" ObjectPath="\Events\Default Work Unit\Player\Movements\SkateLoop"/>
 				<Event Id="1521187885" Name="StartGame" ObjectPath="\Events\Default Work Unit\StartGame"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
