@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PASSRECEIVED = 3176088691U;
+        static const AkUniqueID PUCKPICKUP = 2051795534U;
         static const AkUniqueID SKATE = 3759749381U;
         static const AkUniqueID SKATELOOP = 1553159799U;
         static const AkUniqueID STARTGAME = 1521187885U;

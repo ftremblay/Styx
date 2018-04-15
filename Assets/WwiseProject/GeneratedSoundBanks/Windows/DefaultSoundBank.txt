@@ -1,26 +1,41 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1521187885	StartGame			\Default Work Unit\StartGame	
 	1553159799	SkateLoop			\Default Work Unit\Player\Movements\SkateLoop	
+	2051795534	PuckPickup			\Default Work Unit\Player\Actions\PuckPickup	
+	3176088691	PassReceived			\Default Work Unit\Player\Actions\PassReceived	
 	3759749381	Skate			\Default Work Unit\Player\Movements\Skate	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2886637823	PlayerVelocity			\Default Work Unit\Player\PlayerVelocity	
 
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	4166810550	ArenaReverb			\Default Work Unit\Master Audio Bus\ArenaReverb	
+
 Effect plug-ins	ID	Name	Type				Notes
 	333875072	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	1436517756	CUSTOM_Arena	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	7567365	skating_10	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating_10_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_10		5824
 	19145722	gliding_08	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_08_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_08		29980
 	35914376	skating-rough_16	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating-rough_16_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating-rough_16		2728
+	41701200	puck-pickup_08	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\puck-pickup_08_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PuckPickup\puck-pickup_08		5644
 	70777395	Styx-Mademoiselle	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\Styx-Mademoiselle_EB6DD913.wem		\Actor-Mixer Hierarchy\Default Work Unit\Temp-Music_STYX\Styx-music\Styx-Mademoiselle		3656680
 	76995800	gliding_03	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_03_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_03		16516
 	108817051	skating_11	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating_11_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_11		6256
 	110741779	gliding_25	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_25_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_25		33040
+	124923744	pass-received_05	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\pass-received_05_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PassReceived\pass-received_05		820
 	148481927	Styx-Babe-1980	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\Styx-Babe-1980_8AA45720.wem		\Actor-Mixer Hierarchy\Default Work Unit\Temp-Music_STYX\Styx-music\Styx-Babe-1980		1950416
 	160988101	ambience-arena_01	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\ambience-arena_01_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_01		71920
+	161701344	pass-received_01	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\pass-received_01_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PassReceived\pass-received_01		640
+	168274328	puck-pickup_03	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\puck-pickup_03_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PuckPickup\puck-pickup_03		3592
 	195017422	gliding_24	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_24_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_24		29548
+	218583357	puck-pickup_01	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\puck-pickup_01_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PuckPickup\puck-pickup_01		1000
 	235669072	ambience-arena_04	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\ambience-arena_04_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_04		116920
+	272333425	puck-pickup_02	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\puck-pickup_02_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PuckPickup\puck-pickup_02		3772
 	280723244	ambience-arena_09	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\ambience-arena_09_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_09		112528
 	289022638	skating_02	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating_02_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_02		8344
 	294223798	gliding_06	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_06_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_06		35416
@@ -30,6 +45,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	340054880	ambience-arena_10	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\ambience-arena_10_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_10		65080
 	348315603	gliding_11	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_11_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_11		19540
 	356615417	gliding_13	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_13_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_13		24292
+	357261498	pass-received_04	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\pass-received_04_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PassReceived\pass-received_04		4204
 	359057918	gliding_04	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_04_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_04		23788
 	373587485	gliding_26	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_26_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_26		36604
 	431762514	skating-rough_18	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating-rough_18_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating-rough_18		7192
@@ -42,7 +58,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	491409693	skating-rough_15	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating-rough_15_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating-rough_15		7732
 	491536818	gliding_05	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_05_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_05		33868
 	503072477	skating-rough_19	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating-rough_19_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating-rough_19		4420
+	511855411	puck-pickup_06	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\puck-pickup_06_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PuckPickup\puck-pickup_06		8092
 	513095914	gliding_18	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_18_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_18		20188
+	535369489	pass-received_03	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\pass-received_03_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PassReceived\pass-received_03		856
 	540141096	gliding_02	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_02_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_02		31924
 	544697470	gliding_23	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_23_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_23		31888
 	544967676	gliding_20	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_20_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_20		41248
@@ -56,6 +74,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	646395082	skating_09	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating_09_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_09		5752
 	654537743	Styx-Suite-Madam-Blue	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\Styx-Suite-Madam-Blue_374AE80A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Temp-Music_STYX\Styx-music\Styx-Suite-Madam-Blue		5032727
 	688195390	gliding_22	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_22_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_22		33760
+	726937893	pass-received_02	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\pass-received_02_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PassReceived\pass-received_02		1216
 	753243642	skating_12	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating_12_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_12		6688
 	778163851	skating_14	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating_14_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_14		3160
 	779489019	ambience-arena_03	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\ambience-arena_03_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_03		49240
@@ -69,8 +88,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	976850887	skating_04	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating_04_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating_04		8236
 	989459631	gliding_19	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_19_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_19		31672
 	1000965181	skating-rough_20	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\skating-rough_20_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingBite\skating-rough_20		4024
+	1017917129	puck-pickup_04	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\puck-pickup_04_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PuckPickup\puck-pickup_04		2584
+	1028662537	puck-pickup_05	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\puck-pickup_05_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PuckPickup\puck-pickup_05		4996
 	1050899473	gliding_27	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_27_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_27		41068
 	1060866081	gliding_07	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\gliding_07_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Movements\SkatingGlide\gliding_07		24652
 	1065579094	ambience-arena_02	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\ambience-arena_02_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\ArenaAmbience\ambience-arena_02		62560
+	1068503388	puck-pickup_07	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\puck-pickup_07_31D213C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Actions\PuckPickup\puck-pickup_07		928
 	1071139519	Styx-Come-Sail-Away	F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\.cache\Windows\SFX\Styx-Come-Sail-Away_42D3AF27.wem		\Actor-Mixer Hierarchy\Default Work Unit\Temp-Music_STYX\Styx-music\Styx-Come-Sail-Away		1710783
 
