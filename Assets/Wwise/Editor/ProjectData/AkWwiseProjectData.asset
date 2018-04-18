@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
   - Guid: '{131433F9-DCD5-4B46-8D47-E4C095DAD5D4}'
-    m_lastTimePart2: -1999271005
-    m_lastTimePsrt1: -2068182669
+    m_lastTimePart2: -1999265988
+    m_lastTimePsrt1: -1557113434
     ParentPhysicalPath: 
     PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     List: []
@@ -39,8 +39,8 @@ MonoBehaviour:
         ObjectType: 1
   BankWwu:
   - Guid: '{32EC8EAE-889A-4C46-8C5F-329BFEEDA8C4}'
-    m_lastTimePart2: -1999270414
-    m_lastTimePsrt1: 2067986352
+    m_lastTimePart2: -1999265988
+    m_lastTimePsrt1: -1559340668
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -59,8 +59,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{196E24AF-A484-4ECE-BA7F-6B6352D0BF0C}'
-    m_lastTimePart2: -1999269996
-    m_lastTimePsrt1: 1195394998
+    m_lastTimePart2: -1999265988
+    m_lastTimePsrt1: -1602099918
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -170,23 +170,23 @@ MonoBehaviour:
         ObjectType: 13
   StateWwu:
   - Guid: '{675F9333-4CDE-4E4C-BCB2-67EEE30E5760}'
-    m_lastTimePart2: -1999271005
-    m_lastTimePsrt1: -2068147636
+    m_lastTimePart2: -1999265988
+    m_lastTimePsrt1: -1559035064
     ParentPhysicalPath: 
     PhysicalPath: States\Default Work Unit.wwu
     List: []
   streamingPoolSize: 1024
   SwitchWwu:
   - Guid: '{813D753E-5DCF-43A2-96CE-3CEFEA042D5A}'
-    m_lastTimePart2: -1999271005
-    m_lastTimePsrt1: -2068132622
+    m_lastTimePart2: -1999265988
+    m_lastTimePsrt1: -1557458860
     ParentPhysicalPath: 
     PhysicalPath: Switches\Default Work Unit.wwu
     List: []
   TriggerWwu:
   - Guid: '{FA992529-2A99-499A-A92D-779130D00F6F}'
-    m_lastTimePart2: -1999271005
-    m_lastTimePsrt1: -2068266302
+    m_lastTimePart2: -1999265988
+    m_lastTimePsrt1: -1557318640
     ParentPhysicalPath: 
     PhysicalPath: Triggers\Default Work Unit.wwu
     List: []
