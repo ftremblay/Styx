@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-namespace Assets._Scripts.Players.Controllers
+namespace Assets._Scripts.Controllers
 {
     public class PlayerController : MonoBehaviour
     {
