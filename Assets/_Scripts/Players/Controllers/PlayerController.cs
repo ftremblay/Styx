@@ -12,9 +12,8 @@ namespace Assets._Scripts.Players.Controllers
         {
             float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
-            Vector3 move = vertical * Vector3.forward + horizontal * Vector3.right;
 
-            Debug.Log(move);
+            MovementState.MovementDirection = (vertical * Vector3.forward + horizontal * Vector3.right);
         }
     }
 }
