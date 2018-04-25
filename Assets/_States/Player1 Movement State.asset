@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Name: Player1 Movement State
   m_EditorClassIdentifier: 
   MovementDirection: {x: 0, y: 0, z: 0}
-  MovementSpeed: 4
+  MovementSpeed: 25
   TurnSpeed: 500
+  Drag: 2
+  AngularDrag: 0.8
