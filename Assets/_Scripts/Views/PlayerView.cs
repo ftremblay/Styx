@@ -35,5 +35,10 @@ namespace Assets._Scripts.Views
             Rigidbody.drag = state.Drag;
             Rigidbody.angularDrag = state.AngularDrag;
         }
+
+        public void OnTriggerEnter(Collider other)
+        {
+            
+        }
     }
 }

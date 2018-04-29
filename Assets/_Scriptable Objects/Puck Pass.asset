@@ -8,9 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d02f35955b7160f42b562d748e52a0c6, type: 3}
-  m_Name: Puck Pool
+  m_Script: {fileID: 11500000, guid: a7ebf479ad1a68a40b7bf700c5bf6be6, type: 3}
+  m_Name: Puck Pass
   m_EditorClassIdentifier: 
-  Tag: Puck
-  Prefab: {fileID: 1155670560040920, guid: 2ebc847bb4d1eb84da135f83cff353af, type: 2}
-  Size: 5
+  ShotAngle: {x: 0, y: 0.5, z: 1}
+  Speed: 2
+  Drag: 0
+  AngularDrag: 0.05
+  Mass: 1

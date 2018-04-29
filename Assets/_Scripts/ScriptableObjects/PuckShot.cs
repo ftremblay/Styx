@@ -6,8 +6,8 @@ using UnityEngine;
 
 namespace Assets._Scripts.States
 {
-    [CreateAssetMenu(fileName = "Puck State", menuName = "States/New Puck State")]
-    public class PuckState : ScriptableObject
+    [CreateAssetMenu(fileName = "Puck Shot", menuName = "Shots/New Puck Shot")]
+    public class PuckShot : ScriptableObject
     {
         public Vector3 ShotAngle = new Vector3(0, 0.5f, 1);
 

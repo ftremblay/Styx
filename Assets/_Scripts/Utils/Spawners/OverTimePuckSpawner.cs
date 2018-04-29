@@ -6,6 +6,7 @@ namespace Assets._Scripts.Utils.Spawners
     public class OverTimePuckSpawner : MonoBehaviour
     {
         public float Cooldown;
+        public string Pool;
 
         private ObjectPooler _objectPooler;
         private float _timestamp;
@@ -20,7 +21,7 @@ namespace Assets._Scripts.Utils.Spawners
             if (_timestamp > Time.time)
                 return;
 
-            _objectPooler.SpawnFromPool("Puck", transform.position, Quaternion.identity);
+            _objectPooler.SpawnFromPool(Pool, transform.position, transform.rotation);
             _timestamp = Time.time + Cooldown;
         }
     }
