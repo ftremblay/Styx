@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using PoolType = Assets._Scripts.Utils.Constants.PoolType;
 
 namespace Assets._Scripts.Utils.Pooler
 {
     public class ObjectPooler : MonoBehaviour
     {
         public List<Pool> _pools;
-        private Dictionary<string, Queue<GameObject>> _poolDictionary;
+        private Dictionary<PoolType, Queue<GameObject>> _poolDictionary;
 
         #region Singleton
 
@@ -21,7 +22,7 @@ namespace Assets._Scripts.Utils.Pooler
 
         public void Start()
         {
-            _poolDictionary = new Dictionary<string, Queue<GameObject>>();
+            _poolDictionary = new Dictionary<PoolType, Queue<GameObject>>();
 
             foreach (Pool pool in _pools)
             {
@@ -34,19 +35,19 @@ namespace Assets._Scripts.Utils.Pooler
                     objectPool.Enqueue(obj);
                 }
 
-                _poolDictionary.Add(pool.Tag, objectPool);
+                _poolDictionary.Add(pool.Type, objectPool);
             }
         }
 
-        public void SpawnFromPool(string tag, Vector3 position, Quaternion rotation)
+        public void SpawnFromPool(PoolType type, Vector3 position, Quaternion rotation)
         {
-            if (!_poolDictionary.ContainsKey(tag))
+            if (!_poolDictionary.ContainsKey(type))
             {
                 Debug.LogWarning("Undefined tag in pool dictionary");
                 return;
             }
 
-            var objectToSpawn = _poolDictionary[tag].Dequeue();
+            var objectToSpawn = _poolDictionary[type].Dequeue();
 
             objectToSpawn.SetActive(true);
             objectToSpawn.transform.position = position;
@@ -58,7 +59,7 @@ namespace Assets._Scripts.Utils.Pooler
                 pooledObject.OnSpawn();
             }
 
-            _poolDictionary[tag].Enqueue(objectToSpawn);
+            _poolDictionary[type].Enqueue(objectToSpawn);
         }
     }
 }

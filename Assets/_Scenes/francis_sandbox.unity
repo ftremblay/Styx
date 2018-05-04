@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cooldown: 1
-  Pool: Shot
+  Pool: 0
 --- !u!1 &1048070669
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +730,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1832270242}
+  - component: {fileID: 1832270244}
+  - component: {fileID: 1832270245}
   - component: {fileID: 1832270243}
   m_Layer: 0
   m_Name: Puck Spawner
@@ -744,13 +746,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1832270241}
-  m_LocalRotation: {x: -0, y: 0.69855565, z: -0, w: 0.71555585}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1296506183}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 88.622, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1832270243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -759,8 +761,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1832270241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c26fffa098f2df48963b662cdf67ec3, type: 3}
+  m_Script: {fileID: 11500000, guid: 8246a3b69119b9c44b52fea739f0e0a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cooldown: 1
-  Pool: Pass
+  Caster: {fileID: 1832270244}
+--- !u!114 &1832270244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1832270241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b749ffa4ff43f64781112e3c0753fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHitObject: {fileID: 0}
+  SphereRadius: 2
+  MaxDistance: 20
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1832270245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1832270241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9fa2225075cf9548a444eed7547abfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pool: 1

@@ -6,7 +6,7 @@ namespace Assets._Scripts.Utils.Spawners
     public class OverTimePuckSpawner : MonoBehaviour
     {
         public float Cooldown;
-        public string Pool;
+        public Constants.PoolType Pool;
 
         private ObjectPooler _objectPooler;
         private float _timestamp;

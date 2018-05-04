@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d02f35955b7160f42b562d748e52a0c6, type: 3}
   m_Name: Pool Pass
   m_EditorClassIdentifier: 
-  Tag: Pass
+  Type: 1
   Prefab: {fileID: 1155670560040920, guid: cb2e2da7e23d0ef469f7b5d903529b66, type: 2}
   Size: 10

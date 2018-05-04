@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Puck Pass
   m_EditorClassIdentifier: 
   ShotAngle: {x: 0, y: 0.5, z: 1}
-  Speed: 2
-  Drag: 0
+  Speed: 100
+  Drag: 1
   AngularDrag: 0.05
-  Mass: 1
+  Mass: 5

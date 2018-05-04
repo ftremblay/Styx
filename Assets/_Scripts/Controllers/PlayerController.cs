@@ -1,4 +1,5 @@
-﻿using Assets._Scripts.Players.States;
+﻿using Assets._Scripts.Managers;
+using Assets._Scripts.Players.States;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -14,6 +15,15 @@ namespace Assets._Scripts.Controllers
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
 
             MovementState.MovementDirection = (vertical * Vector3.forward + horizontal * Vector3.right);
+        }
+        
+
+        public void Update()
+        {
+            //if (Input.GetButtonDown("Joystick Button 2"))
+            //{
+                
+            //}
         }
     }
 }
