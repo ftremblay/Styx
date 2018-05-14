@@ -7,11 +7,15 @@ namespace Assets._Scripts.Views
     {
         public PlayerMovementState MovementState;
         public Rigidbody Rigidbody;
+        public Animator Animator;
 
         public void Start()
         {
             if (Rigidbody == null)
                 Rigidbody = GetComponent<Rigidbody>();
+
+            if (Animator == null)
+                Animator = GetComponent<Animator>();
         }
 
         public void Update()
@@ -34,6 +38,8 @@ namespace Assets._Scripts.Views
 
             Rigidbody.drag = state.Drag;
             Rigidbody.angularDrag = state.AngularDrag;
+
+            Animator.SetFloat("Forward Amount", forwardAmount);
         }
 
         public void OnTriggerEnter(Collider other)
