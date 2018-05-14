@@ -225,6 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementState: {fileID: 11400000, guid: 3bd1db931939e5b47b67176a18fadd60, type: 2}
   Rigidbody: {fileID: 480416257}
+  Animator: {fileID: 0}
 --- !u!136 &480416256
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -406,11 +407,6 @@ Prefab:
     - target: {fileID: 4695218631939574, guid: 675c0582df8f80a44818ad706bc53eb9, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114544246289349324, guid: 675c0582df8f80a44818ad706bc53eb9,
-        type: 2}
-      propertyPath: Rigidbody
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 675c0582df8f80a44818ad706bc53eb9, type: 2}
