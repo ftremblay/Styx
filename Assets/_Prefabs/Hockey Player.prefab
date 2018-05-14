@@ -2758,6 +2758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementState: {fileID: 11400000, guid: 3bd1db931939e5b47b67176a18fadd60, type: 2}
   Rigidbody: {fileID: 0}
+  Animator: {fileID: 0}
 --- !u!136 &136986300862390220
 CapsuleCollider:
   m_ObjectHideFlags: 1
