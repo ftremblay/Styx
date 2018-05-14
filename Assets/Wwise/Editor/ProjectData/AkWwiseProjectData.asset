@@ -11,169 +11,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e3fc028da3ed6248ba0af994f858f94, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu:
-  - Guid: '{131433F9-DCD5-4B46-8D47-E4C095DAD5D4}'
-    m_lastTimePart2: -1999271005
-    m_lastTimePsrt1: -2068182669
-    ParentPhysicalPath: 
-    PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
-    List: []
+  AcousticTextureWwu: []
   autoPopulateEnabled: 1
-  AuxBusWwu:
-  - Guid: '{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}'
-    m_lastTimePart2: -1999270980
-    m_lastTimePsrt1: -1198539359
-    ParentPhysicalPath: 
-    PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
-    List:
-    - Guid: d8ffd3233a2d754295b3ddeb2819c30d
-      ID: -128156746
-      Name: ArenaReverb
-      Path: Default Work Unit\Master Audio Bus\ArenaReverb
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-      - ElementName: ArenaReverb
-        ObjectType: 1
-  BankWwu:
-  - Guid: '{32EC8EAE-889A-4C46-8C5F-329BFEEDA8C4}'
-    m_lastTimePart2: -1999270414
-    m_lastTimePsrt1: 2067986352
-    ParentPhysicalPath: 
-    PhysicalPath: SoundBanks\Default Work Unit.wwu
-    List:
-    - Guid: ec8921c77f37ee4ba9607415a576dcf1
-      ID: 1675065207
-      Name: DefaultSoundBank
-      Path: Default Work Unit\DefaultSoundBank
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: DefaultSoundBank
-        ObjectType: 7
+  AuxBusWwu: []
+  BankWwu: []
   basePath: Audio\GeneratedSoundBanks
   callbackManagerBufferSize: 4
   CurrentPluginConfig: 
   defaultPoolSize: 4096
-  EventWwu:
-  - Guid: '{196E24AF-A484-4ECE-BA7F-6B6352D0BF0C}'
-    m_lastTimePart2: -1999269996
-    m_lastTimePsrt1: 1195394998
-    ParentPhysicalPath: 
-    PhysicalPath: Events\Default Work Unit.wwu
-    List:
-    - Guid: ffc81ad13f6b274ea638a462b7d18a35
-      ID: -1118878605
-      Name: PassReceived
-      Path: Default Work Unit\Player\Actions\PassReceived
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Player
-        ObjectType: 4
-      - ElementName: Actions
-        ObjectType: 4
-      - ElementName: PassReceived
-        ObjectType: 3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - Guid: 28ffc7c424fe964a90e9df29497cefb5
-      ID: 2051795534
-      Name: PuckPickup
-      Path: Default Work Unit\Player\Actions\PuckPickup
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Player
-        ObjectType: 4
-      - ElementName: Actions
-        ObjectType: 4
-      - ElementName: PuckPickup
-        ObjectType: 3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - Guid: 6a6727e4ce363f479ed14e9e7a69a403
-      ID: -535217915
-      Name: Skate
-      Path: Default Work Unit\Player\Movements\Skate
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Player
-        ObjectType: 4
-      - ElementName: Movements
-        ObjectType: 4
-      - ElementName: Skate
-        ObjectType: 3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - Guid: 0b5b0ade9506504399453bbae6c04d60
-      ID: 1553159799
-      Name: SkateLoop
-      Path: Default Work Unit\Player\Movements\SkateLoop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Player
-        ObjectType: 4
-      - ElementName: Movements
-        ObjectType: 4
-      - ElementName: SkateLoop
-        ObjectType: 3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - Guid: 278acebd56944849b821f9307adbbf8a
-      ID: 1521187885
-      Name: StartGame
-      Path: Default Work Unit\StartGame
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: StartGame
-        ObjectType: 3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-  ExpandedItems:
-  - /styx
+  EventWwu: []
+  ExpandedItems: []
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0
   m_lastPopulateTimePsrt1: 0
   memoryCutoffThreshold: 0.95
   preparePoolSize: 0
-  RtpcWwu:
-  - Guid: '{FF001B0F-DCC0-4C1C-B5C6-A07B6D3083F3}'
-    m_lastTimePart2: -1999271005
-    m_lastTimePsrt1: -2068053428
-    ParentPhysicalPath: 
-    PhysicalPath: Game Parameters\Default Work Unit.wwu
-    List: []
-  StateWwu:
-  - Guid: '{675F9333-4CDE-4E4C-BCB2-67EEE30E5760}'
-    m_lastTimePart2: -1999271005
-    m_lastTimePsrt1: -2068147636
-    ParentPhysicalPath: 
-    PhysicalPath: States\Default Work Unit.wwu
-    List: []
+  RtpcWwu: []
+  StateWwu: []
   streamingPoolSize: 1024
-  SwitchWwu:
-  - Guid: '{813D753E-5DCF-43A2-96CE-3CEFEA042D5A}'
-    m_lastTimePart2: -1999271005
-    m_lastTimePsrt1: -2068132622
-    ParentPhysicalPath: 
-    PhysicalPath: Switches\Default Work Unit.wwu
-    List: []
-  TriggerWwu:
-  - Guid: '{FA992529-2A99-499A-A92D-779130D00F6F}'
-    m_lastTimePart2: -1999271005
-    m_lastTimePsrt1: -2068266302
-    ParentPhysicalPath: 
-    PhysicalPath: Triggers\Default Work Unit.wwu
-    List: []
+  SwitchWwu: []
+  TriggerWwu: []

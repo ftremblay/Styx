@@ -5,7 +5,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	4166810550	ArenaReverb			\Default Work Unit\Master Audio Bus\ArenaReverb	
 
 Effect plug-ins	ID	Name	Type				Notes
-	3164629247	Holy	Wwise RoomVerb			
+	1436517756	CUSTOM_Arena	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	530303819	Communication	Communication			

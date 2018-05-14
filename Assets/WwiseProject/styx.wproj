@@ -28,7 +28,7 @@
 					</ValueList>
 				</Property>
 				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjUzNDIiIG1hc2s9IlBBQVc0NTk2IiBlbmM9IjAiPjxsaWNlbnNlIGlkPSI0MSIgbmFtZT0iV3dpc2UgKExpbWl0ZWQgQ29tbWVyY2lhbCBMaWNlbnNlKSIgdHlwZT0iMiIgcGxhdGZvcm1zPSI0LDEwLDE0IiBleHBpcmVzPSIyMDE5LTAzLTE2IiAgLz48L3Byb2plY3Q+|056ckkFaGYP2yF1mt/oMlafOdz1nO7rdua9sTqBYJavxiOo2TTWBgDXVjTgOZFOhoiN3nK7knWWQdc2W2M+T1fIgYfoMGlDq7Wb62vJ/H8YIW5vt5MeB1ba5RoEPVCt6TtTDGHjoZzDlK4inOxZJDclRBBil+yGB3qsjI4P6yUVt7HN5f7/m3pQV62JliJE0Xd2oJ+WcCu1ZfkYBhDDLd4wG6yEpPqp5pLFOqzHccDkU5lchtF+BCd17E8u+FqJxunalhIaZPgg/lOQehTls4W1Ek5G8bZjf+ECiYMyZNEl1O1YiIUkWHizY6zaVH4xeHE9oPdFdHd6XcMiqurTzyA==" />
-				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="../StreamingAssets/Audio/GeneratedSoundBanks" />
+				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="../../../Styx/Assets/StreamingAssets/Audio/GeneratedSoundBanks" />
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>

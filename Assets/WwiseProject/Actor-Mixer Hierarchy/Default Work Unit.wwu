@@ -31,6 +31,35 @@
 												<Value>8</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{D6CEF122-8F4A-40EE-8C86-A9F94719798D}" ShortID="173257818">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="PlayerVelocity" ID="{274FBB0F-5F91-43F5-AA6A-F050B517C43C}" WorkUnitID="{FF001B0F-DCC0-4C1C-B5C6-A07B6D3083F3}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{558906C5-38EC-45AA-B7E4-F41A66691DD1}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
 										<Property Name="Spatialization" Type="int16" Value="1"/>
@@ -41,8 +70,34 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-12</Value>
 											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{A263F911-406E-4389-815C-4C6B4AF9CA5F}" ShortID="616074484">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="PlayerVelocity" ID="{274FBB0F-5F91-43F5-AA6A-F050B517C43C}" WorkUnitID="{FF001B0F-DCC0-4C1C-B5C6-A07B6D3083F3}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{2CB69C46-8A91-401F-AD11-DA3BFF9F48E4}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1039,13 +1094,12 @@
 									<PropertyList>
 										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>12</Value>
+												<Value>8</Value>
 											</ValueList>
 										</Property>
-										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1058,10 +1112,39 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{3C1E27A5-B220-437F-8F9D-7CCD66954CF5}" ShortID="833485332">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="PlayerVelocity" ID="{274FBB0F-5F91-43F5-AA6A-F050B517C43C}" WorkUnitID="{FF001B0F-DCC0-4C1C-B5C6-A07B6D3083F3}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{16B4AD09-9065-49F5-8E98-D3E93AA66A9B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
 										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.4"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Spatialization" Type="int16" Value="1"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
@@ -1071,6 +1154,32 @@
 											<ValueList>
 												<Value>-6</Value>
 											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{A158D0BB-B215-42F7-A083-363EE843A45F}" ShortID="547617215">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="PlayerVelocity" ID="{274FBB0F-5F91-43F5-AA6A-F050B517C43C}" WorkUnitID="{FF001B0F-DCC0-4C1C-B5C6-A07B6D3083F3}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{92D6216C-ADD9-412C-8FA0-BFF8D447CAE7}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1633,6 +1742,14 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="PuckPickup" ID="{1DC30E2B-288E-4867-84FE-6E4CFFDB7E39}" ShortID="828201372">
 									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1646,7 +1763,14 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Spatialization" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>2</Value>
@@ -1829,6 +1953,13 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="PassReceived" ID="{DCC348CD-89AD-4A68-804E-4FF0F852257F}" ShortID="116157236">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1841,6 +1972,13 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Spatialization" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>

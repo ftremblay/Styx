@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FF001B0F-DCC0-4C1C-B5C6-A07B6D3083F3}" SchemaVersion="85">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{FF001B0F-DCC0-4C1C-B5C6-A07B6D3083F3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FF001B0F-DCC0-4C1C-B5C6-A07B6D3083F3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Player" ID="{96706001-4932-46C9-9F1A-F6EF877E8E2C}" ShortID="548087381">
+					<ChildrenList>
+						<GameParameter Name="PlayerVelocity" ID="{274FBB0F-5F91-43F5-AA6A-F050B517C43C}">
+							<PropertyList>
+								<Property Name="FilterTimeDown" Type="Real64" Value="1.5"/>
+								<Property Name="FilterTimeUp" Type="Real64" Value="2.2"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="RTPCRamping" Type="int16" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

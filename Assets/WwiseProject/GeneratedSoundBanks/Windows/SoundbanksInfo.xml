@@ -21,6 +21,8 @@
 			<ShortName>DefaultSoundBank</ShortName>
 			<Path>DefaultSoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3176088691" Name="PassReceived" ObjectPath="\Events\Default Work Unit\Player\Actions\PassReceived"/>
+				<Event Id="2051795534" Name="PuckPickup" ObjectPath="\Events\Default Work Unit\Player\Actions\PuckPickup"/>
 				<Event Id="3759749381" Name="Skate" ObjectPath="\Events\Default Work Unit\Player\Movements\Skate"/>
 				<Event Id="1553159799" Name="SkateLoop" ObjectPath="\Events\Default Work Unit\Player\Movements\SkateLoop"/>
 				<Event Id="1521187885" Name="StartGame" ObjectPath="\Events\Default Work Unit\StartGame"/>
@@ -38,6 +40,10 @@
 					<ShortName>skating-rough_16.wav</ShortName>
 					<Path>SFX\skating-rough_16_31D213C5.wem</Path>
 				</File>
+				<File Id="41701200" Language="SFX">
+					<ShortName>puck-pickup_08.wav</ShortName>
+					<Path>SFX\puck-pickup_08_31D213C5.wem</Path>
+				</File>
 				<File Id="70777395" Language="SFX">
 					<ShortName>Styx-Mademoiselle.wav</ShortName>
 					<Path>SFX\Styx-Mademoiselle_EB6DD913.wem</Path>
@@ -54,6 +60,10 @@
 					<ShortName>gliding_25.wav</ShortName>
 					<Path>SFX\gliding_25_31D213C5.wem</Path>
 				</File>
+				<File Id="124923744" Language="SFX">
+					<ShortName>pass-received_05.wav</ShortName>
+					<Path>SFX\pass-received_05_31D213C5.wem</Path>
+				</File>
 				<File Id="148481927" Language="SFX">
 					<ShortName>Styx-Babe-1980.wav</ShortName>
 					<Path>SFX\Styx-Babe-1980_8AA45720.wem</Path>
@@ -62,13 +72,29 @@
 					<ShortName>ambience-arena_01.wav</ShortName>
 					<Path>SFX\ambience-arena_01_31D213C5.wem</Path>
 				</File>
+				<File Id="161701344" Language="SFX">
+					<ShortName>pass-received_01.wav</ShortName>
+					<Path>SFX\pass-received_01_31D213C5.wem</Path>
+				</File>
+				<File Id="168274328" Language="SFX">
+					<ShortName>puck-pickup_03.wav</ShortName>
+					<Path>SFX\puck-pickup_03_31D213C5.wem</Path>
+				</File>
 				<File Id="195017422" Language="SFX">
 					<ShortName>gliding_24.wav</ShortName>
 					<Path>SFX\gliding_24_31D213C5.wem</Path>
 				</File>
+				<File Id="218583357" Language="SFX">
+					<ShortName>puck-pickup_01.wav</ShortName>
+					<Path>SFX\puck-pickup_01_31D213C5.wem</Path>
+				</File>
 				<File Id="235669072" Language="SFX">
 					<ShortName>ambience-arena_04.wav</ShortName>
 					<Path>SFX\ambience-arena_04_31D213C5.wem</Path>
+				</File>
+				<File Id="272333425" Language="SFX">
+					<ShortName>puck-pickup_02.wav</ShortName>
+					<Path>SFX\puck-pickup_02_31D213C5.wem</Path>
 				</File>
 				<File Id="280723244" Language="SFX">
 					<ShortName>ambience-arena_09.wav</ShortName>
@@ -105,6 +131,10 @@
 				<File Id="356615417" Language="SFX">
 					<ShortName>gliding_13.wav</ShortName>
 					<Path>SFX\gliding_13_31D213C5.wem</Path>
+				</File>
+				<File Id="357261498" Language="SFX">
+					<ShortName>pass-received_04.wav</ShortName>
+					<Path>SFX\pass-received_04_31D213C5.wem</Path>
 				</File>
 				<File Id="359057918" Language="SFX">
 					<ShortName>gliding_04.wav</ShortName>
@@ -154,9 +184,17 @@
 					<ShortName>skating-rough_19.wav</ShortName>
 					<Path>SFX\skating-rough_19_31D213C5.wem</Path>
 				</File>
+				<File Id="511855411" Language="SFX">
+					<ShortName>puck-pickup_06.wav</ShortName>
+					<Path>SFX\puck-pickup_06_31D213C5.wem</Path>
+				</File>
 				<File Id="513095914" Language="SFX">
 					<ShortName>gliding_18.wav</ShortName>
 					<Path>SFX\gliding_18_31D213C5.wem</Path>
+				</File>
+				<File Id="535369489" Language="SFX">
+					<ShortName>pass-received_03.wav</ShortName>
+					<Path>SFX\pass-received_03_31D213C5.wem</Path>
 				</File>
 				<File Id="540141096" Language="SFX">
 					<ShortName>gliding_02.wav</ShortName>
@@ -210,6 +248,10 @@
 					<ShortName>gliding_22.wav</ShortName>
 					<Path>SFX\gliding_22_31D213C5.wem</Path>
 				</File>
+				<File Id="726937893" Language="SFX">
+					<ShortName>pass-received_02.wav</ShortName>
+					<Path>SFX\pass-received_02_31D213C5.wem</Path>
+				</File>
 				<File Id="753243642" Language="SFX">
 					<ShortName>skating_12.wav</ShortName>
 					<Path>SFX\skating_12_31D213C5.wem</Path>
@@ -262,6 +304,14 @@
 					<ShortName>skating-rough_20.wav</ShortName>
 					<Path>SFX\skating-rough_20_31D213C5.wem</Path>
 				</File>
+				<File Id="1017917129" Language="SFX">
+					<ShortName>puck-pickup_04.wav</ShortName>
+					<Path>SFX\puck-pickup_04_31D213C5.wem</Path>
+				</File>
+				<File Id="1028662537" Language="SFX">
+					<ShortName>puck-pickup_05.wav</ShortName>
+					<Path>SFX\puck-pickup_05_31D213C5.wem</Path>
+				</File>
 				<File Id="1050899473" Language="SFX">
 					<ShortName>gliding_27.wav</ShortName>
 					<Path>SFX\gliding_27_31D213C5.wem</Path>
@@ -273,6 +323,10 @@
 				<File Id="1065579094" Language="SFX">
 					<ShortName>ambience-arena_02.wav</ShortName>
 					<Path>SFX\ambience-arena_02_31D213C5.wem</Path>
+				</File>
+				<File Id="1068503388" Language="SFX">
+					<ShortName>puck-pickup_07.wav</ShortName>
+					<Path>SFX\puck-pickup_07_31D213C5.wem</Path>
 				</File>
 				<File Id="1071139519" Language="SFX">
 					<ShortName>Styx-Come-Sail-Away.wav</ShortName>

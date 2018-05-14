@@ -12,8 +12,8 @@
 					<ChildrenList>
 						<AuxBus Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}">
 							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-									<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="CUSTOM_Arena" ID="{C0A429F4-BB21-4D4B-80E4-F12C70FA0542}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
