@@ -6,7 +6,7 @@ namespace Assets._Scripts.Views
 {
     public class PuckView : MonoBehaviour, IPooledObject
     {
-        public PuckShot Shot;
+        public PuckThrow Throw;
         public Rigidbody Rigidbody;
 
         public void Start()
@@ -17,14 +17,14 @@ namespace Assets._Scripts.Views
 
         public void OnSpawn()
         {
-            Rigidbody.AddForce(transform.forward * Shot.Speed, ForceMode.Impulse);
+            Rigidbody.AddForce(transform.forward * Throw.Speed, ForceMode.Impulse);
         }
 
         public void FixedUpdate()
         {
-            Rigidbody.mass = Shot.Mass;
-            Rigidbody.angularDrag = Shot.AngularDrag;
-            Rigidbody.drag = Shot.Drag;
+            Rigidbody.mass = Throw.Mass;
+            Rigidbody.angularDrag = Throw.AngularDrag;
+            Rigidbody.drag = Throw.Drag;
         }
     }
 }

@@ -87,6 +87,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: a564d41171fb7534cb4fdfad2186ebbc, type: 3}
   m_StaticBatchInfo:
@@ -159,6 +160,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114195878568806982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,5 +172,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0272e900eb0b7d54f8fedaa5101b9fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shot: {fileID: 11400000, guid: d1d88049451222844871a209c10bf3ca, type: 2}
+  Throw: {fileID: 11400000, guid: d1d88049451222844871a209c10bf3ca, type: 2}
   Rigidbody: {fileID: 54912052589681960}
