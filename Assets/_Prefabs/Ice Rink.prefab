@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33210627490810578}
   - component: {fileID: 23722657906715018}
   - component: {fileID: 64542455300998668}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: iceRink_geo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4980062530480736}
   - component: {fileID: 95494976129650246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ice Rink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,6 +85,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: d088d253a0670e947876ee4bbb5c363a, type: 3}
   - {fileID: 2100002, guid: d088d253a0670e947876ee4bbb5c363a, type: 3}
@@ -148,3 +149,4 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

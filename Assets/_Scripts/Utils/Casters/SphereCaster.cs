@@ -1,14 +1,13 @@
-﻿using UnityEngine;
+﻿using Assets._Scripts.ScriptableObjects;
+using UnityEngine;
 
 namespace Assets._Scripts.Utils.Casters
 {
     public class SphereCaster : MonoBehaviour
     {
         public GameObject CurrentHitObject;
-
-        public float SphereRadius;
-        public float MaxDistance;
-        public LayerMask LayerMask;
+        public bool CastEveryFrame = false;
+        public SphereCast Configs;
 
         private Vector3 _origin;
         private Vector3 _direction;
@@ -17,28 +16,35 @@ namespace Assets._Scripts.Utils.Casters
 
         public GameObject Cast()
         {
-            _origin = transform.position;
+            _origin = transform.position + Configs.OriginOffset;
             _direction = transform.forward;
             RaycastHit hit;
-            if (Physics.SphereCast(_origin, SphereRadius, _direction, out hit, MaxDistance, LayerMask, QueryTriggerInteraction.UseGlobal))
+            if (Physics.SphereCast(_origin, Configs.Radius, _direction, out hit, Configs.MaxDistance, Configs.Mask, QueryTriggerInteraction.UseGlobal))
             {
                 CurrentHitObject = hit.transform.gameObject;
                 _currentHitDistance = hit.distance;
             }
             else
             {
-                _currentHitDistance = MaxDistance;
+                _currentHitDistance = Configs.MaxDistance;
                 CurrentHitObject = null;
             }
 
             return CurrentHitObject;
         }
 
+        public void FixedUpdate()
+        {
+            if (!CastEveryFrame) return;
+
+            Cast();
+        }
+
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
             Debug.DrawLine(_origin, _origin + _direction * _currentHitDistance);
-            Gizmos.DrawWireSphere(_origin + _direction * _currentHitDistance, SphereRadius);
+            Gizmos.DrawWireSphere(_origin + _direction * _currentHitDistance, Configs.Radius);
         }
     }
 }

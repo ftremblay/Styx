@@ -8,5 +8,7 @@ namespace Assets._Scripts.ScriptableObjects
         public float Radius;
         public float MaxDistance;
         public LayerMask Mask;
+
+        public Vector3 OriginOffset;
     }
 }

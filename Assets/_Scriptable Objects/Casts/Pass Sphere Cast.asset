@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86596d5207f0a724abfada0f56303768, type: 3}
   m_Name: Pass Sphere Cast
   m_EditorClassIdentifier: 
-  Radius: 0
-  MaxDistance: 0
+  Radius: 1
+  MaxDistance: 1
   Mask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967039
