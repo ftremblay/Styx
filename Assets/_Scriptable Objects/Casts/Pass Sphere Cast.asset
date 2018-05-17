@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Name: Pass Sphere Cast
   m_EditorClassIdentifier: 
   Radius: 1
-  MaxDistance: 1
+  MaxDistance: 100
   Mask:
     serializedVersion: 2
     m_Bits: 4294967039
+  OriginOffset: {x: 0, y: 0.5, z: 0}

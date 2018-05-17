@@ -1,5 +1,5 @@
-﻿using Assets._Scripts.Managers;
-using Assets._Scripts.Players.States;
+﻿using Assets._Scripts.Players.States;
+using RageCure.EventUtils;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -8,6 +8,7 @@ namespace Assets._Scripts.Controllers
     public class PlayerController : MonoBehaviour
     {
         public PlayerMovementState MovementState;
+        public EventAggregator EventAggregrator;
 
         public void FixedUpdate()
         {
@@ -16,14 +17,13 @@ namespace Assets._Scripts.Controllers
 
             MovementState.MovementDirection = (vertical * Vector3.forward + horizontal * Vector3.right);
         }
-        
 
         public void Update()
         {
-            //if (Input.GetButtonDown("Joystick Button 2"))
-            //{
-                
-            //}
+            if (Input.GetButtonDown("Pass"))
+            {
+                Debug.Log("Pass");
+            }
         }
     }
 }
