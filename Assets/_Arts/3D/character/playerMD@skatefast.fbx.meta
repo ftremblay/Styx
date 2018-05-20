@@ -238,7 +238,39 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.05407066
+        functionName: CallEvent
+        data: Skate
+        objectReferenceParameter: {fileID: 1298390961334312, guid: 675c0582df8f80a44818ad706bc53eb9,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.32239023
+        functionName: CallEvent
+        data: Skate
+        objectReferenceParameter: {fileID: 1298390961334312, guid: 675c0582df8f80a44818ad706bc53eb9,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5556118
+        functionName: CallEvent
+        data: Skate
+        objectReferenceParameter: {fileID: 1298390961334312, guid: 675c0582df8f80a44818ad706bc53eb9,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.82037914
+        functionName: CallEvent
+        data: Skate
+        objectReferenceParameter: {fileID: 1298390961334312, guid: 675c0582df8f80a44818ad706bc53eb9,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

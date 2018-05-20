@@ -1,1 +1,1 @@
-Error: FBX error 0: File is corrupted  (file: 'F:\RageCure\styx\work\unity\styx\Assets\_Arts\3D\object\net_geo.fbx') [ (line 0)]
+Error: FBX error 0: File is corrupted  (file: 'F:\RageCure\styx\work\unity\styx\Assets\_Arts\3D\character\playerMD@idle.fbx') [ (line 0)]

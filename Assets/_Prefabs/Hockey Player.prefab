@@ -429,6 +429,8 @@ GameObject:
   - component: {fileID: 54972695518403174}
   - component: {fileID: 136986300862390220}
   - component: {fileID: 114544246289349324}
+  - component: {fileID: 114307422965567992}
+  - component: {fileID: 114536362128371924}
   m_Layer: 0
   m_Name: Hockey Player
   m_TagString: Untagged
@@ -2364,7 +2366,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1298390961334312}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4789302, y: 0.012655681, z: -4.1111817}
+  m_LocalPosition: {x: 1.4789302, y: 1.3, z: -4.1111817}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4418375895696248}
@@ -2745,6 +2747,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114307422965567992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298390961334312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca554454e5ae001418bb1fc43ce42e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114536362128371924
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298390961334312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ee6096addc2ad48a20f4e07e1caacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!114 &114544246289349324
 MonoBehaviour:
   m_ObjectHideFlags: 1
