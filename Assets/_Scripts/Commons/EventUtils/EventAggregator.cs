@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 namespace RageCure.EventUtils
 {
     /// <summary>
     /// EventAggregator implementation from PlurialSight design patterns video
     /// </summary>
-    public class EventAggregator
+    public class EventAggregator : MonoBehaviour
     {
         private readonly IDictionary<Type, List<object>> _subscriptions = new Dictionary<Type, List<object>>();
         private readonly object _lock = new object();
