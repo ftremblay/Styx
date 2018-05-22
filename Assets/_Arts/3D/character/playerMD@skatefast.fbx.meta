@@ -240,15 +240,15 @@ ModelImporter:
       curves: []
       events:
       - time: 0.05407066
-        functionName: CallEvent
+        functionName: Post
         data: Skate
         objectReferenceParameter: {fileID: 1298390961334312, guid: 675c0582df8f80a44818ad706bc53eb9,
           type: 2}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.32239023
-        functionName: CallEvent
+      - time: 0.3255448
+        functionName: Post
         data: Skate
         objectReferenceParameter: {fileID: 1298390961334312, guid: 675c0582df8f80a44818ad706bc53eb9,
           type: 2}
@@ -256,7 +256,7 @@ ModelImporter:
         intParameter: 0
         messageOptions: 0
       - time: 0.5556118
-        functionName: CallEvent
+        functionName: Post
         data: Skate
         objectReferenceParameter: {fileID: 1298390961334312, guid: 675c0582df8f80a44818ad706bc53eb9,
           type: 2}
@@ -264,7 +264,7 @@ ModelImporter:
         intParameter: 0
         messageOptions: 0
       - time: 0.82037914
-        functionName: CallEvent
+        functionName: Post
         data: Skate
         objectReferenceParameter: {fileID: 1298390961334312, guid: 675c0582df8f80a44818ad706bc53eb9,
           type: 2}
