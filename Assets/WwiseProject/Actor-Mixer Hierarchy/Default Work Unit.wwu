@@ -1740,7 +1740,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="PuckPickup" ID="{1DC30E2B-288E-4867-84FE-6E4CFFDB7E39}" ShortID="828201372">
+								<RandomSequenceContainer Name="PuckGrab" ID="{1DC30E2B-288E-4867-84FE-6E4CFFDB7E39}" ShortID="828201372">
 									<PropertyList>
 										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>

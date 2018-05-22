@@ -22,7 +22,7 @@
 			<Path>DefaultSoundBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3176088691" Name="PassReceived" ObjectPath="\Events\Default Work Unit\Player\Actions\PassReceived"/>
-				<Event Id="2051795534" Name="PuckPickup" ObjectPath="\Events\Default Work Unit\Player\Actions\PuckPickup"/>
+				<Event Id="2757335292" Name="PuckGrab" ObjectPath="\Events\Default Work Unit\Player\Actions\PuckGrab"/>
 				<Event Id="3759749381" Name="Skate" ObjectPath="\Events\Default Work Unit\Player\Movements\Skate"/>
 				<Event Id="1553159799" Name="SkateLoop" ObjectPath="\Events\Default Work Unit\Player\Movements\SkateLoop"/>
 				<Event Id="1521187885" Name="StartGame" ObjectPath="\Events\Default Work Unit\StartGame"/>

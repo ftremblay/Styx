@@ -566,7 +566,7 @@
 						</Folder>
 						<Folder Name="Actions" ID="{2963F890-2A9A-4703-9F46-3307061B4BC1}" ShortID="501731294">
 							<ChildrenList>
-								<Event Name="PuckPickup" ID="{C4C7FF28-FE24-4A96-90E9-DF29497CEFB5}">
+								<Event Name="PuckGrab" ID="{C4C7FF28-FE24-4A96-90E9-DF29497CEFB5}">
 									<ChildrenList>
 										<Action Name="" ID="{B27D0FDB-C219-44E4-9092-57081A05A4E6}" ShortID="210884231">
 											<PropertyList>
@@ -574,7 +574,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="PuckPickup" ID="{1DC30E2B-288E-4867-84FE-6E4CFFDB7E39}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+													<ObjectRef Name="PuckGrab" ID="{1DC30E2B-288E-4867-84FE-6E4CFFDB7E39}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

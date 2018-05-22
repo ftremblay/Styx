@@ -18,7 +18,7 @@
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="PuckPickup" ID="{C4C7FF28-FE24-4A96-90E9-DF29497CEFB5}" WorkUnitID="{196E24AF-A484-4ECE-BA7F-6B6352D0BF0C}"/>
+							<ObjectRef Name="PuckGrab" ID="{C4C7FF28-FE24-4A96-90E9-DF29497CEFB5}" WorkUnitID="{196E24AF-A484-4ECE-BA7F-6B6352D0BF0C}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 					</ModuleList>
