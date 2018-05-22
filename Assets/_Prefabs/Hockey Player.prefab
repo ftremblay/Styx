@@ -429,8 +429,8 @@ GameObject:
   - component: {fileID: 54972695518403174}
   - component: {fileID: 136986300862390220}
   - component: {fileID: 114544246289349324}
-  - component: {fileID: 114307422965567992}
   - component: {fileID: 114536362128371924}
+  - component: {fileID: 114829303175635158}
   m_Layer: 0
   m_Name: Hockey Player
   m_TagString: Untagged
@@ -2747,17 +2747,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114307422965567992
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1298390961334312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca554454e5ae001418bb1fc43ce42e03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114536362128371924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2793,6 +2782,17 @@ MonoBehaviour:
   MovementState: {fileID: 11400000, guid: 3bd1db931939e5b47b67176a18fadd60, type: 2}
   Rigidbody: {fileID: 0}
   Animator: {fileID: 0}
+--- !u!114 &114829303175635158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298390961334312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca554454e5ae001418bb1fc43ce42e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136986300862390220
 CapsuleCollider:
   m_ObjectHideFlags: 1
