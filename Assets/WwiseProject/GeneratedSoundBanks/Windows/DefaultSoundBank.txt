@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	103253078	Brake			\Default Work Unit\Player\Movements\Brake	
 	1521187885	StartGame			\Default Work Unit\StartGame	
 	1553159799	SkateLoop			\Default Work Unit\Player\Movements\SkateLoop	
 	2424161734	PuckOnGoalPost			\Default Work Unit\Objects\Goal\PuckOnGoalPost	

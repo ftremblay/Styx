@@ -562,6 +562,20 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Brake" ID="{6987A67D-DA0F-4FD4-9226-EBF23D595721}">
+									<ChildrenList>
+										<Action Name="" ID="{B079C432-9F51-4C6C-AD1B-9DEEAFA32D28}" ShortID="66863762">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Braking" ID="{BF663498-D536-4A18-A9F1-7698243E3053}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Actions" ID="{2963F890-2A9A-4703-9F46-3307061B4BC1}" ShortID="501731294">

@@ -21,6 +21,7 @@
 			<ShortName>DefaultSoundBank</ShortName>
 			<Path>DefaultSoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="103253078" Name="Brake" ObjectPath="\Events\Default Work Unit\Player\Movements\Brake"/>
 				<Event Id="3176088691" Name="PassReceived" ObjectPath="\Events\Default Work Unit\Player\Actions\PassReceived"/>
 				<Event Id="2757335292" Name="PuckGrab" ObjectPath="\Events\Default Work Unit\Player\Actions\PuckGrab"/>
 				<Event Id="2424161734" Name="PuckOnGoalPost" ObjectPath="\Events\Default Work Unit\Objects\Goal\PuckOnGoalPost"/>
