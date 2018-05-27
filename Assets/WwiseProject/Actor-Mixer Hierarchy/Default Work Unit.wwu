@@ -2764,6 +2764,201 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="WristShot" ID="{A94B3636-60B1-453E-8077-884484622A1A}" ShortID="757060093">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BDEC5D19-21E8-48DD-94BE-474C97283E26}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Spatialization" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3E20F9EB-976F-4C17-9408-2DC742DFAE55}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="wrist-shot_01" ID="{4E5BCDD6-2CF4-49DB-A13B-06D0435AC301}" ShortID="482339360">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_01" ID="{5EF63E18-AF7E-4309-89D6-6F086B2D6671}" ShortID="12855732">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_01" ID="{5EF63E18-AF7E-4309-89D6-6F086B2D6671}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_02" ID="{3B028CCE-5411-4742-B979-822E56252635}" ShortID="1016806916">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_02" ID="{B9E45EFE-03CE-4B79-8823-A32EC14C0E89}" ShortID="1019423150">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_02" ID="{B9E45EFE-03CE-4B79-8823-A32EC14C0E89}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_03" ID="{80AD261D-79C5-4ACF-A625-CA4F20742D76}" ShortID="884659947">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_03" ID="{571B3578-92D9-466D-9104-86C9A0C2459F}" ShortID="301662028">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_03" ID="{571B3578-92D9-466D-9104-86C9A0C2459F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_04" ID="{00CB5017-D83C-40FF-92CA-A8C8DA8B187B}" ShortID="181200915">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_04" ID="{045D68B7-60D6-4A4F-9CE1-0F84184D25D0}" ShortID="286673266">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_04" ID="{045D68B7-60D6-4A4F-9CE1-0F84184D25D0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_05" ID="{60375DFB-D1CC-4667-B0E2-8DF794051ECE}" ShortID="854825058">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_05" ID="{9844D71E-81DA-4157-97B3-8036286569CD}" ShortID="460481918">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_05" ID="{9844D71E-81DA-4157-97B3-8036286569CD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_06" ID="{1CBFF255-DBDE-404D-950B-9EF268D425D7}" ShortID="232473499">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_06" ID="{D7B2C4A4-E329-4E8F-9BCC-9E027753B385}" ShortID="176512165">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_06" ID="{D7B2C4A4-E329-4E8F-9BCC-9E027753B385}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_07" ID="{5728BB6A-0419-4C9C-8889-88082524ED49}" ShortID="1069524777">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_07" ID="{CB533B42-8C92-46FD-9EA2-5E28CD43DB97}" ShortID="186926914">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_07" ID="{CB533B42-8C92-46FD-9EA2-5E28CD43DB97}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>

@@ -622,6 +622,31 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="WristShot" ID="{BF96349C-A019-47B2-BEC0-59F00F3C647B}">
+									<ChildrenList>
+										<Action Name="" ID="{93316120-A021-4541-8BFE-F35169064D51}" ShortID="475410260">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WristShot" ID="{A94B3636-60B1-453E-8077-884484622A1A}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{FB9AA5D1-F46C-42E8-9D19-6AE70801646F}" ShortID="637992634">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="0.08"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WristShot" ID="{A94B3636-60B1-453E-8077-884484622A1A}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

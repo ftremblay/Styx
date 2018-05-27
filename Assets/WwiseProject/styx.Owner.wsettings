@@ -3,11 +3,12 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{A71200DA-4C62-45F6-96A2-A1E358A6B06C}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="F:\RageCure\styx\work\audio\sfx\render\pass-shot"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="F:\RageCure\styx\work\audio\sfx\render\wrist-shot"/>
 				<Property Name="Event Action List\{0827C9D2-9518-49FB-957F-22CF3F27CE91}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6987A67D-DA0F-4FD4-9226-EBF23D595721}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A790E934-2DC8-40A6-96C6-7706693E9DD3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{BDCE8A27-9456-4948-B821-F9307ADBBF8A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BF96349C-A019-47B2-BEC0-59F00F3C647B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C4C7FF28-FE24-4A96-90E9-DF29497CEFB5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D11AC8FF-6B3F-4E27-A638-A462B7D18A35}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{DE0A5B0B-0695-4350-9945-3BBAE6C04D60}\x64_Expand States" Type="string" Value=""/>

@@ -29,11 +29,16 @@
 				<Event Id="3759749381" Name="Skate" ObjectPath="\Events\Default Work Unit\Player\Movements\Skate"/>
 				<Event Id="1553159799" Name="SkateLoop" ObjectPath="\Events\Default Work Unit\Player\Movements\SkateLoop"/>
 				<Event Id="1521187885" Name="StartGame" ObjectPath="\Events\Default Work Unit\StartGame"/>
+				<Event Id="1374461310" Name="WristShot" ObjectPath="\Events\Default Work Unit\Player\Actions\WristShot"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="7567365" Language="SFX">
 					<ShortName>skating_10.wav</ShortName>
 					<Path>SFX\skating_10_31D213C5.wem</Path>
+				</File>
+				<File Id="12855732" Language="SFX">
+					<ShortName>wrist-shot_01.wav</ShortName>
+					<Path>SFX\wrist-shot_01_31D213C5.wem</Path>
 				</File>
 				<File Id="19145722" Language="SFX">
 					<ShortName>gliding_08.wav</ShortName>
@@ -91,6 +96,14 @@
 					<ShortName>puck-pickup_03.wav</ShortName>
 					<Path>SFX\puck-pickup_03_31D213C5.wem</Path>
 				</File>
+				<File Id="176512165" Language="SFX">
+					<ShortName>wrist-shot_06.wav</ShortName>
+					<Path>SFX\wrist-shot_06_31D213C5.wem</Path>
+				</File>
+				<File Id="186926914" Language="SFX">
+					<ShortName>wrist-shot_07.wav</ShortName>
+					<Path>SFX\wrist-shot_07_31D213C5.wem</Path>
+				</File>
 				<File Id="188494245" Language="SFX">
 					<ShortName>braking_heel-scratch_02.wav</ShortName>
 					<Path>SFX\braking_heel-scratch_02_31D213C5.wem</Path>
@@ -123,6 +136,10 @@
 					<ShortName>ambience-arena_09.wav</ShortName>
 					<Path>SFX\ambience-arena_09_31D213C5.wem</Path>
 				</File>
+				<File Id="286673266" Language="SFX">
+					<ShortName>wrist-shot_04.wav</ShortName>
+					<Path>SFX\wrist-shot_04_31D213C5.wem</Path>
+				</File>
 				<File Id="289022638" Language="SFX">
 					<ShortName>skating_02.wav</ShortName>
 					<Path>SFX\skating_02_31D213C5.wem</Path>
@@ -138,6 +155,10 @@
 				<File Id="300453644" Language="SFX">
 					<ShortName>skating_08.wav</ShortName>
 					<Path>SFX\skating_08_31D213C5.wem</Path>
+				</File>
+				<File Id="301662028" Language="SFX">
+					<ShortName>wrist-shot_03.wav</ShortName>
+					<Path>SFX\wrist-shot_03_31D213C5.wem</Path>
 				</File>
 				<File Id="337096209" Language="SFX">
 					<ShortName>Styx-Mr-Roboto-Relaid-Audio.wav</ShortName>
@@ -178,6 +199,10 @@
 				<File Id="445467223" Language="SFX">
 					<ShortName>skating_06.wav</ShortName>
 					<Path>SFX\skating_06_31D213C5.wem</Path>
+				</File>
+				<File Id="460481918" Language="SFX">
+					<ShortName>wrist-shot_05.wav</ShortName>
+					<Path>SFX\wrist-shot_05_31D213C5.wem</Path>
 				</File>
 				<File Id="466550563" Language="SFX">
 					<ShortName>skating_13.wav</ShortName>
@@ -386,6 +411,10 @@
 				<File Id="1017917129" Language="SFX">
 					<ShortName>puck-pickup_04.wav</ShortName>
 					<Path>SFX\puck-pickup_04_31D213C5.wem</Path>
+				</File>
+				<File Id="1019423150" Language="SFX">
+					<ShortName>wrist-shot_02.wav</ShortName>
+					<Path>SFX\wrist-shot_02_31D213C5.wem</Path>
 				</File>
 				<File Id="1028662537" Language="SFX">
 					<ShortName>puck-pickup_05.wav</ShortName>

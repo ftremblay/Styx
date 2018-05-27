@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID SKATE = 3759749381U;
         static const AkUniqueID SKATELOOP = 1553159799U;
         static const AkUniqueID STARTGAME = 1521187885U;
+        static const AkUniqueID WRISTSHOT = 1374461310U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
