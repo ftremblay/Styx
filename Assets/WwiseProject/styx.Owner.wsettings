@@ -3,7 +3,8 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{A71200DA-4C62-45F6-96A2-A1E358A6B06C}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="F:\RageCure\styx\work\audio\sfx\render\puck-goal-post"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="F:\RageCure\styx\work\audio\sfx\render\pass-shot"/>
+				<Property Name="Event Action List\{0827C9D2-9518-49FB-957F-22CF3F27CE91}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6987A67D-DA0F-4FD4-9226-EBF23D595721}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A790E934-2DC8-40A6-96C6-7706693E9DD3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{BDCE8A27-9456-4948-B821-F9307ADBBF8A}\x64_Expand States" Type="string" Value=""/>

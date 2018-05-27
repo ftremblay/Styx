@@ -23,6 +23,7 @@
 			<IncludedEvents>
 				<Event Id="103253078" Name="Brake" ObjectPath="\Events\Default Work Unit\Player\Movements\Brake"/>
 				<Event Id="3176088691" Name="PassReceived" ObjectPath="\Events\Default Work Unit\Player\Actions\PassReceived"/>
+				<Event Id="105158222" Name="PassShot" ObjectPath="\Events\Default Work Unit\Player\Actions\PassShot"/>
 				<Event Id="2757335292" Name="PuckGrab" ObjectPath="\Events\Default Work Unit\Player\Actions\PuckGrab"/>
 				<Event Id="2424161734" Name="PuckOnGoalPost" ObjectPath="\Events\Default Work Unit\Objects\Goal\PuckOnGoalPost"/>
 				<Event Id="3759749381" Name="Skate" ObjectPath="\Events\Default Work Unit\Player\Movements\Skate"/>
@@ -105,6 +106,10 @@
 				<File Id="235669072" Language="SFX">
 					<ShortName>ambience-arena_04.wav</ShortName>
 					<Path>SFX\ambience-arena_04_31D213C5.wem</Path>
+				</File>
+				<File Id="256480533" Language="SFX">
+					<ShortName>pass-shot_04.wav</ShortName>
+					<Path>SFX\pass-shot_04_31D213C5.wem</Path>
 				</File>
 				<File Id="269171532" Language="SFX">
 					<ShortName>braking_scrape-peel_02.wav</ShortName>
@@ -286,6 +291,10 @@
 					<ShortName>braking_heel-scratch_04.wav</ShortName>
 					<Path>SFX\braking_heel-scratch_04_31D213C5.wem</Path>
 				</File>
+				<File Id="744402037" Language="SFX">
+					<ShortName>pass-shot_02.wav</ShortName>
+					<Path>SFX\pass-shot_02_31D213C5.wem</Path>
+				</File>
 				<File Id="753243642" Language="SFX">
 					<ShortName>skating_12.wav</ShortName>
 					<Path>SFX\skating_12_31D213C5.wem</Path>
@@ -301,6 +310,10 @@
 				<File Id="779489019" Language="SFX">
 					<ShortName>ambience-arena_03.wav</ShortName>
 					<Path>SFX\ambience-arena_03_31D213C5.wem</Path>
+				</File>
+				<File Id="791723441" Language="SFX">
+					<ShortName>pass-shot_05.wav</ShortName>
+					<Path>SFX\pass-shot_05_31D213C5.wem</Path>
 				</File>
 				<File Id="797033609" Language="SFX">
 					<ShortName>ambience-arena_08.wav</ShortName>
@@ -350,6 +363,10 @@
 					<ShortName>braking_scrape-peel_01.wav</ShortName>
 					<Path>SFX\braking_scrape-peel_01_31D213C5.wem</Path>
 				</File>
+				<File Id="932006159" Language="SFX">
+					<ShortName>pass-shot_01.wav</ShortName>
+					<Path>SFX\pass-shot_01_31D213C5.wem</Path>
+				</File>
 				<File Id="976850887" Language="SFX">
 					<ShortName>skating_04.wav</ShortName>
 					<Path>SFX\skating_04_31D213C5.wem</Path>
@@ -361,6 +378,10 @@
 				<File Id="1000965181" Language="SFX">
 					<ShortName>skating-rough_20.wav</ShortName>
 					<Path>SFX\skating-rough_20_31D213C5.wem</Path>
+				</File>
+				<File Id="1015508956" Language="SFX">
+					<ShortName>pass-shot_03.wav</ShortName>
+					<Path>SFX\pass-shot_03_31D213C5.wem</Path>
 				</File>
 				<File Id="1017917129" Language="SFX">
 					<ShortName>puck-pickup_04.wav</ShortName>
