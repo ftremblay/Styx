@@ -3,7 +3,8 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{A71200DA-4C62-45F6-96A2-A1E358A6B06C}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="F:\RageCure\styx\work\audio\sfx\render\pass-received"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="F:\RageCure\styx\work\audio\sfx\render\puck-goal-post"/>
+				<Property Name="Event Action List\{A790E934-2DC8-40A6-96C6-7706693E9DD3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{BDCE8A27-9456-4948-B821-F9307ADBBF8A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C4C7FF28-FE24-4A96-90E9-DF29497CEFB5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D11AC8FF-6B3F-4E27-A638-A462B7D18A35}\x64_Expand States" Type="string" Value=""/>
@@ -57,8 +58,8 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ8yq4JnvTov5Bn2poXzx8geA="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="2Xq6oE4UNEC3N0TrvmOeMWK+22uZB/1Bg9OgclXY4xvrcrLCei07QpKsvQ/K22/YoVEYU61kiUKoXK/xosqcHjGEStjnaVZKlXdHQFScjjkGikgUyCm+TpMdosLRzHsg/rBX1j56W0+mzPWjTuTiMw=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="x+FJJTU7mUKDAW4a9LQs0ZD4YymaKgNHn0YzBwYbS8Em5LOf+Uo8TY5Wr+7n8zZ7ryRuGYSkzk66f2tjUtC/DA=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="2Xq6oE4UNEC3N0TrvmOeMRQWJrkrUBpCilahT0qKNt/rcrLCei07QpKsvQ/K22/YoVEYU61kiUKoXK/xosqcHuH4gfZ85hZGr7VDNxkQYCGJ4czhYmJsRoRxu7VMvyAhMYRK2OdpVkqVd0dAVJyOOQaKSBTIKb5Okx2iwtHMeyD+sFfWPnpbT6bM9aNO5OIz"/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="x+FJJTU7mUKDAW4a9LQs0YpEhFqrB19GqoNfGfN0SKeIM884Xc/9RpCOgCLYzcOokPhjKZoqA0efRjMHBhtLwSbks5/5SjxNjlav7ufzNnuvJG4ZhKTOTrp/a2NS0L8M"/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="ro7sMpqIRkyMXzKb/u2oxA=="/>

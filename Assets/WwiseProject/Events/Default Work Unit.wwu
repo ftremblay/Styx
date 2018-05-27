@@ -622,6 +622,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Objects" ID="{5A84448A-07AB-465F-AA83-5F19F37448A7}" ShortID="1024494221">
+					<ChildrenList>
+						<Folder Name="Goal" ID="{38CF3388-CF5D-46FD-908E-8022D8CDC3A8}" ShortID="423820816">
+							<ChildrenList>
+								<Event Name="PuckOnGoalPost" ID="{A790E934-2DC8-40A6-96C6-7706693E9DD3}">
+									<ChildrenList>
+										<Action Name="" ID="{7DD94920-1278-4701-A687-D7565ABB5A58}" ShortID="441346455">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PuckOnGoalPost" ID="{1FEEAF0F-663B-4622-A58E-33F5C6BCA3A9}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

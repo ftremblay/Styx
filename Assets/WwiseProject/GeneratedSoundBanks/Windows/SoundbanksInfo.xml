@@ -23,6 +23,7 @@
 			<IncludedEvents>
 				<Event Id="3176088691" Name="PassReceived" ObjectPath="\Events\Default Work Unit\Player\Actions\PassReceived"/>
 				<Event Id="2757335292" Name="PuckGrab" ObjectPath="\Events\Default Work Unit\Player\Actions\PuckGrab"/>
+				<Event Id="2424161734" Name="PuckOnGoalPost" ObjectPath="\Events\Default Work Unit\Objects\Goal\PuckOnGoalPost"/>
 				<Event Id="3759749381" Name="Skate" ObjectPath="\Events\Default Work Unit\Player\Movements\Skate"/>
 				<Event Id="1553159799" Name="SkateLoop" ObjectPath="\Events\Default Work Unit\Player\Movements\SkateLoop"/>
 				<Event Id="1521187885" Name="StartGame" ObjectPath="\Events\Default Work Unit\StartGame"/>
@@ -35,6 +36,14 @@
 				<File Id="19145722" Language="SFX">
 					<ShortName>gliding_08.wav</ShortName>
 					<Path>SFX\gliding_08_31D213C5.wem</Path>
+				</File>
+				<File Id="26289970" Language="SFX">
+					<ShortName>puck_goal-post_02.wav</ShortName>
+					<Path>SFX\puck_goal-post_02_31D213C5.wem</Path>
+				</File>
+				<File Id="33345285" Language="SFX">
+					<ShortName>braking_heel-scratch_03.wav</ShortName>
+					<Path>SFX\braking_heel-scratch_03_31D213C5.wem</Path>
 				</File>
 				<File Id="35914376" Language="SFX">
 					<ShortName>skating-rough_16.wav</ShortName>
@@ -80,6 +89,10 @@
 					<ShortName>puck-pickup_03.wav</ShortName>
 					<Path>SFX\puck-pickup_03_31D213C5.wem</Path>
 				</File>
+				<File Id="188494245" Language="SFX">
+					<ShortName>braking_heel-scratch_02.wav</ShortName>
+					<Path>SFX\braking_heel-scratch_02_31D213C5.wem</Path>
+				</File>
 				<File Id="195017422" Language="SFX">
 					<ShortName>gliding_24.wav</ShortName>
 					<Path>SFX\gliding_24_31D213C5.wem</Path>
@@ -91,6 +104,10 @@
 				<File Id="235669072" Language="SFX">
 					<ShortName>ambience-arena_04.wav</ShortName>
 					<Path>SFX\ambience-arena_04_31D213C5.wem</Path>
+				</File>
+				<File Id="269171532" Language="SFX">
+					<ShortName>braking_scrape-peel_02.wav</ShortName>
+					<Path>SFX\braking_scrape-peel_02_31D213C5.wem</Path>
 				</File>
 				<File Id="272333425" Language="SFX">
 					<ShortName>puck-pickup_02.wav</ShortName>
@@ -144,6 +161,10 @@
 					<ShortName>gliding_26.wav</ShortName>
 					<Path>SFX\gliding_26_31D213C5.wem</Path>
 				</File>
+				<File Id="410982254" Language="SFX">
+					<ShortName>braking_scrape-drag_02.wav</ShortName>
+					<Path>SFX\braking_scrape-drag_02_31D213C5.wem</Path>
+				</File>
 				<File Id="431762514" Language="SFX">
 					<ShortName>skating-rough_18.wav</ShortName>
 					<Path>SFX\skating-rough_18_31D213C5.wem</Path>
@@ -179,6 +200,10 @@
 				<File Id="491536818" Language="SFX">
 					<ShortName>gliding_05.wav</ShortName>
 					<Path>SFX\gliding_05_31D213C5.wem</Path>
+				</File>
+				<File Id="497097696" Language="SFX">
+					<ShortName>braking_scrape-drag_06.wav</ShortName>
+					<Path>SFX\braking_scrape-drag_06_31D213C5.wem</Path>
 				</File>
 				<File Id="503072477" Language="SFX">
 					<ShortName>skating-rough_19.wav</ShortName>
@@ -244,6 +269,10 @@
 					<ShortName>Styx-Suite-Madam-Blue.wav</ShortName>
 					<Path>SFX\Styx-Suite-Madam-Blue_374AE80A.wem</Path>
 				</File>
+				<File Id="672714420" Language="SFX">
+					<ShortName>braking_heel-scratch_01.wav</ShortName>
+					<Path>SFX\braking_heel-scratch_01_31D213C5.wem</Path>
+				</File>
 				<File Id="688195390" Language="SFX">
 					<ShortName>gliding_22.wav</ShortName>
 					<Path>SFX\gliding_22_31D213C5.wem</Path>
@@ -252,9 +281,17 @@
 					<ShortName>pass-received_02.wav</ShortName>
 					<Path>SFX\pass-received_02_31D213C5.wem</Path>
 				</File>
+				<File Id="737146566" Language="SFX">
+					<ShortName>braking_heel-scratch_04.wav</ShortName>
+					<Path>SFX\braking_heel-scratch_04_31D213C5.wem</Path>
+				</File>
 				<File Id="753243642" Language="SFX">
 					<ShortName>skating_12.wav</ShortName>
 					<Path>SFX\skating_12_31D213C5.wem</Path>
+				</File>
+				<File Id="756299984" Language="SFX">
+					<ShortName>braking_scrape-drag_01.wav</ShortName>
+					<Path>SFX\braking_scrape-drag_01_31D213C5.wem</Path>
 				</File>
 				<File Id="778163851" Language="SFX">
 					<ShortName>skating_14.wav</ShortName>
@@ -272,6 +309,10 @@
 					<ShortName>gliding_12.wav</ShortName>
 					<Path>SFX\gliding_12_31D213C5.wem</Path>
 				</File>
+				<File Id="831871064" Language="SFX">
+					<ShortName>braking_scrape-drag_03.wav</ShortName>
+					<Path>SFX\braking_scrape-drag_03_31D213C5.wem</Path>
+				</File>
 				<File Id="861507772" Language="SFX">
 					<ShortName>skating_01.wav</ShortName>
 					<Path>SFX\skating_01_31D213C5.wem</Path>
@@ -284,6 +325,14 @@
 					<ShortName>skating-rough_17.wav</ShortName>
 					<Path>SFX\skating-rough_17_31D213C5.wem</Path>
 				</File>
+				<File Id="871996150" Language="SFX">
+					<ShortName>puck_goal-post_01.wav</ShortName>
+					<Path>SFX\puck_goal-post_01_31D213C5.wem</Path>
+				</File>
+				<File Id="880803785" Language="SFX">
+					<ShortName>braking_scrape-drag_05.wav</ShortName>
+					<Path>SFX\braking_scrape-drag_05_31D213C5.wem</Path>
+				</File>
 				<File Id="901327506" Language="SFX">
 					<ShortName>ambience-arena_05.wav</ShortName>
 					<Path>SFX\ambience-arena_05_31D213C5.wem</Path>
@@ -291,6 +340,14 @@
 				<File Id="908852665" Language="SFX">
 					<ShortName>gliding_15.wav</ShortName>
 					<Path>SFX\gliding_15_31D213C5.wem</Path>
+				</File>
+				<File Id="921013607" Language="SFX">
+					<ShortName>braking_scrape-peel_03.wav</ShortName>
+					<Path>SFX\braking_scrape-peel_03_31D213C5.wem</Path>
+				</File>
+				<File Id="924602077" Language="SFX">
+					<ShortName>braking_scrape-peel_01.wav</ShortName>
+					<Path>SFX\braking_scrape-peel_01_31D213C5.wem</Path>
 				</File>
 				<File Id="976850887" Language="SFX">
 					<ShortName>skating_04.wav</ShortName>
@@ -323,6 +380,10 @@
 				<File Id="1065579094" Language="SFX">
 					<ShortName>ambience-arena_02.wav</ShortName>
 					<Path>SFX\ambience-arena_02_31D213C5.wem</Path>
+				</File>
+				<File Id="1065777026" Language="SFX">
+					<ShortName>braking_scrape-drag_04.wav</ShortName>
+					<Path>SFX\braking_scrape-drag_04_31D213C5.wem</Path>
 				</File>
 				<File Id="1068503388" Language="SFX">
 					<ShortName>puck-pickup_07.wav</ShortName>

@@ -6,6 +6,7 @@
 				<SoundBank Name="DefaultSoundBank" ID="{C72189EC-377F-4BEE-A960-7415A576DCF1}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Objects" ID="{B9261614-502B-421A-8A56-A14F4A8A36DF}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{1FC001EC-C0E5-476E-8A1D-9D2D0F99CE34}" WorkUnitID="{1FC001EC-C0E5-476E-8A1D-9D2D0F99CE34}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PASSRECEIVED = 3176088691U;
         static const AkUniqueID PUCKGRAB = 2757335292U;
+        static const AkUniqueID PUCKONGOALPOST = 2424161734U;
         static const AkUniqueID SKATE = 3759749381U;
         static const AkUniqueID SKATELOOP = 1553159799U;
         static const AkUniqueID STARTGAME = 1521187885U;
