@@ -1,4 +1,6 @@
-﻿namespace RageCure.Commons.ReduxUtils
+﻿using Assets._Scripts;
+
+namespace RageCure.Commons.ReduxUtils
 {
     public interface IReducer<T, A>
     {

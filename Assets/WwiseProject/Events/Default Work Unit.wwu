@@ -562,11 +562,25 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Brake" ID="{6987A67D-DA0F-4FD4-9226-EBF23D595721}">
+									<ChildrenList>
+										<Action Name="" ID="{B079C432-9F51-4C6C-AD1B-9DEEAFA32D28}" ShortID="66863762">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Braking" ID="{BF663498-D536-4A18-A9F1-7698243E3053}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Actions" ID="{2963F890-2A9A-4703-9F46-3307061B4BC1}" ShortID="501731294">
 							<ChildrenList>
-								<Event Name="PuckPickup" ID="{C4C7FF28-FE24-4A96-90E9-DF29497CEFB5}">
+								<Event Name="PuckGrab" ID="{C4C7FF28-FE24-4A96-90E9-DF29497CEFB5}">
 									<ChildrenList>
 										<Action Name="" ID="{B27D0FDB-C219-44E4-9092-57081A05A4E6}" ShortID="210884231">
 											<PropertyList>
@@ -574,7 +588,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="PuckPickup" ID="{1DC30E2B-288E-4867-84FE-6E4CFFDB7E39}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+													<ObjectRef Name="PuckGrab" ID="{1DC30E2B-288E-4867-84FE-6E4CFFDB7E39}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -589,6 +603,45 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="PassReceived" ID="{DCC348CD-89AD-4A68-804E-4FF0F852257F}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="PassShot" ID="{0827C9D2-9518-49FB-957F-22CF3F27CE91}">
+									<ChildrenList>
+										<Action Name="" ID="{4B66C297-F740-4BE4-80FD-AA47FEE146D6}" ShortID="666966918">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PassShot" ID="{2712E3E2-404D-4D14-91B2-56376AEC87A6}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="WristShot" ID="{BF96349C-A019-47B2-BEC0-59F00F3C647B}">
+									<ChildrenList>
+										<Action Name="" ID="{93316120-A021-4541-8BFE-F35169064D51}" ShortID="475410260">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WristShot" ID="{A94B3636-60B1-453E-8077-884484622A1A}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{FB9AA5D1-F46C-42E8-9D19-6AE70801646F}" ShortID="637992634">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+												<Property Name="Delay" Type="Real64" Value="0.08"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WristShot" ID="{A94B3636-60B1-453E-8077-884484622A1A}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -622,6 +675,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Objects" ID="{5A84448A-07AB-465F-AA83-5F19F37448A7}" ShortID="1024494221">
+					<ChildrenList>
+						<Folder Name="Goal" ID="{38CF3388-CF5D-46FD-908E-8022D8CDC3A8}" ShortID="423820816">
+							<ChildrenList>
+								<Event Name="PuckOnGoalPost" ID="{A790E934-2DC8-40A6-96C6-7706693E9DD3}">
+									<ChildrenList>
+										<Action Name="" ID="{7DD94920-1278-4701-A687-D7565ABB5A58}" ShortID="441346455">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PuckOnGoalPost" ID="{1FEEAF0F-663B-4622-A58E-33F5C6BCA3A9}" WorkUnitID="{14488A06-29C8-4EBE-931D-A2C2D1CC7B20}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

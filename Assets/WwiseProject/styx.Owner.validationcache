@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="85">
-	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1523816752" DateHigh="0"/>
+	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1527039473" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1521248876" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1521248876" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1521248876" DateHigh="0"/>
@@ -9,7 +9,7 @@
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1521248876" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Effects\Default Work Unit.wwu" DateLow="1521248876" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Effects\Factory Effects.wwu" DateLow="1523816752" DateHigh="0"/>
-	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Events\Default Work Unit.wwu" DateLow="1521682135" DateHigh="0"/>
+	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Events\Default Work Unit.wwu" DateLow="1527039442" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1523408230" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1521248876" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1523408897" DateHigh="0"/>
@@ -18,10 +18,10 @@
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Presets\Default Work Unit.wwu" DateLow="1521248876" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Queries\Default Work Unit.wwu" DateLow="1521248876" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Queries\Factory Queries.wwu" DateLow="1521248176" DateHigh="0"/>
-	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1523816880" DateHigh="0"/>
-	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1523408407" DateHigh="0"/>
+	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1527039488" DateHigh="0"/>
+	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1526948554" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\States\Default Work Unit.wwu" DateLow="1521248876" DateHigh="0"/>
-	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\styx.Owner.wsettings" DateLow="1523816881" DateHigh="0"/>
+	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\styx.Owner.wsettings" DateLow="1527039490" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\styx.wproj" DateLow="1526262502" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Switches\Default Work Unit.wwu" DateLow="1521248876" DateHigh="0"/>
 	<ValidationCacheItem File="F:\RageCure\styx\work\unity\styx\Assets\WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1521248876" DateHigh="0"/>

@@ -10,7 +10,7 @@ namespace Assets._Scripts.Utils.Sound
                 return;
 
 		    AkSoundEngine.PostEvent(soundEvent, gameObject);
-		    Debug.Log ("PrintEvent: " + soundEvent + " Called at: " + Time.time);
+		    //Debug.Log ("PrintEvent: " + soundEvent + " Called at: " + Time.time);
 	    }
     }
 }

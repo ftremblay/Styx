@@ -1725,6 +1725,513 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<BlendContainer Name="Braking" ID="{BF663498-D536-4A18-A9F1-7698243E3053}" ShortID="732600399">
+									<PropertyList>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Spatialization" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Heel-scratch" ID="{810F7F15-BA35-46B8-9293-49198E3F86AE}" ShortID="864503570">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.03</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{EDE67E15-2B2B-4287-AF5D-7CED08C84150}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A47CDA63-1EAD-4890-8AD6-B53C6FBDBEC0}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="braking_heel-scratch_03" ID="{934C8EB4-00EE-43EB-B6BA-FCEB800E5A0C}" ShortID="1049628576">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_heel-scratch_03" ID="{8BCA4E8A-40E1-4BA4-ACF0-BE67FF8D0CD4}" ShortID="33345285">
+															<Language>SFX</Language>
+															<AudioFile>braking_heel-scratch_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_heel-scratch_03" ID="{8BCA4E8A-40E1-4BA4-ACF0-BE67FF8D0CD4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="braking_heel-scratch_01" ID="{8316838F-4B53-4BCD-9BA2-0956F27E73C8}" ShortID="43343759">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_heel-scratch_01" ID="{F7D12593-11E7-4BBD-BB08-0940811901E6}" ShortID="672714420">
+															<Language>SFX</Language>
+															<AudioFile>braking_heel-scratch_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_heel-scratch_01" ID="{F7D12593-11E7-4BBD-BB08-0940811901E6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="braking_heel-scratch_04" ID="{ABAFA326-2500-4934-9EE4-E7C2088E5FF1}" ShortID="497901246">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_heel-scratch_04" ID="{78010B23-0C65-4533-B8E2-3A65A63F3625}" ShortID="737146566">
+															<Language>SFX</Language>
+															<AudioFile>braking_heel-scratch_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_heel-scratch_04" ID="{78010B23-0C65-4533-B8E2-3A65A63F3625}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="braking_heel-scratch_02" ID="{FCD19315-4C1C-4EFC-9419-A8F7C0BCC5F6}" ShortID="311586958">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_heel-scratch_02" ID="{5C08EB01-D6E5-478C-B7C4-DAAA0F880342}" ShortID="188494245">
+															<Language>SFX</Language>
+															<AudioFile>braking_heel-scratch_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_heel-scratch_02" ID="{5C08EB01-D6E5-478C-B7C4-DAAA0F880342}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Scrape-drag" ID="{ACC0CFD1-F408-42FC-91E7-2FC4A8B529EF}" ShortID="626294794">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4D6839F1-9F64-4D03-96F9-E42952609909}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D64C3B92-7A87-4F13-B8C9-DA0722FC6438}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="braking_scrape-drag_02" ID="{3512E62C-2DC5-4537-AC2F-4A53ACDB44EF}" ShortID="967536592">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_scrape-drag_02" ID="{7A11A593-7169-438F-8D09-3921317BD21C}" ShortID="410982254">
+															<Language>SFX</Language>
+															<AudioFile>braking_scrape-drag_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_scrape-drag_02" ID="{7A11A593-7169-438F-8D09-3921317BD21C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="braking_scrape-drag_01" ID="{2906E6A5-E63A-4D19-8E35-5573E30F2D94}" ShortID="819042169">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_scrape-drag_01" ID="{815F7F6B-85AB-4C0C-AF05-EB4D5A536C90}" ShortID="756299984">
+															<Language>SFX</Language>
+															<AudioFile>braking_scrape-drag_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_scrape-drag_01" ID="{815F7F6B-85AB-4C0C-AF05-EB4D5A536C90}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="braking_scrape-drag_04" ID="{B1DE3EAE-4879-49A4-9A7E-E87276D00388}" ShortID="652291291">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_scrape-drag_04" ID="{F044F63B-813B-49E6-96A4-615862FF1EED}" ShortID="1065777026">
+															<Language>SFX</Language>
+															<AudioFile>braking_scrape-drag_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_scrape-drag_04" ID="{F044F63B-813B-49E6-96A4-615862FF1EED}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="braking_scrape-drag_05" ID="{39A08A03-B0C4-4624-9FA2-95DA9F633EB0}" ShortID="813675906">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_scrape-drag_05" ID="{A4DBA0C3-E7EC-4CFD-A6DA-75FEEC652395}" ShortID="880803785">
+															<Language>SFX</Language>
+															<AudioFile>braking_scrape-drag_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_scrape-drag_05" ID="{A4DBA0C3-E7EC-4CFD-A6DA-75FEEC652395}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="braking_scrape-drag_03" ID="{9DB9B744-0AD6-4812-AA34-1F4745725340}" ShortID="597854215">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_scrape-drag_03" ID="{1933BF28-85BF-439A-82FB-859C9999BCD8}" ShortID="831871064">
+															<Language>SFX</Language>
+															<AudioFile>braking_scrape-drag_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_scrape-drag_03" ID="{1933BF28-85BF-439A-82FB-859C9999BCD8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="braking_scrape-drag_06" ID="{B074F3FE-9EA7-4A45-AA5F-40E065C135BF}" ShortID="777436312">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_scrape-drag_06" ID="{E768FC77-8782-4D11-9199-F5F44268081A}" ShortID="497097696">
+															<Language>SFX</Language>
+															<AudioFile>braking_scrape-drag_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_scrape-drag_06" ID="{E768FC77-8782-4D11-9199-F5F44268081A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Scrape-peel" ID="{2A4B66A9-5CE7-4936-8D3B-A5BE988075EB}" ShortID="1044898475">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.067</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{93F6576A-B12D-4C7A-9C54-70EBCD893943}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E612CF12-D8FD-471A-B997-402D00198181}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="braking_scrape-peel_01" ID="{2A8FFCC5-BDD7-4572-B5CB-8E1FF72DF24F}" ShortID="831434906">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_scrape-peel_01" ID="{62DB62B3-D042-4A36-A866-689EFB7B5F2A}" ShortID="924602077">
+															<Language>SFX</Language>
+															<AudioFile>braking_scrape-peel_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_scrape-peel_01" ID="{62DB62B3-D042-4A36-A866-689EFB7B5F2A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="braking_scrape-peel_02" ID="{D5487856-2B6E-41DF-8C38-B9C33A07ECFE}" ShortID="766446909">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_scrape-peel_02" ID="{68320D05-F655-48BD-9A67-49A0A7240D18}" ShortID="269171532">
+															<Language>SFX</Language>
+															<AudioFile>braking_scrape-peel_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_scrape-peel_02" ID="{68320D05-F655-48BD-9A67-49A0A7240D18}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="braking_scrape-peel_03" ID="{10894E59-F834-4314-B376-5C428EF55AB5}" ShortID="187014021">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="braking_scrape-peel_03" ID="{D2761EAF-9D67-4069-8F0D-FE94E6856504}" ShortID="921013607">
+															<Language>SFX</Language>
+															<AudioFile>braking_scrape-peel_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="braking_scrape-peel_03" ID="{D2761EAF-9D67-4069-8F0D-FE94E6856504}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="Actions" ID="{6BDBBE62-0799-41FD-83D3-A07255D8E31B}" ShortID="833696950">
@@ -1740,7 +2247,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="PuckPickup" ID="{1DC30E2B-288E-4867-84FE-6E4CFFDB7E39}" ShortID="828201372">
+								<RandomSequenceContainer Name="PuckGrab" ID="{1DC30E2B-288E-4867-84FE-6E4CFFDB7E39}" ShortID="828201372">
 									<PropertyList>
 										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
@@ -2099,6 +2606,355 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="pass-received_05" ID="{8F98554E-C737-492A-AF58-62D438B9B040}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="PassShot" ID="{2712E3E2-404D-4D14-91B2-56376AEC87A6}" ShortID="966368268">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{494ADC69-BA9D-49DE-A8D8-13CFCFF55394}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Spatialization" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E840D001-1192-471E-BC68-AF09C0CAA294}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="pass-shot_01" ID="{364E9DEB-0EBC-4B5C-AEAE-B36232463D92}" ShortID="410857768">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pass-shot_01" ID="{C9F147BB-DA8B-4A74-9620-C727A750B889}" ShortID="932006159">
+													<Language>SFX</Language>
+													<AudioFile>pass-shot_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pass-shot_01" ID="{C9F147BB-DA8B-4A74-9620-C727A750B889}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pass-shot_02" ID="{E3F7F456-50FC-4F24-BDE2-7EF5B0106A63}" ShortID="996635735">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pass-shot_02" ID="{7DC34B44-777D-43D3-BEB8-282A55847B43}" ShortID="744402037">
+													<Language>SFX</Language>
+													<AudioFile>pass-shot_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pass-shot_02" ID="{7DC34B44-777D-43D3-BEB8-282A55847B43}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pass-shot_03" ID="{9F0EA1DB-B5FF-499B-8E8F-9FF34A30D397}" ShortID="785433473">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pass-shot_03" ID="{CB33022F-8509-498A-BA0B-DF925C9AEA8B}" ShortID="1015508956">
+													<Language>SFX</Language>
+													<AudioFile>pass-shot_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pass-shot_03" ID="{CB33022F-8509-498A-BA0B-DF925C9AEA8B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pass-shot_04" ID="{CCB4796B-81FD-48F6-AF87-F43179E70B64}" ShortID="59431684">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pass-shot_04" ID="{29A50070-484E-4C6E-860B-746A70132D28}" ShortID="256480533">
+													<Language>SFX</Language>
+													<AudioFile>pass-shot_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pass-shot_04" ID="{29A50070-484E-4C6E-860B-746A70132D28}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="pass-shot_05" ID="{36B62D85-D790-4A68-B8CE-2362E51E7AA5}" ShortID="889612178">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="pass-shot_05" ID="{AD88F89A-9AE4-49AB-A08A-272FFD2854FB}" ShortID="791723441">
+													<Language>SFX</Language>
+													<AudioFile>pass-shot_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="pass-shot_05" ID="{AD88F89A-9AE4-49AB-A08A-272FFD2854FB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="WristShot" ID="{A94B3636-60B1-453E-8077-884484622A1A}" ShortID="757060093">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BDEC5D19-21E8-48DD-94BE-474C97283E26}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Spatialization" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3E20F9EB-976F-4C17-9408-2DC742DFAE55}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="wrist-shot_01" ID="{4E5BCDD6-2CF4-49DB-A13B-06D0435AC301}" ShortID="482339360">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_01" ID="{5EF63E18-AF7E-4309-89D6-6F086B2D6671}" ShortID="12855732">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_01" ID="{5EF63E18-AF7E-4309-89D6-6F086B2D6671}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_02" ID="{3B028CCE-5411-4742-B979-822E56252635}" ShortID="1016806916">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_02" ID="{B9E45EFE-03CE-4B79-8823-A32EC14C0E89}" ShortID="1019423150">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_02" ID="{B9E45EFE-03CE-4B79-8823-A32EC14C0E89}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_03" ID="{80AD261D-79C5-4ACF-A625-CA4F20742D76}" ShortID="884659947">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_03" ID="{571B3578-92D9-466D-9104-86C9A0C2459F}" ShortID="301662028">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_03" ID="{571B3578-92D9-466D-9104-86C9A0C2459F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_04" ID="{00CB5017-D83C-40FF-92CA-A8C8DA8B187B}" ShortID="181200915">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_04" ID="{045D68B7-60D6-4A4F-9CE1-0F84184D25D0}" ShortID="286673266">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_04" ID="{045D68B7-60D6-4A4F-9CE1-0F84184D25D0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_05" ID="{60375DFB-D1CC-4667-B0E2-8DF794051ECE}" ShortID="854825058">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_05" ID="{9844D71E-81DA-4157-97B3-8036286569CD}" ShortID="460481918">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_05" ID="{9844D71E-81DA-4157-97B3-8036286569CD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_06" ID="{1CBFF255-DBDE-404D-950B-9EF268D425D7}" ShortID="232473499">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_06" ID="{D7B2C4A4-E329-4E8F-9BCC-9E027753B385}" ShortID="176512165">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_06" ID="{D7B2C4A4-E329-4E8F-9BCC-9E027753B385}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wrist-shot_07" ID="{5728BB6A-0419-4C9C-8889-88082524ED49}" ShortID="1069524777">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="wrist-shot_07" ID="{CB533B42-8C92-46FD-9EA2-5E28CD43DB97}" ShortID="186926914">
+													<Language>SFX</Language>
+													<AudioFile>wrist-shot_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="wrist-shot_07" ID="{CB533B42-8C92-46FD-9EA2-5E28CD43DB97}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -2553,6 +3409,118 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Objects" ID="{F681F8E1-E67C-4616-AFB5-433719106021}" ShortID="743363558">
+					<ChildrenList>
+						<BlendContainer Name="Objects" ID="{B9261614-502B-421A-8A56-A14F4A8A36DF}" ShortID="618064101">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="ArenaReverb" ID="{23D3FFD8-2D3A-4275-95B3-DDEB2819C30D}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Goal" ID="{E1CCE189-6262-466C-8471-BBB54CBF2021}" ShortID="16627427">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="PuckOnGoalPost" ID="{1FEEAF0F-663B-4622-A58E-33F5C6BCA3A9}" ShortID="568851162">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C4D9F3B6-8025-42D0-ABCF-2A002A2C28F2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																	<Property Name="Min" Type="Real64" Value="-50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AB8A8B5F-9664-45AA-B227-4FA7C855E4FE}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="puck_goal-post_02" ID="{E7F22CA1-4344-48DD-BF38-B5D4112C9063}" ShortID="327334208">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="puck_goal-post_02" ID="{623266CB-C223-4B1A-A26A-1ED30C652428}" ShortID="26289970">
+															<Language>SFX</Language>
+															<AudioFile>puck_goal-post_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="puck_goal-post_02" ID="{623266CB-C223-4B1A-A26A-1ED30C652428}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="puck_goal-post_01" ID="{6FBBD68E-C39F-499A-964F-47F73B600C0A}" ShortID="706762813">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="ADPCM Auto Detect High" ID="{6D51666E-9C7A-40E4-831D-C445512EBABD}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7B26B82A-A2D3-41FE-9F6A-685F3C7C81E0}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="puck_goal-post_01" ID="{4CDE77F7-A420-4773-AA6F-8B4416979112}" ShortID="871996150">
+															<Language>SFX</Language>
+															<AudioFile>puck_goal-post_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="puck_goal-post_01" ID="{4CDE77F7-A420-4773-AA6F-8B4416979112}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
