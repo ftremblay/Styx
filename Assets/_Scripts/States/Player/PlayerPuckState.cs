@@ -9,11 +9,12 @@ namespace Assets._Scripts.States.Players
 {
     public class PlayerPuckState : PlayerSkatingState
     {
-        public GameObject PuckJointPlaceholder;
-        public Rigidbody PuckRigidbody;
-        public PuckShot PuckShot;
+        [SerializeField] private GameObject _puckJointAnchor;
+        [SerializeField] private Transform _opponentsGoal;
 
         private HingeJoint _puckJoint;
+
+        public Rigidbody PuckRigidbody { get; set; }
 
         public void Start()
         {
@@ -27,7 +28,7 @@ namespace Assets._Scripts.States.Players
         public override void Enter(PlayerView entity)
         {
             base.Enter(entity);
-            _puckJoint = PuckJointPlaceholder.AddComponent<HingeJoint>();
+            _puckJoint = _puckJointAnchor.AddComponent<HingeJoint>();
             PuckRigidbody.SetPosition(_puckJoint.transform.position);
             _puckJoint.connectedBody = PuckRigidbody;
         }
@@ -35,24 +36,7 @@ namespace Assets._Scripts.States.Players
         public override void Execute(PlayerView entity)
         {
             base.Execute(entity);
-            var shotX = CrossPlatformInputManager.GetAxis("ShotX");
-            var shotY = CrossPlatformInputManager.GetAxis("ShotY");
-            if (shotX != 0 && shotY != 0)
-            {
-                var shotAngle = Mathf.Abs((Mathf.Atan2(shotX, shotY) * Mathf.Rad2Deg) - 180);
-                var playerOrientation = transform.eulerAngles.y;
-                
-                if (IsOrientationTop(shotAngle) == IsOrientationTop(playerOrientation))
-                {
-                    Shoot();
-                    entity.StateMachine.ChangeState(entity.NormalState);
-                }
-            }
-        }
-
-        private bool IsOrientationTop(float angle)
-        {
-            return (angle >= 270f && angle <= 90f);
+            HandleWristShot(entity);
         }
 
         public override void Exit(PlayerView entity)
@@ -64,17 +48,17 @@ namespace Assets._Scripts.States.Players
         public override void FixedExecute(PlayerView entity)
         {
             base.FixedExecute(entity);
+
             if (_puckJoint == null)
                 entity.StateMachine.ChangeState(entity.NormalState);
         }
 
         private void Shoot()
         {
-            Debug.Log("Shoot");
-            transform.LookAt(transform.position + new Vector3(Input.GetAxis("ShotX"), 0, -Input.GetAxis("ShotY")));
+            var direction = (_opponentsGoal.position - transform.position).normalized;
+            LookAtWherePlayerShoot(_opponentsGoal.position);
             ReleasePuck();
-            PuckRigidbody.AddForce(transform.forward * 30  + new Vector3(0, 0.4f, 0) , ForceMode.Impulse);
-
+            PuckRigidbody.AddForce(direction * 30  + new Vector3(0, 0.4f, 0) , ForceMode.Impulse);
         }
 
         private void ReleasePuck()
@@ -82,5 +66,25 @@ namespace Assets._Scripts.States.Players
             if (_puckJoint != null)
                 Destroy(_puckJoint);
         }
+
+        private void LookAtWherePlayerShoot(Vector3 destination)
+        {
+            transform.LookAt(destination);
+        }
+        
+        private void HandleWristShot(PlayerView entity)
+        {
+            var shot = CrossPlatformInputManager.GetAxis("Shot");
+            if (IsWristShooting(shot))
+            {
+                Shoot();
+                entity.StateMachine.ChangeState(entity.NormalState);
+            }
+        }
+
+        private bool IsWristShooting(float shot)
+        {
+            return (_opponentsGoal.position.z > 0 && shot > 0.7f) || (_opponentsGoal.position.z < 0 && shot < -0.7f);
+        } 
     }
 }

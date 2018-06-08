@@ -29,7 +29,7 @@ namespace Assets._Scripts.States.Players
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
 
             var move = (vertical * Vector3.forward + horizontal * Vector3.right);
-            var movement = entity.PlayerModel.Movement;
+            var movement = entity.Model.Movement;
 
             if (move.magnitude > 1f)
                 move.Normalize();

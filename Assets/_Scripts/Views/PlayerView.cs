@@ -8,21 +8,27 @@ namespace Assets._Scripts.Views
 {
     public class PlayerView : MonoBehaviour
     {
-        public StateMachine<PlayerView> StateMachine;
+        public StateMachine<PlayerView> StateMachine { get; set; }
 
-        public PlayerNormalState NormalState;
-        public PlayerPuckState PuckState;
-        
-        public PlayerModel PlayerModel;
+        [SerializeField] private PlayerNormalState _normalState;
+        [SerializeField] private PlayerPuckState _puckState;
+        [SerializeField] private PlayerModel _playerModel;
+
+        public PlayerNormalState NormalState { get { return _normalState; } }
+        public PlayerPuckState PuckState { get { return _puckState; } }
+        public PlayerModel Model { get { return _playerModel; } }
 
         public void Start()
         {
-            PlayerModel = ScriptableObject.CreateInstance<PlayerModel>();
+            _playerModel = ScriptableObject.CreateInstance<PlayerModel>();
 
-            StateMachine = new StateMachine<PlayerView>(this, NormalState);
+            StateMachine = new StateMachine<PlayerView>(this, _normalState);
 
-            if (NormalState == null)
-                NormalState = GetComponent<PlayerNormalState>();
+            if (_normalState == null)
+                _normalState = GetComponent<PlayerNormalState>();
+
+            if (_puckState == null)
+                _puckState = GetComponent<PlayerPuckState>();
         }
 
         public void Update()
@@ -35,9 +41,10 @@ namespace Assets._Scripts.Views
             StateMachine.FixedUpdate();
         }
 
-        public void PickPuck()
+        public void PickPuck(Rigidbody puckRigidbody)
         {
-            StateMachine.ChangeState(PuckState);
+            _puckState.PuckRigidbody = puckRigidbody;
+            StateMachine.ChangeState(_puckState);
         }
     }
 }
