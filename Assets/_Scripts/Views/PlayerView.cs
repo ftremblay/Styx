@@ -1,50 +1,50 @@
-﻿using Assets._Scripts.Players.States;
-using UnityEngine;
+﻿using UnityEngine;
+using RageCure.StateUtils;
+
+using Assets._Scripts.Models;
+using Assets._Scripts.States.Players;
 
 namespace Assets._Scripts.Views
 {
     public class PlayerView : MonoBehaviour
     {
-        public PlayerMovementState MovementState;
-        public Rigidbody Rigidbody;
-        public Animator Animator;
+        public StateMachine<PlayerView> StateMachine { get; set; }
+
+        [SerializeField] private PlayerNormalState _normalState;
+        [SerializeField] private PlayerPuckState _puckState;
+        [SerializeField] private PlayerModel _playerModel;
+
+        public PlayerNormalState NormalState { get { return _normalState; } }
+        public PlayerPuckState PuckState { get { return _puckState; } }
+        public PlayerModel Model { get { return _playerModel; } }
 
         public void Start()
         {
-            if (Rigidbody == null)
-                Rigidbody = GetComponent<Rigidbody>();
+            _playerModel = ScriptableObject.CreateInstance<PlayerModel>();
 
-            if (Animator == null)
-                Animator = GetComponent<Animator>();
+            StateMachine = new StateMachine<PlayerView>(this, _normalState);
+
+            if (_normalState == null)
+                _normalState = GetComponent<PlayerNormalState>();
+
+            if (_puckState == null)
+                _puckState = GetComponent<PlayerPuckState>();
         }
 
         public void Update()
         {
-            UpdateMovement(MovementState);
+            StateMachine.Update();
         }
 
-        private void UpdateMovement(PlayerMovementState state)
+        public void FixedUpdate()
         {
-            var move = state.MovementDirection;
-            if (move.magnitude > 1f)
-                move.Normalize();
-            move = transform.InverseTransformDirection(move);
-            move = Vector3.ProjectOnPlane(move, Vector3.up);
-            var forwardAmount = move.z;
-            var turnAmount = Mathf.Atan2(move.x, move.z);
-
-            transform.Rotate(0, turnAmount * state.TurnSpeed * Time.deltaTime, 0);
-            Rigidbody.velocity += (transform.forward * state.MovementSpeed * Time.deltaTime) * forwardAmount;
-
-            Rigidbody.drag = state.Drag;
-            Rigidbody.angularDrag = state.AngularDrag;
-
-            Animator.SetFloat("Forward Amount", forwardAmount);
+            StateMachine.FixedUpdate();
         }
 
-        public void OnTriggerEnter(Collider other)
+        public void PickPuck(Rigidbody puckRigidbody)
         {
-            
+            _puckState.PuckRigidbody = puckRigidbody;
+            StateMachine.ChangeState(_puckState);
         }
     }
 }

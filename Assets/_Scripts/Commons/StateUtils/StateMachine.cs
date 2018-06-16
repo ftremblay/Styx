@@ -6,9 +6,10 @@
         public State<T> CurrentState { get; set; }
         public State<T> PreviousState { get; set; }
         public State<T> GlobalState { get; set; }
-        public StateMachine(T entity)
+        public StateMachine(T entity, State<T> initState)
         {
             _entity = entity;
+            CurrentState = initState;
         }
 
         public void Update()
