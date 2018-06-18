@@ -1,30 +1,43 @@
-﻿using Assets._Scripts.States;
-using Assets._Scripts.Utils.Pooler;
+﻿using Assets._Scripts.Models;
 using UnityEngine;
+using RageCure.StateUtils;
+
+using Assets._Scripts.States.Puck;
+using System;
 
 namespace Assets._Scripts.Views
 {
-    public class PuckView : MonoBehaviour, IPooledObject
+    public class PuckView : MonoBehaviour
     {
-        public PuckThrow Throw;
-        public Rigidbody Rigidbody;
+        public PuckModel PuckModel;
+
+        public StateMachine<PuckView> StateMachine;
+
+        public PuckLooseState LooseState;
+        public PuckCarriedState CarriedState;
 
         public void Start()
         {
-            if (Rigidbody == null)
-                Rigidbody = GetComponent<Rigidbody>();
+            PuckModel = ScriptableObject.CreateInstance<PuckModel>();
+
+            StateMachine = new StateMachine<PuckView>(this, LooseState);
+
+            LooseState.PuckPicked += PuckPicked;
         }
 
-        public void OnSpawn()
+        public void Update()
         {
-            Rigidbody.AddForce(transform.forward * Throw.Speed, ForceMode.Impulse);
+            StateMachine.Update();
         }
 
         public void FixedUpdate()
         {
-            Rigidbody.mass = Throw.Mass;
-            Rigidbody.angularDrag = Throw.AngularDrag;
-            Rigidbody.drag = Throw.Drag;
+            StateMachine.FixedUpdate();
+        }
+
+        public void PuckPicked(object sender, EventArgs e)
+        {
+            StateMachine.ChangeState(CarriedState);
         }
     }
 }

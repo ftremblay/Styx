@@ -1,6 +1,8 @@
-﻿namespace RageCure.StateUtils
+﻿using UnityEngine;
+
+namespace RageCure.StateUtils
 {
-    public abstract class State<T>
+    public abstract class State<T> : MonoBehaviour
     {
         public abstract void Enter(T entity);
         public abstract void Execute(T entity);
