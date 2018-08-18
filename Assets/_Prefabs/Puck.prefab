@@ -20,12 +20,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4153368464993826}
   - component: {fileID: 95708857443306706}
-  - component: {fileID: 114100590178219354}
   - component: {fileID: 65868560838278348}
   - component: {fileID: 54831780165412652}
   - component: {fileID: 135268863374172176}
-  - component: {fileID: 114815849347045660}
-  - component: {fileID: 114969500896746632}
+  - component: {fileID: 114135683693504418}
+  - component: {fileID: 114216857309964236}
+  - component: {fileID: 114804251393372140}
   m_Layer: 9
   m_Name: Puck
   m_TagString: Untagged
@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1096119287754072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.795879, y: 0, z: -8.16872}
+  m_LocalPosition: {x: -8.795879, y: 1.44, z: -8.16872}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children:
   - {fileID: 4151557194553006}
@@ -164,7 +164,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114100590178219354
+--- !u!114 &114135683693504418
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -172,13 +172,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1096119287754072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0272e900eb0b7d54f8fedaa5101b9fb8, type: 3}
+  m_Script: {fileID: -1493875918, guid: 5e4a96b3c6ef58f419cd9824925eb585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PuckModel: {fileID: 0}
-  LooseState: {fileID: 114815849347045660}
-  CarriedState: {fileID: 114969500896746632}
---- !u!114 &114815849347045660
+  movementModel: {fileID: 11400000, guid: 8243e31e797d29d48b717f47315ee83c, type: 2}
+  rigidbodyModel: {fileID: 11400000, guid: 1b840e1230c14c649b9e1f058a8f079b, type: 2}
+  transformModel: {fileID: 11400000, guid: 27c1d0af280c73147a509e2402b9b71b, type: 2}
+  puckLooseState: {fileID: 114216857309964236}
+  puckCarriedState: {fileID: 114804251393372140}
+--- !u!114 &114216857309964236
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -186,10 +188,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1096119287754072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d4a37cfcc6b00f4d9f3fe958dd6f043, type: 3}
+  m_Script: {fileID: 1423177216, guid: 5e4a96b3c6ef58f419cd9824925eb585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114969500896746632
+--- !u!114 &114804251393372140
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -197,7 +199,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1096119287754072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44ad725c62641c6449cc5bc57e87669c, type: 3}
+  m_Script: {fileID: -156813061, guid: 5e4a96b3c6ef58f419cd9824925eb585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &135268863374172176

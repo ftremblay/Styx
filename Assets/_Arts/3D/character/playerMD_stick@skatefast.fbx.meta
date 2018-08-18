@@ -234,7 +234,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -248,7 +248,7 @@ ModelImporter:
       curves: []
       events:
       - time: 0.09130435
-        functionName: Post
+        functionName: PostEvent
         data: Skate
         objectReferenceParameter: {fileID: 100114, guid: f7966d30a09e6474781dabccb231f01b,
           type: 3}
@@ -256,7 +256,7 @@ ModelImporter:
         intParameter: 0
         messageOptions: 0
       - time: 0.5976284
-        functionName: Post
+        functionName: PostEvent
         data: Skate
         objectReferenceParameter: {fileID: 100114, guid: f7966d30a09e6474781dabccb231f01b,
           type: 3}
