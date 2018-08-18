@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Movement Model
   m_EditorClassIdentifier: 
   linearSpeed: 20
-  rotationSpeed: 500
+  rotationSpeed: 200

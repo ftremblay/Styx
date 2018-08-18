@@ -51,6 +51,8 @@ type PlayerView () =
     let mutable opponentsGoal: Transform = null
 
     let mutable playerState: PlayerState = Unchecked.defaultof<PlayerState>
+    member this.PlayerState 
+        with get() = playerState
 
     member this.Start () =
         rigidbodyModel.Rigidbody <- this.GetComponent<Rigidbody>()

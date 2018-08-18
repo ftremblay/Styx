@@ -1,7 +1,9 @@
 ﻿namespace Styx.Commons.Casters
 
-open System.Runtime.InteropServices
 open UnityEngine
+open Styx.Entities
+open Styx.Entities.PlayerModule
+open Styx.Managers
 
 type SphereCaster () =
     inherit MonoBehaviour ()
@@ -13,31 +15,25 @@ type SphereCaster () =
     [<SerializeField>]
     let mutable sphereCast: SphereCast = Unchecked.defaultof<SphereCast>
 
-    let mutable origin: Vector3     = Vector3.zero
-    let mutable direction: Vector3  = Vector3.zero
-
-    let mutable currentHitDistance: float32 = 0.f
+    let mutable origin       : Vector3  = Vector3.zero
+    let mutable direction    : Vector3  = Vector3.zero
+    let mutable timestamp    : float32  = 0.f
+    
+    let mutable currentHitDistance  : float32   = 0.f
 
     member this.CurrentHitObject 
         with get() = currentHitObject
 
-
-    member this.Cast () =
+    member this.Cast (player: Player) =
         origin      <- this.transform.position + sphereCast.OriginOffset
-        direction   <- this.transform.forward
+        direction   <- (player.inputs.verticalAxis.Value * Vector3.forward + player.inputs.horizontalAxis.Value * Vector3.right)
         let mutable hit: RaycastHit = RaycastHit()
         if Physics.SphereCast (origin, sphereCast.Radius, direction, &hit, sphereCast.MaxDistance, (int) sphereCast.Mask, QueryTriggerInteraction.UseGlobal) then
             currentHitObject <- hit.transform.gameObject
             currentHitDistance <- hit.distance
-        else
-            currentHitDistance <- sphereCast.MaxDistance
-            currentHitObject <- null
+            timestamp <- Time.time + 1.f
         currentHitObject
 
-    member this.FixedUpdate() =
-        if castEveryFrame then
-            this.Cast()
-            |> ignore
 
     member this.OnDrawGizmosSelected() =
         Gizmos.color <- Color.red

@@ -59,8 +59,6 @@
     <Compile Include="Commons\StateMachine.fs" />
     <Compile Include="Commons\Utils\Vector3Utils.fs" />
     <Compile Include="Commons\Utils\LayersUtils.fs" />
-    <Compile Include="Commons\Casters\SphereCast.fs" />
-    <Compile Include="Commons\Casters\SphereCaster.fs" />
     <Compile Include="Commons\Wwise\WwiseSoundEvent.fs" />
     <Compile Include="Commons\Wwise\AkSoundEngine.fs" />
     <Compile Include="Commands\Command.fs" />
@@ -78,6 +76,8 @@
     <Compile Include="Managers\PlayerManager.fs" />
     <Compile Include="Managers\GameManager.fs" />
     <Compile Include="Managers\PlayerAIManager.fs" />
+    <Compile Include="Casters\SphereCast.fs" />
+    <Compile Include="Casters\SphereCaster.fs" />
     <Compile Include="States\Puck\PuckLooseState.fs" />
     <Compile Include="States\Puck\PuckCarriedState.fs" />
     <Compile Include="States\Player\PlayerSkatingState.fs" />

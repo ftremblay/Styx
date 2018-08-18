@@ -16,7 +16,7 @@ type PlayerPassState () =
     let mutable sphereCaster: SphereCaster = Unchecked.defaultof<SphereCaster>
 
     let calculateVelocity player (movementModel: MovementModel) (transformModel: TransformModel) (rigidbodyModel: RigidbodyModel) =
-        let Sc = 0.f
+        let Sc = 60.f
         let Sr = movementModel.LinearSpeed
         let Pc = player.transformModel.Transform.position
         let Pr = transformModel.Transform.position
@@ -28,7 +28,7 @@ type PlayerPassState () =
         let b = 2.f * Vector3.Dot(D, Vr)
         let c = -(d * d)
 
-        let t = (-b - Mathf.Sqrt(Mathf.Abs((b*b) - (4.f * a * c)))) / (2.f * a)
+        let t = (-b + Mathf.Sqrt(Mathf.Abs((b*b) - (4.f * a * c)))) / (2.f * a)
 
         let Pi = Pr + (Vr * t)
         let vc = ((Pi - Pc) / t)
@@ -37,11 +37,12 @@ type PlayerPassState () =
     
 
     let handlePass (player: Player) =
-        if sphereCaster.CurrentHitObject <> null then
-            let index = sphereCaster.CurrentHitObject.GetComponent<PlayerId>().Value
+        let currentHitObject = sphereCaster.Cast(player)
+        if currentHitObject <> null then
+            let index = currentHitObject.GetComponent<PlayerId>().Value
             let otherPlayer = PlayerManager.Instance.GetPlayer index
             let aiPlayer = PlayerAIManager.Instance.GetPlayerAI index
-                
+             
             match otherPlayer, aiPlayer  with
             | Some otherPlayer, None -> 
                 calculateVelocity player otherPlayer.movementModel otherPlayer.transformModel otherPlayer.rigidbodyModel
@@ -50,12 +51,11 @@ type PlayerPassState () =
             | Some otherPlayer, _ ->
                 calculateVelocity player otherPlayer.movementModel otherPlayer.transformModel otherPlayer.rigidbodyModel
             | None, None ->
-                player.transformModel.Transform.forward * 10.f
-            |> (*) 1.2f
+                player.transformModel.Transform.forward * 30.f
             |> PuckManager.Instance.SetVelocity 
             |> ignore
         else
-            player.transformModel.Transform.forward * 10.f
+            player.transformModel.Transform.forward * 30.f
             |> PuckManager.Instance.SetVelocity 
             |> ignore
         player
