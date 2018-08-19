@@ -4,6 +4,7 @@ open UnityEngine
 open Styx.Entities.PlayerModule
 open Styx.Managers
 open RageCure.StateUtils
+open System
 
 type PlayerCarryPuckState () =
     inherit PlayerSkatingState ()
@@ -11,6 +12,7 @@ type PlayerCarryPuckState () =
     [<SerializeField>]
     let mutable puckJointAnchor: GameObject = null
     let mutable joint: HingeJoint = null
+    let mutable playerId: Guid = Unchecked.defaultof<Guid>
 
     // ****************************************** WRIST SHOT ********************************************
     let isWristShooting (shot: float32) (player: Player) =
@@ -30,10 +32,8 @@ type PlayerCarryPuckState () =
     // ****************************************** PASS **************************************************
     let handlePass (player: Player) =
         if player.inputs.passKeyDown.IsPressed then
-            PlayerManager.Instance.GetPlayerState(player.id.Value)
-            |> reduce Message.UpdateToPass
-            |> focusPlayer
-            |> PlayerManager.Instance.UpdatePlayer
+            player.animatorModel.SetTrigger("Front pass")
+            player
         else
             player
     // **************************************************************************************************
@@ -42,10 +42,17 @@ type PlayerCarryPuckState () =
         if joint <> null then
             Object.Destroy joint
 
+    member this.Pass () =
+        PlayerManager.Instance.GetPlayerState(playerId)
+            |> reduce Message.UpdateToPass
+            |> focusPlayer
+            |> PlayerManager.Instance.UpdatePlayer
+
     interface IState<Player> with
 
         member this.Enter (player: Player) =
             base.Enter(player)
+            playerId <- player.id.Value
             let puckState = PuckManager.Instance.GetPuck()
             joint                                               <- puckJointAnchor.AddComponent<HingeJoint>()
             puckState.puck.transformModel.Transform.position    <- puckJointAnchor.transform.position

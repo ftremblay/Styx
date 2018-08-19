@@ -61,6 +61,7 @@
     <Compile Include="Commons\Utils\LayersUtils.fs" />
     <Compile Include="Commons\Wwise\WwiseSoundEvent.fs" />
     <Compile Include="Commons\Wwise\AkSoundEngine.fs" />
+    <Compile Include="Commons\IgnoreCollisionWithPlayers.fs" />
     <Compile Include="Commands\Command.fs" />
     <Compile Include="Commands\InputAxisCommand.fs" />
     <Compile Include="Commands\InputKeyDownCommand.fs" />
@@ -76,6 +77,7 @@
     <Compile Include="Managers\PlayerManager.fs" />
     <Compile Include="Managers\GameManager.fs" />
     <Compile Include="Managers\PlayerAIManager.fs" />
+    <Compile Include="Managers\RagdollManager.fs" />
     <Compile Include="Casters\SphereCast.fs" />
     <Compile Include="Casters\SphereCaster.fs" />
     <Compile Include="States\Puck\PuckLooseState.fs" />

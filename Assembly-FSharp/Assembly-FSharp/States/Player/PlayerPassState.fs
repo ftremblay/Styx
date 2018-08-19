@@ -12,6 +12,7 @@ open Styx.Models
 type PlayerPassState () =
     inherit PlayerSkatingState ()
 
+    let mutable passingPlayer: Player = Unchecked.defaultof<Player>
     [<SerializeField>]
     let mutable sphereCaster: SphereCaster = Unchecked.defaultof<SphereCaster>
 
@@ -59,6 +60,13 @@ type PlayerPassState () =
             |> PuckManager.Instance.SetVelocity 
             |> ignore
         player
+        |> PlayerManager.Instance.UpdatePlayer
+        |> ignore
+
+    member this.Pass() =
+        PlayerManager.Instance.GetPlayerState(passingPlayer.id.Value)
+        |> reduce Message.UpdateToNormal
+        |> ignore
 
     interface IState<Player> with
         member this.Execute(player: Player): unit = 
@@ -66,18 +74,15 @@ type PlayerPassState () =
 
         member this.Exit(player: Player): unit = 
             base.Exit(player)
+            handlePass(player)
 
         member this.FixedExecute(player: Player): unit = 
             base.FixedExecute(player)
 
         member this.Enter (player: Player) =
             base.Enter(player)
-            player.animatorModel.SetTrigger("Pass")
-            PlayerManager.Instance.GetPlayerState(player.id.Value)
-            |> reduce Message.UpdateToNormal
-            |> ignore
+            passingPlayer <- player
+            
+            
 
-            handlePass player
-            |> PlayerManager.Instance.UpdatePlayer
-            |> ignore
 
