@@ -246,7 +246,23 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.097109824
+        functionName: PostEvent
+        data: Skate
+        objectReferenceParameter: {fileID: 100114, guid: f7966d30a09e6474781dabccb231f01b,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5947977
+        functionName: PostEvent
+        data: Skate
+        objectReferenceParameter: {fileID: 100114, guid: f7966d30a09e6474781dabccb231f01b,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
