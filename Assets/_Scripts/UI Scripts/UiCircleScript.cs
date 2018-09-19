@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UiCircleScript : MonoBehaviour {
 
-    Image circleUi;
+    //Image circleUi;
 
     public float rotationSpeed = 35f;
 
@@ -21,12 +21,12 @@ public class UiCircleScript : MonoBehaviour {
         transform.Rotate(0, 0, Time.deltaTime * rotationSpeed);
     }
 
-    void Start() {
-        circleUi = GetComponent<Image>();
-        var tempColor = circleUi.color;
-        tempColor.a = 0.65f;
-        circleUi.color = tempColor;
-    }
+    //void Start() {
+    //    circleUi = GetComponent<Image>();
+    //    var tempColor = circleUi.color;
+    //    tempColor.a = 0.65f;
+    //    circleUi.color = tempColor;
+    //}
 
 } //class
 
