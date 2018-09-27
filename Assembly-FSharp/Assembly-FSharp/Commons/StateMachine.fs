@@ -1,10 +1,15 @@
 ﻿namespace RageCure.StateUtils
 
+open System.Collections.Concurrent
+
 type StateMachine<'a> (currentState: IState<'a>) =
 
     let mutable currentState: IState<'a> = currentState
     let mutable previousState: IState<'a> option = None
     let mutable globalState: IState<'a> option = None
+
+    member this.CurrentState
+        with get() = currentState
 
     member this.Update(entity: 'a) =
         match globalState with

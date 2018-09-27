@@ -1,9 +1,7 @@
 ﻿namespace Styx.Commons.Casters
 
 open UnityEngine
-open Styx.Entities
 open Styx.Entities.PlayerModule
-open Styx.Managers
 
 type SphereCaster () =
     inherit MonoBehaviour ()
@@ -19,7 +17,7 @@ type SphereCaster () =
     let mutable direction    : Vector3  = Vector3.zero
     let mutable timestamp    : float32  = 0.f
     
-    let mutable currentHitDistance  : float32   = 0.f
+    let mutable currentHitDistance : float32   = 0.f
 
     member this.CurrentHitObject 
         with get() = currentHitObject
@@ -32,6 +30,8 @@ type SphereCaster () =
             currentHitObject <- hit.transform.gameObject
             currentHitDistance <- hit.distance
             timestamp <- Time.time + 1.f
+        else
+            currentHitObject <- null
         currentHitObject
 
 
