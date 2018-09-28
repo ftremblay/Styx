@@ -85,6 +85,7 @@ type PlayerView () =
 
     member this.Update () =
         playerState.stateMachine.Update(playerState.player)
+        Debug.Log playerState.stateMachine.CurrentState
 
     member this.FixedUpdate() =
         rigidbodyModel.Update()

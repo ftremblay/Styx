@@ -46,6 +46,7 @@ type PuckView () =
 
     member this.Update() =
         puckState.stateMachine.Update(puckState.puck)
+        Debug.Log puckState.stateMachine.CurrentState
 
     member this.FixedUpdate() =
         rigidbodyModel.Update()
