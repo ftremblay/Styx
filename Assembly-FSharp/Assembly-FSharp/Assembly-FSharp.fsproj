@@ -59,9 +59,11 @@
     <Compile Include="Commons\StateMachine.fs" />
     <Compile Include="Commons\Utils\Vector3Utils.fs" />
     <Compile Include="Commons\Utils\LayersUtils.fs" />
+    <Compile Include="Commons\Utils\QuickSort.fs" />
     <Compile Include="Commons\Wwise\WwiseSoundEvent.fs" />
     <Compile Include="Commons\Wwise\AkSoundEngine.fs" />
     <Compile Include="Commons\IgnoreCollisionWithPlayers.fs" />
+    <Compile Include="Types.fs" />
     <Compile Include="Commands\Command.fs" />
     <Compile Include="Commands\InputAxisCommand.fs" />
     <Compile Include="Commands\InputKeyDownCommand.fs" />

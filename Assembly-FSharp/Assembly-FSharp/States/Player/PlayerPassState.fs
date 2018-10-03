@@ -8,6 +8,7 @@ open Styx.Managers
 open Styx.Entities
 open RageCure.StateUtils
 open Styx.Models
+open RageCure.Utils
 
 type PlayerPassState () =
     inherit PlayerSkatingState ()
@@ -32,9 +33,23 @@ type PlayerPassState () =
 
         let Pi = Pr + (Vr * t)
         let vc = ((Pi - Pc) / t)
-        Debug.Log(vc)
         vc
     
+    let passSpeed = 30.f
+
+    let getVelocityWhenTheresNoTargetPlayer (player: Player) =
+        let forward = player.transformModel.Transform.forward
+        if forward.magnitude = 0.f then
+            //get all allies players
+            let allies = PlayerManager.Instance.GetPlayersFromTeam player.team
+            //Calculate distance between players and current passing player
+            let playersDistance =
+                List.map (fun p -> (p, (p.transformModel.Transform.position - player.transformModel.Transform.position).magnitude)) allies
+            //take the smallest distance, if it is less or equal to a certain distance, pass to that player using the calculateVelocity
+            
+            forward
+        else
+            forward * passSpeed
 
     let handlePass (player: Player) =
         let currentHitObject = sphereCaster.Cast(player)
@@ -51,18 +66,18 @@ type PlayerPassState () =
             | Some otherPlayer, _ ->
                 calculateVelocity player otherPlayer.movementModel otherPlayer.transformModel otherPlayer.rigidbodyModel
             | None, None ->
-                player.transformModel.Transform.forward * 30.f
+                player.transformModel.Transform.forward * passSpeed
             |> PuckManager.Instance.SetVelocity 
             |> ignore
         else
-            player.transformModel.Transform.forward * 30.f
+            player.transformModel.Transform.forward * passSpeed
             |> PuckManager.Instance.SetVelocity 
             |> ignore
         player
         |> PlayerManager.Instance.UpdatePlayer
         |> ignore
 
-    member this.Pass(player:Player) =
+    member this.ChangePlayerStateToNormal(player:Player) =
         PlayerManager.Instance.GetPlayerState(player.id.Value)
         |> (reduce Message.UpdateToNormal)
         |> ignore
@@ -80,7 +95,7 @@ type PlayerPassState () =
 
         member this.Enter (player: Player) =
             base.Enter(player)
-            this.Pass(player)
+            this.ChangePlayerStateToNormal(player)
             
             
 

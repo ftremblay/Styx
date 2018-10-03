@@ -24,6 +24,7 @@ type PlayerSkatingState () =
             |> Vector3Utils.projectOnPlane Vector3.up
         let forwardAmount =
             move.z
+        Debug.Log forwardAmount
         let turnAmount =
             Mathf.Atan2 (move.x, move.z)
         this.transform.Rotate(0.f, turnAmount * player.movementModel.RotationSpeed * Time.deltaTime, 0.f)

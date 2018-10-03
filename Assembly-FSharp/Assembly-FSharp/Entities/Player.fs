@@ -6,6 +6,7 @@ module PlayerModule =
     open Styx.Commands
     open UnityEngine
     open RageCure.StateUtils
+    open Styx.Types
 
     type Message =
     | UpdateToNormal
@@ -27,7 +28,8 @@ module PlayerModule =
         ; animatorModel     : AnimatorModel      
         ; transformModel    : TransformModel     
         ; inputs            : Inputs             
-        ; opponentsGoal     : Transform   
+        ; opponentsGoal     : Transform
+        ; team              : Team
         }
 
     type States =

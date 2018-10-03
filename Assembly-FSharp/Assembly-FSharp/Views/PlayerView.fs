@@ -9,6 +9,7 @@ open Styx.Commands
 open RageCure.StateUtils
 open Styx.States.Player
 open Styx.Entities
+open Styx.Types
 
 type PlayerView () =
     inherit MonoBehaviour ()
@@ -72,6 +73,7 @@ type PlayerView () =
                     ; passKeyDown = passKeyDown
                     }
                 ; opponentsGoal = opponentsGoal
+                ; team = Team.TeamBlue
                 }
             ; states = 
                 { playerCarryPuck   = playerCarryPuckState
@@ -85,7 +87,6 @@ type PlayerView () =
 
     member this.Update () =
         playerState.stateMachine.Update(playerState.player)
-        Debug.Log playerState.stateMachine.CurrentState
 
     member this.FixedUpdate() =
         rigidbodyModel.Update()
