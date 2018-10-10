@@ -9,12 +9,15 @@ open RageCure.Commons.Utils
 type PlayerSkatingState () =
     inherit State<Player> ()
 
+
+
     member this.Enter (player: Player) =
         ()
 
     member this.Execute (player: Player) =
         player.inputs.horizontalAxis.Execute()
         player.inputs.verticalAxis.Execute()
+        //handle collision with other players
 
     member this.FixedExecute (player: Player) =
         let move =
@@ -24,7 +27,6 @@ type PlayerSkatingState () =
             |> Vector3Utils.projectOnPlane Vector3.up
         let forwardAmount =
             move.z
-        Debug.Log forwardAmount
         let turnAmount =
             Mathf.Atan2 (move.x, move.z)
         this.transform.Rotate(0.f, turnAmount * player.movementModel.RotationSpeed * Time.deltaTime, 0.f)
@@ -34,3 +36,6 @@ type PlayerSkatingState () =
     member this.Exit (player: Player) =
         ()
 
+    member this.OnCollisionEnter (coll: Collision) =
+        sprintf "Collision: %f" coll.relativeVelocity.magnitude
+        |> Debug.Log

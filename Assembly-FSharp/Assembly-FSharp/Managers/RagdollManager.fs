@@ -23,6 +23,7 @@ type RagdollManager () =
     let setKinematic (value:bool) (rigidbody: Rigidbody) =
         rigidbody.isKinematic <- value
 
+
     [<SerializeField>]
     member this.Ragdolled
         with get() = (state = Ragdolled)
@@ -45,3 +46,7 @@ type RagdollManager () =
     member this.Start() =
         rigidbodies <- this.GetComponentsInChildren<Rigidbody>()
         this.Ragdolled <- false
+
+
+    member this.FixedUpdate() =
+        this.Ragdolled <- not animator.isActiveAndEnabled
