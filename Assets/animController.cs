@@ -15,7 +15,7 @@ public class animController : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown("0")) 
 		{
-			anim.Play ("deke");
+			anim.Play ("skatefast");
 		}
 	}
 }
