@@ -61,7 +61,6 @@ namespace Styx.Views
         {
             _rigidbodyModel.Update();
             PuckState.StateMachine.FixedUpdate(PuckState);
-            Debug.Log("Puck state: " + PuckState.StateMachine.CurrentState);
         }
     }
 }

@@ -9,11 +9,6 @@ using UnityEngine;
 
 namespace Styx.Views
 {
-    public class P
-    {
-        public float Boom { get; set; }
-    }
-
     public class PlayerView : MonoBehaviour
     {
         [SerializeField]
@@ -37,6 +32,8 @@ namespace Styx.Views
         private InputAxisCommand _shootAxis;
         [SerializeField]
         private InputKeyDownCommand _passKeyDown;
+        [SerializeField]
+        private InputKeyDownCommand _dashKeyDown;
         // *******************************************************************
 
         // *************************** STATES ******************************************
@@ -46,6 +43,8 @@ namespace Styx.Views
         private PlayerNormalState _playerNormalState;
         [SerializeField]
         private PlayerPassState _playerPassState;
+        [SerializeField]
+        private PlayerDashState _playerDashState;
 
         public PlayerState PlayerState { get; private set; }
 
@@ -56,6 +55,7 @@ namespace Styx.Views
             _playerCarryPuckState = (_playerCarryPuckState ?? GetComponent<PlayerCarryPuckState>());
             _playerNormalState = (_playerNormalState ?? GetComponent<PlayerNormalState>());
             _playerPassState = (_playerPassState ?? GetComponent<PlayerPassState>());
+            _playerDashState = (_playerDashState ?? GetComponent<PlayerDashState>());
 
             _rigidbodyModel = (_rigidbodyModel ?? GetComponent<RigidbodyModel>());
             _transformModel = (_transformModel ?? GetComponent<TransformModel>());
@@ -70,6 +70,7 @@ namespace Styx.Views
             _animatorModel.Animator = GetComponent<Animator>();
 
             //TODO: Will be moved when team management system and game loop system is implemented
+            //TODO: Use a builder pattern maybe??
             PlayerState = new PlayerState
             {
                 Player = new Player
@@ -84,14 +85,16 @@ namespace Styx.Views
                         HorizontalAxis = _horizontalAxis,
                         VerticalAxis = _verticalAxis,
                         ShootAxis = _shootAxis,
-                        PassKeyDown = _passKeyDown
+                        PassKeyDown = _passKeyDown,
+                        DashKeyDown = _dashKeyDown
                     }
                 },
                 States = new Entities.PlayerModule.States
                 {
                     PlayerCarryPuck = _playerCarryPuckState,
                     PlayerNormal = _playerNormalState,
-                    PlayerPass = _playerPassState
+                    PlayerPass = _playerPassState,
+                    PlayerDash = _playerDashState
                 },
                 StateMachine = new StateMachine<PlayerState>(_playerNormalState)
             };
@@ -107,7 +110,6 @@ namespace Styx.Views
         {
             _rigidbodyModel.Update();
             PlayerState.StateMachine.FixedUpdate(PlayerState);
-            Debug.Log("Player state: " + PlayerState.StateMachine.CurrentState);
         }
     }
 }

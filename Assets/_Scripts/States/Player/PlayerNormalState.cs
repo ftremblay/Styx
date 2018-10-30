@@ -12,6 +12,10 @@ namespace Styx.States
         public override void Execute(PlayerState playerState)
         {
             base.Execute(playerState);
+            playerState.Player.Inputs.DashKeyDown.Execute();
+
+            if (playerState.Player.Inputs.DashKeyDown.IsPressed)
+                playerState.Reduce(Message.UpdateToDash);
         }
 
         public override void FixedExecute(PlayerState playerState)

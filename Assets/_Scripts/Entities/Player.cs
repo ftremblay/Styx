@@ -9,7 +9,8 @@ namespace Styx.Entities.PlayerModule
     {
         UpdateToNormal,
         UpdateToCarryPuck,
-        UpdateToPass
+        UpdateToPass,
+        UpdateToDash
     }
 
     public class Inputs
@@ -18,6 +19,7 @@ namespace Styx.Entities.PlayerModule
         public InputAxisCommand VerticalAxis { get; set; }
         public InputAxisCommand ShootAxis { get; set; }
         public InputKeyDownCommand PassKeyDown { get; set; }
+        public InputKeyDownCommand DashKeyDown { get; set; }
     }
     
     public class Player
@@ -45,12 +47,13 @@ namespace Styx.Entities.PlayerModule
             get { return MovementModel.RotationSpeed; }
         }
     }
-
+     
     public class States
     {
         public State<PlayerState> PlayerCarryPuck { get; set; }
         public State<PlayerState> PlayerNormal { get; set; }
         public State<PlayerState> PlayerPass { get; set; }
+        public State<PlayerState> PlayerDash { get; set; }
     }
 
     public class PlayerState
@@ -71,6 +74,9 @@ namespace Styx.Entities.PlayerModule
                     break;
                 case Message.UpdateToPass:
                     StateMachine.ChangeState(this, States.PlayerPass);
+                    break;
+                case Message.UpdateToDash:
+                    StateMachine.ChangeState(this, States.PlayerDash);
                     break;
             }
         }

@@ -772,18 +772,20 @@ GameObject:
   - component: {fileID: 54743293335059276}
   - component: {fileID: 136545641753021926}
   - component: {fileID: 114425801661093272}
-  - component: {fileID: 114802756978007386}
   - component: {fileID: 114925604591885744}
   - component: {fileID: 114953238989112106}
   - component: {fileID: 114443230807205144}
+  - component: {fileID: 114412463329769060}
+  - component: {fileID: 114802756978007386}
   - component: {fileID: 114108470770290358}
   - component: {fileID: 114127624006971884}
-  - component: {fileID: 114689785317885490}
   - component: {fileID: 114806090138083048}
   - component: {fileID: 114800271861950420}
   - component: {fileID: 114249284941936504}
+  - component: {fileID: 114722747168266802}
   - component: {fileID: 114086604392601204}
   - component: {fileID: 114598059869206010}
+  - component: {fileID: 114689785317885490}
   - component: {fileID: 114698025500375750}
   m_Layer: 10
   m_Name: Player
@@ -2924,6 +2926,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02fbd6cde460ae4098b03eb31bb1123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114412463329769060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547438931888510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c3f474941c08c4c99c2679d95ae1fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputKey: Dash Player 1
+  _isPressed: 0
 --- !u!114 &114425801661093272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2944,9 +2959,11 @@ MonoBehaviour:
   _verticalAxis: {fileID: 114953238989112106}
   _shootAxis: {fileID: 114925604591885744}
   _passKeyDown: {fileID: 114802756978007386}
+  _dashKeyDown: {fileID: 114412463329769060}
   _playerCarryPuckState: {fileID: 114800271861950420}
   _playerNormalState: {fileID: 114249284941936504}
   _playerPassState: {fileID: 114806090138083048}
+  _playerDashState: {fileID: 114722747168266802}
 --- !u!114 &114443230807205144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3075,6 +3092,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6b9a40fba253c948aacffeef569fa7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114722747168266802
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547438931888510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313c4524606e7484aa6768449681d9dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114800271861950420
