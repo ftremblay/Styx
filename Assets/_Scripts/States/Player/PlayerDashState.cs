@@ -10,16 +10,16 @@ namespace Styx.States
     {
         [SerializeField]
         private DashModel _dashModel;
-        private float _cooldown;
+        private float _timestamp;
 
         public override void Enter(PlayerState playerState)
         {
-            _cooldown = Time.time + 0.1f;
+            _timestamp = Time.time + _dashModel.Cooldown;
         }
 
         public override void Execute(PlayerState playerState)
         {
-            if (_cooldown > Time.time)
+            if (_timestamp > Time.time)
                 playerState.Player.RigidbodyModel.Rigidbody.velocity = transform.forward * Time.deltaTime * _dashModel.Velocity;
             else
                 playerState.Reduce(Message.UpdateToNormal);
