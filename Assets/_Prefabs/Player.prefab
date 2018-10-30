@@ -787,6 +787,7 @@ GameObject:
   - component: {fileID: 114598059869206010}
   - component: {fileID: 114689785317885490}
   - component: {fileID: 114698025500375750}
+  - component: {fileID: 114929766696847892}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -1435,7 +1436,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1547438931888510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.5, y: 1.45, z: 68.26274}
+  m_LocalPosition: {x: 49.67, y: 1.398, z: 68.26274}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4939586354551292}
@@ -2187,7 +2188,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1245669997631234}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6054579, y: 0, z: 0.008291092}
+  m_LocalPosition: {x: -0.056, y: 0, z: 0.008291092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4939586354551292}
@@ -2623,7 +2624,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1112342902728772}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.877, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4433235871527420}
@@ -2926,6 +2927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02fbd6cde460ae4098b03eb31bb1123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerId: {fileID: 0}
 --- !u!114 &114412463329769060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2955,6 +2957,7 @@ MonoBehaviour:
   _movementModel: {fileID: 11400000, guid: 89512e447682bac42b49aa2c15a9d6ca, type: 2}
   _animatorModel: {fileID: 11400000, guid: fe7cd6392b00e1845a0f34a5e8f5566e, type: 2}
   _transformModel: {fileID: 11400000, guid: 4cf79a9ff99ea2e4b973a0bb936fe409, type: 2}
+  _dashModel: {fileID: 11400000, guid: ce6932fc50da39748ae4df21baf81233, type: 2}
   _horizontalAxis: {fileID: 114443230807205144}
   _verticalAxis: {fileID: 114953238989112106}
   _shootAxis: {fileID: 114925604591885744}
@@ -2964,6 +2967,7 @@ MonoBehaviour:
   _playerNormalState: {fileID: 114249284941936504}
   _playerPassState: {fileID: 114806090138083048}
   _playerDashState: {fileID: 114722747168266802}
+  _playerKnockedDownState: {fileID: 114929766696847892}
 --- !u!114 &114443230807205144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3105,6 +3109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313c4524606e7484aa6768449681d9dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerId: {fileID: 0}
+  _playerId: {fileID: 0}
 --- !u!114 &114800271861950420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3116,6 +3122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36761e85116abee4ba7e4ee2bf1fc1c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerId: {fileID: 0}
   _puckAnchor: {fileID: 1177305033958654}
 --- !u!114 &114802756978007386
 MonoBehaviour:
@@ -3141,6 +3148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2273d83cc9332d6479a5b24f15475ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerId: {fileID: 0}
   _sphereCaster: {fileID: 114689785317885490}
   _puckAnchor: {fileID: 1177305033958654}
   _aimIk: {fileID: 114598059869206010}
@@ -3157,6 +3165,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputAxis: Shot Player 1
   _value: 0
+--- !u!114 &114929766696847892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547438931888510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c25f70afda6c40a8b76a99861a946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerId: {fileID: 0}
+  _knockedDownModel: {fileID: 11400000, guid: ecb1fa60f360fd14285d5b17920f6bbc, type: 2}
+  _rootToSpawn: {fileID: 4135619054304252}
 --- !u!114 &114953238989112106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3180,7 +3202,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.17329788
+  m_Radius: 0.4
   m_Center: {x: -0.17329788, y: 0, z: 0}
 --- !u!136 &136011429695576356
 CapsuleCollider:
@@ -3459,10 +3481,10 @@ CharacterJoint:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1611348031277214}
   m_ConnectedBody: {fileID: 54356874384602600}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.24, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.49871573, y: 0.09610234, z: 2.0461862e-16}
+  m_ConnectedAnchor: {x: -0.2617993, y: 0.057753686, z: 2.3930748e-16}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:

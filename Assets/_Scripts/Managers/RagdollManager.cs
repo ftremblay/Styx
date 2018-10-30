@@ -24,7 +24,7 @@ namespace Assets._Scripts.Managers
         [SerializeField]
         private Rigidbody _rigidbody;
         [SerializeField]
-        private CapsuleCollider _mainCollider;
+        private Collider _mainCollider;
 
         public void Start()
         {
@@ -49,6 +49,8 @@ namespace Assets._Scripts.Managers
                     _animator.enabled = false;
                     _mainCollider.enabled = false;
                     _state = RagdollState.Ragdolled;
+                    var randomRigidbody = _rigidbodies[Random.Range(0, _rigidbodies.Count())];
+                    randomRigidbody.AddExplosionForce(5000f, transform.position, 50f);
                 }
                 else
                 {

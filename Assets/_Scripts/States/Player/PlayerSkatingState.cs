@@ -45,7 +45,21 @@ namespace Styx.States
 
         public override void Exit(PlayerState playerState)
         {
-
         }
+
+        //public void OnCollisionEnter(Collision collision)
+        //{
+        //    Debug.Log(collision.relativeVelocity.magnitude);
+        //    if (!_isColliderActive && _playerState == null)
+        //        return;
+
+        //    if (collision.gameObject.layer == LayerMask.NameToLayer("Player") && collision.relativeVelocity.magnitude > 10f)
+        //    {
+        //        var playerId = collision.gameObject.GetComponent<PlayerId>().Value;
+        //        var playerState = PlayerManager.Instance.GetPlayerState(playerId);
+        //        if (playerState.StateMachine.CurrentState.GetType() != typeof(PlayerDashState))
+        //            playerState.Reduce(Message.UpdateToKnockDown);
+        //    }
+        //}
     }
 }

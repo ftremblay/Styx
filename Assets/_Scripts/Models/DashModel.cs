@@ -10,9 +10,15 @@ namespace Styx.Models
         private float _velocity = 1500f;
         [SerializeField]
         [Range(0, 2)]
-        private float _cooldown = 0.1f;
+        private float _duration = 0.5f;
+        [SerializeField]
+        private float _cooldown = 5f;
+        [SerializeField]
+        private bool _isOnCooldown = false;
 
         public float Velocity { get { return _velocity; } }
         public float Cooldown { get { return _cooldown; } }
+        public float Duration { get { return _duration; } }
+        public bool IsOnCooldown { get { return _isOnCooldown; } set { _isOnCooldown = value; } }
     }
 }

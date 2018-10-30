@@ -22,6 +22,8 @@ namespace Styx.Views
         private AnimatorModel _animatorModel;
         [SerializeField]
         private TransformModel _transformModel;
+        [SerializeField]
+        private DashModel _dashModel;
 
         // *********************** INPUTS ***********************************
         [SerializeField]
@@ -45,6 +47,8 @@ namespace Styx.Views
         private PlayerPassState _playerPassState;
         [SerializeField]
         private PlayerDashState _playerDashState;
+        [SerializeField]
+        private PlayerKnockedDownState _playerKnockedDownState;
 
         public PlayerState PlayerState { get; private set; }
 
@@ -56,11 +60,7 @@ namespace Styx.Views
             _playerNormalState = (_playerNormalState ?? GetComponent<PlayerNormalState>());
             _playerPassState = (_playerPassState ?? GetComponent<PlayerPassState>());
             _playerDashState = (_playerDashState ?? GetComponent<PlayerDashState>());
-
-            _rigidbodyModel = (_rigidbodyModel ?? GetComponent<RigidbodyModel>());
-            _transformModel = (_transformModel ?? GetComponent<TransformModel>());
-            _movementModel = (_movementModel ?? GetComponent<MovementModel>());
-            _animatorModel = (_animatorModel ?? GetComponent<AnimatorModel>());
+            _playerKnockedDownState = (_playerKnockedDownState ?? GetComponent<PlayerKnockedDownState>());
         }
         
         public void Start()
@@ -80,6 +80,7 @@ namespace Styx.Views
                     MovementModel = _movementModel,
                     TransformModel = _transformModel,
                     AnimatorModel = _animatorModel,
+                    DashModel = _dashModel,
                     Inputs = new Inputs
                     {
                         HorizontalAxis = _horizontalAxis,
@@ -94,7 +95,8 @@ namespace Styx.Views
                     PlayerCarryPuck = _playerCarryPuckState,
                     PlayerNormal = _playerNormalState,
                     PlayerPass = _playerPassState,
-                    PlayerDash = _playerDashState
+                    PlayerDash = _playerDashState,
+                    PlayerKnockedDown = _playerKnockedDownState
                 },
                 StateMachine = new StateMachine<PlayerState>(_playerNormalState)
             };

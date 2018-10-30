@@ -23,5 +23,17 @@ namespace Styx.Models
         {
             _animator.SetFloat(key, value);
         }
+
+        public void Disable()
+        {
+            if (_animator.enabled)
+                _animator.enabled = false;
+        }
+
+        public void Enable()
+        {
+            if (!_animator.enabled)
+                _animator.enabled = true;
+        }
     }
 }

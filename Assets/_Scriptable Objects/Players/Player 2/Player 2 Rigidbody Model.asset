@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
   _drag: 2
-  _angularDrag: 0.8
-  _mass: 1
+  _angularDrag: 2
+  _mass: 10

@@ -2,6 +2,7 @@
 using Styx.Models;
 using RageCure.StateUtils;
 using UnityEngine;
+using System;
 
 namespace Styx.Entities.PlayerModule
 {
@@ -10,7 +11,8 @@ namespace Styx.Entities.PlayerModule
         UpdateToNormal,
         UpdateToCarryPuck,
         UpdateToPass,
-        UpdateToDash
+        UpdateToDash,
+        UpdateToKnockDown
     }
 
     public class Inputs
@@ -29,6 +31,7 @@ namespace Styx.Entities.PlayerModule
         public MovementModel MovementModel { get; set; }
         public AnimatorModel AnimatorModel { get; set; }
         public TransformModel TransformModel { get; set; }
+        public DashModel DashModel { get; set; }
         public Inputs Inputs { get; set; }
         //TODO: Add scriptable object model to gather pass speed information
 
@@ -54,6 +57,7 @@ namespace Styx.Entities.PlayerModule
         public State<PlayerState> PlayerNormal { get; set; }
         public State<PlayerState> PlayerPass { get; set; }
         public State<PlayerState> PlayerDash { get; set; }
+        public State<PlayerState> PlayerKnockedDown { get; set; }
     }
 
     public class PlayerState
@@ -77,6 +81,9 @@ namespace Styx.Entities.PlayerModule
                     break;
                 case Message.UpdateToDash:
                     StateMachine.ChangeState(this, States.PlayerDash);
+                    break;
+                case Message.UpdateToKnockDown:
+                    StateMachine.ChangeState(this, States.PlayerKnockedDown);
                     break;
             }
         }

@@ -14,8 +14,10 @@ namespace Styx.States
             base.Execute(playerState);
             playerState.Player.Inputs.DashKeyDown.Execute();
 
-            if (playerState.Player.Inputs.DashKeyDown.IsPressed)
+            if (playerState.Player.Inputs.DashKeyDown.IsPressed && !playerState.Player.DashModel.IsOnCooldown)
+            {
                 playerState.Reduce(Message.UpdateToDash);
+            }
         }
 
         public override void FixedExecute(PlayerState playerState)
@@ -27,5 +29,7 @@ namespace Styx.States
         {
             base.Exit(playerState);
         }
+
+        
     }
 }
