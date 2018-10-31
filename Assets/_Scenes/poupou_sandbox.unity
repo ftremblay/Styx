@@ -392,6 +392,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114738294444378644, guid: 6aad444f271a32b49a52c734170e17b1,
+        type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482199772601616, guid: 6aad444f271a32b49a52c734170e17b1,
+        type: 2}
+      propertyPath: solver.IKPosition.x
+      value: 1.8189726
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482199772601616, guid: 6aad444f271a32b49a52c734170e17b1,
+        type: 2}
+      propertyPath: solver.IKPosition.y
+      value: 3.6223428
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482199772601616, guid: 6aad444f271a32b49a52c734170e17b1,
+        type: 2}
+      propertyPath: solver.IKPositionWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482199772601616, guid: 6aad444f271a32b49a52c734170e17b1,
+        type: 2}
+      propertyPath: solver.polePosition.x
+      value: -1.7541571
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482199772601616, guid: 6aad444f271a32b49a52c734170e17b1,
+        type: 2}
+      propertyPath: solver.polePosition.y
+      value: 1.567687
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6aad444f271a32b49a52c734170e17b1, type: 2}
   m_IsPrefabParent: 0
