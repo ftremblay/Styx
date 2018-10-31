@@ -7,7 +7,6 @@ namespace RageCure.StateUtils
 {
     public abstract class State<T> : MonoBehaviour
     {
-        [SerializeField]
         protected PlayerId PlayerId;
 
         public void Start()

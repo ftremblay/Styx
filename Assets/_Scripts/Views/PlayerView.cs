@@ -24,6 +24,8 @@ namespace Styx.Views
         private TransformModel _transformModel;
         [SerializeField]
         private DashModel _dashModel;
+        [SerializeField]
+        private RagdollModel _ragdollModel;
 
         // *********************** INPUTS ***********************************
         [SerializeField]
@@ -81,6 +83,7 @@ namespace Styx.Views
                     TransformModel = _transformModel,
                     AnimatorModel = _animatorModel,
                     DashModel = _dashModel,
+                    RagdollModel = _ragdollModel,
                     Inputs = new Inputs
                     {
                         HorizontalAxis = _horizontalAxis,

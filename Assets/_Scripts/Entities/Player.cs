@@ -32,6 +32,8 @@ namespace Styx.Entities.PlayerModule
         public AnimatorModel AnimatorModel { get; set; }
         public TransformModel TransformModel { get; set; }
         public DashModel DashModel { get; set; }
+        public RagdollModel RagdollModel { get; set; }
+
         public Inputs Inputs { get; set; }
         //TODO: Add scriptable object model to gather pass speed information
 

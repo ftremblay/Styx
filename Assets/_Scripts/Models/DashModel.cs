@@ -20,5 +20,10 @@ namespace Styx.Models
         public float Cooldown { get { return _cooldown; } }
         public float Duration { get { return _duration; } }
         public bool IsOnCooldown { get { return _isOnCooldown; } set { _isOnCooldown = value; } }
+
+        public void OnEnable()
+        {
+            _isOnCooldown = false;
+        }
     }
 }

@@ -9,8 +9,7 @@ namespace Styx.States
 {
     public class PlayerDashState : State<PlayerState>
     {
-        [SerializeField]
-        private PlayerId _playerId;
+
         private float _timestamp;
 
         public override void Enter(PlayerState playerState)
@@ -46,7 +45,10 @@ namespace Styx.States
                 {
                     var playerId = collision.gameObject.GetComponent<PlayerId>().Value;
                     var playerState = PlayerManager.Instance.GetPlayerState(playerId);
+                    var currentVelocity = playerState.Player.RigidbodyModel.Rigidbody.velocity;
                     playerState.Reduce(Message.UpdateToKnockDown);
+                    playerState.Player.RagdollModel.Rigidbodies.ForEach(r => r.velocity = currentVelocity);
+                    //playerState.Player.RagdollModel.Rigidbodies.ForEach(r => r.AddExplosionForce(collision.relativeVelocity.magnitude, collision.contacts[0].point, 50f));
                 }
             }
         }
