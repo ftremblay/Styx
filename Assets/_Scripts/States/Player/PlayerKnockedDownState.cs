@@ -1,5 +1,6 @@
 ﻿using RageCure.StateUtils;
 using Styx.Entities.PlayerModule;
+using Styx.Managers;
 using Styx.Models;
 using UnityEngine;
 
@@ -17,6 +18,7 @@ namespace Styx.States
         {
             playerState.Player.AnimatorModel.Disable();
             _timestamp = Time.time + _knockedDownModel.Cooldown;
+            PuckManager.Instance.GetPuckState().Reduce(Entities.PuckModule.Message.UpdateToLoose);
         }
 
         public override void Execute(PlayerState playerState)

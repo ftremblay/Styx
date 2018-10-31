@@ -1,6 +1,8 @@
 ﻿using RageCure.StateUtils;
 using Styx.Entities.PuckModule;
+using RageCure.Commons.Extensions;
 using UnityEngine;
+
 
 namespace Styx.States
 {
@@ -8,11 +10,6 @@ namespace Styx.States
     {
         [SerializeField]
         private SphereCollider _collider;
-
-        private void ReactivateCollider()
-        {
-            _collider.enabled = true;
-        }
 
         public void Start()
         {
@@ -30,7 +27,7 @@ namespace Styx.States
 
         public override void Exit(PuckState entity)
         {
-            Invoke("ReactivateCollider", 0.2f);
+            this.Invoke(() => { _collider.enabled = true; }, 0.2f);
         }
 
         public override void FixedExecute(PuckState entity)

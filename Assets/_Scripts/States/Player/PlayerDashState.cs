@@ -4,11 +4,14 @@ using Styx.Entities.PlayerModule;
 using Styx.Managers;
 using UnityEngine;
 using RageCure.Commons.Extensions;
+using RootMotion.FinalIK;
 
 namespace Styx.States
 {
     public class PlayerDashState : State<PlayerState>
     {
+        [SerializeField]
+        private AimIK _aimIK;
 
         private float _timestamp;
 
@@ -16,6 +19,8 @@ namespace Styx.States
         {
             _timestamp = Time.time + playerState.Player.DashModel.Duration;
             playerState.Player.RigidbodyModel.Rigidbody.velocity = transform.forward * Time.deltaTime * playerState.Player.DashModel.Velocity;
+            playerState.Player.AnimatorModel.SetTrigger("Dash");
+            _aimIK.enabled = false;
         }
 
         public override void Execute(PlayerState playerState)
@@ -28,6 +33,7 @@ namespace Styx.States
         {
             playerState.Player.DashModel.IsOnCooldown = true;
             this.Invoke(() => { playerState.Player.DashModel.IsOnCooldown = false; }, playerState.Player.DashModel.Cooldown);
+            _aimIK.enabled = true;
         }
 
         public override void FixedExecute(PlayerState playerState)
@@ -36,15 +42,14 @@ namespace Styx.States
 
         public void OnCollisionEnter(Collision collision)
         {
-            Debug.Log("Layer: " + LayerMask.LayerToName(collision.gameObject.layer) + " velocity: " + collision.relativeVelocity.magnitude);
-            
             if (collision.gameObject.layer == LayerMask.NameToLayer("Player") && collision.relativeVelocity.magnitude > 10f)
             {
                 var dashingPlayerState = PlayerManager.Instance.GetPlayerState(PlayerId.Value);
                 if (dashingPlayerState.StateMachine.CurrentState == this)
                 {
-                    var playerId = collision.gameObject.GetComponent<PlayerId>().Value;
-                    var playerState = PlayerManager.Instance.GetPlayerState(playerId);
+                    var playerId = collision.gameObject.GetComponent<PlayerId>();
+                    Debug.Log(collision.gameObject + " : " + playerId);
+                    var playerState = PlayerManager.Instance.GetPlayerState(playerId.Value);
                     var currentVelocity = playerState.Player.RigidbodyModel.Rigidbody.velocity;
                     playerState.Reduce(Message.UpdateToKnockDown);
                     playerState.Player.RagdollModel.Rigidbodies.ForEach(r => r.velocity = (currentVelocity + new Vector3(0, 10, 0)) * collision.relativeVelocity.magnitude * Time.deltaTime);
