@@ -67,9 +67,14 @@ namespace Styx.Views
         
         public void Start()
         {
-            _rigidbodyModel.Rigidbody = GetComponent<Rigidbody>();
+            var animator = GetComponent<Animator>();
+            var rigidbody = GetComponent<Rigidbody>();
+            _rigidbodyModel.Rigidbody = rigidbody;
             _transformModel.Transform = transform;
-            _animatorModel.Animator = GetComponent<Animator>();
+            _animatorModel.Animator = animator;
+            _ragdollModel.MainAnimator = animator;
+            _ragdollModel.MainCollider = GetComponent<CapsuleCollider>();
+            _ragdollModel.MainRigidbody = rigidbody;
 
             //TODO: Will be moved when team management system and game loop system is implemented
             //TODO: Use a builder pattern maybe??
