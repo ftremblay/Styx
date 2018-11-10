@@ -15,6 +15,9 @@ namespace Styx.Views
         private TransformModel _transformModel;
 
         [SerializeField]
+        private Rigidbody _rigidbody;
+
+        [SerializeField]
         private PuckLooseState _puckLooseState;
         [SerializeField]
         private PuckCarriedState _puckCarriedState;
@@ -32,7 +35,7 @@ namespace Styx.Views
 
         public void Start()
         {
-            _rigidbodyModel.Rigidbody = GetComponent<Rigidbody>();
+            _rigidbody = _rigidbody ?? GetComponent<Rigidbody>();
             _transformModel.Transform = transform;
 
             PuckState = new PuckState
@@ -40,7 +43,8 @@ namespace Styx.Views
                 Puck = new Puck
                 {
                     RigidbodyModel = _rigidbodyModel,
-                    TransformModel = _transformModel
+                    TransformModel = _transformModel,
+                    Rigidbody = _rigidbody
                 },
                 States = new Entities.PuckModule.States
                 {
@@ -59,7 +63,7 @@ namespace Styx.Views
 
         public void FixedUpdate()
         {
-            _rigidbodyModel.Update();
+            PuckState.Puck.UpdateRigidbody();
             PuckState.StateMachine.FixedUpdate(PuckState);
         }
     }

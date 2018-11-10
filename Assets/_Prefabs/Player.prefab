@@ -773,6 +773,7 @@ GameObject:
   - component: {fileID: 136545641753021926}
   - component: {fileID: 114425801661093272}
   - component: {fileID: 114925604591885744}
+  - component: {fileID: 114330245895453952}
   - component: {fileID: 114953238989112106}
   - component: {fileID: 114443230807205144}
   - component: {fileID: 114412463329769060}
@@ -783,11 +784,12 @@ GameObject:
   - component: {fileID: 114800271861950420}
   - component: {fileID: 114249284941936504}
   - component: {fileID: 114722747168266802}
+  - component: {fileID: 114929766696847892}
+  - component: {fileID: 114602748905419072}
   - component: {fileID: 114086604392601204}
   - component: {fileID: 114598059869206010}
   - component: {fileID: 114689785317885490}
   - component: {fileID: 114698025500375750}
-  - component: {fileID: 114929766696847892}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -2922,6 +2924,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02fbd6cde460ae4098b03eb31bb1123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114330245895453952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547438931888510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c246e66f139fce14a80ba50a4cbf038b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputAxis: Shoot Vertical Player 1
+  _value: 0
 --- !u!114 &114412463329769060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2953,9 +2968,12 @@ MonoBehaviour:
   _transformModel: {fileID: 11400000, guid: 4cf79a9ff99ea2e4b973a0bb936fe409, type: 2}
   _dashModel: {fileID: 11400000, guid: ce6932fc50da39748ae4df21baf81233, type: 2}
   _ragdollModel: {fileID: 11400000, guid: be674ef4ec27fa54aa4f6340fc9985cf, type: 2}
+  _slapshotModel: {fileID: 11400000, guid: da39c92af8a19144c93adcc9e8c6da47, type: 2}
+  _rigidbody: {fileID: 54743293335059276}
   _horizontalAxis: {fileID: 114443230807205144}
   _verticalAxis: {fileID: 114953238989112106}
-  _shootAxis: {fileID: 114925604591885744}
+  _horizontalShootAxis: {fileID: 114925604591885744}
+  _verticalShootAxis: {fileID: 114330245895453952}
   _passKeyDown: {fileID: 114802756978007386}
   _dashKeyDown: {fileID: 114412463329769060}
   _playerCarryPuckState: {fileID: 114800271861950420}
@@ -2963,6 +2981,7 @@ MonoBehaviour:
   _playerPassState: {fileID: 114806090138083048}
   _playerDashState: {fileID: 114722747168266802}
   _playerKnockedDownState: {fileID: 114929766696847892}
+  _playerSlapShotState: {fileID: 114602748905419072}
 --- !u!114 &114443230807205144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3069,6 +3088,19 @@ MonoBehaviour:
     poleTarget: {fileID: 0}
     clampWeight: 0.1
     clampSmoothing: 2
+--- !u!114 &114602748905419072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547438931888510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a5c613fb493834598070f193ff9d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _puckAnchor: {fileID: 1177305033958654}
+  _aimIk: {fileID: 114598059869206010}
 --- !u!114 &114689785317885490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3155,7 +3187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c246e66f139fce14a80ba50a4cbf038b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputAxis: Shot Player 1
+  _inputAxis: Shoot Horizontal Player 1
   _value: 0
 --- !u!114 &114929766696847892
 MonoBehaviour:

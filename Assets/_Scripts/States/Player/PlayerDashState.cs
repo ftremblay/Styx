@@ -18,7 +18,7 @@ namespace Styx.States
         public override void Enter(PlayerState playerState)
         {
             _timestamp = Time.time + playerState.Player.DashModel.Duration;
-            playerState.Player.RigidbodyModel.Rigidbody.velocity = transform.forward * Time.deltaTime * playerState.Player.DashModel.Velocity;
+            playerState.Player.Rigidbody.velocity = transform.forward.normalized * playerState.Player.DashModel.Velocity * Time.deltaTime;
             playerState.Player.AnimatorModel.SetTrigger("Dash");
             _aimIK.enabled = false;
         }
@@ -48,11 +48,11 @@ namespace Styx.States
                 if (dashingPlayerState.StateMachine.CurrentState == this)
                 {
                     var playerId = collision.gameObject.GetComponent<PlayerId>();
-                    Debug.Log(collision.gameObject + " : " + playerId);
                     var playerState = PlayerManager.Instance.GetPlayerState(playerId.Value);
-                    var currentVelocity = playerState.Player.RigidbodyModel.Rigidbody.velocity;
+                    var currentVelocity = playerState.Player.Rigidbody.velocity;
                     playerState.Reduce(Message.UpdateToKnockDown);
                     playerState.Player.RagdollModel.Rigidbodies.ForEach(r => r.velocity = (currentVelocity + new Vector3(0, 10, 0)) * collision.relativeVelocity.magnitude * Time.deltaTime);
+
                 }
             }
         }

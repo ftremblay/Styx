@@ -19,6 +19,7 @@ namespace Styx.States
             playerState.Player.AnimatorModel.Disable();
             _timestamp = Time.time + _knockedDownModel.Cooldown;
             PuckManager.Instance.GetPuckState().Reduce(Entities.PuckModule.Message.UpdateToLoose);
+            PuckManager.Instance.GetPuckState().Puck.Rigidbody.velocity = playerState.Player.Rigidbody.velocity;
         }
 
         public override void Execute(PlayerState playerState)

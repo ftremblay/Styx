@@ -6,19 +6,11 @@ namespace Styx.Models
     public class RigidbodyModel : ScriptableObject
     {
         [SerializeField]
-        private Rigidbody _rigidbody;
-        [SerializeField]
         private float _drag = 2f;
         [SerializeField]
         private float _angularDrag = 0.8f;
         [SerializeField]
         private float _mass = 1f;
-
-        public Rigidbody Rigidbody
-        {
-            get { return _rigidbody; }
-            set { _rigidbody = value; }
-        }
 
         public float Drag
         {
@@ -36,13 +28,6 @@ namespace Styx.Models
         {
             get { return _mass; }
             set { _mass = value; }
-        }
-
-        public void Update()
-        {
-            _rigidbody.drag = _drag;
-            _rigidbody.angularDrag = _angularDrag;
-            _rigidbody.mass = _mass;
         }
     }
 }

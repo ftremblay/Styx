@@ -5,6 +5,7 @@ using Styx.Entities.PlayerModule;
 using Styx.Managers;
 using Styx.Models;
 using Styx.States;
+using Styx.States.playerState;
 using UnityEngine;
 
 namespace Styx.Views
@@ -26,6 +27,11 @@ namespace Styx.Views
         private DashModel _dashModel;
         [SerializeField]
         private RagdollModel _ragdollModel;
+        [SerializeField]
+        private SlapshotModel _slapshotModel;
+
+        [SerializeField]
+        private Rigidbody _rigidbody;
 
         // *********************** INPUTS ***********************************
         [SerializeField]
@@ -33,7 +39,9 @@ namespace Styx.Views
         [SerializeField]
         private InputAxisCommand _verticalAxis;
         [SerializeField]
-        private InputAxisCommand _shootAxis;
+        private InputAxisCommand _horizontalShootAxis;
+        [SerializeField]
+        private InputAxisCommand _verticalShootAxis;
         [SerializeField]
         private InputKeyDownCommand _passKeyDown;
         [SerializeField]
@@ -51,6 +59,8 @@ namespace Styx.Views
         private PlayerDashState _playerDashState;
         [SerializeField]
         private PlayerKnockedDownState _playerKnockedDownState;
+        [SerializeField]
+        private PlayerSlapShotState _playerSlapShotState;
 
         public PlayerState PlayerState { get; private set; }
 
@@ -63,18 +73,18 @@ namespace Styx.Views
             _playerPassState = (_playerPassState ?? GetComponent<PlayerPassState>());
             _playerDashState = (_playerDashState ?? GetComponent<PlayerDashState>());
             _playerKnockedDownState = (_playerKnockedDownState ?? GetComponent<PlayerKnockedDownState>());
+            _playerSlapShotState = (_playerSlapShotState ?? GetComponent<PlayerSlapShotState>());
         }
         
         public void Start()
         {
             var animator = GetComponent<Animator>();
-            var rigidbody = GetComponent<Rigidbody>();
-            _rigidbodyModel.Rigidbody = rigidbody;
+            _rigidbody = _rigidbody ?? GetComponent<Rigidbody>();
             _transformModel.Transform = transform;
             _animatorModel.Animator = animator;
             _ragdollModel.MainAnimator = animator;
             _ragdollModel.MainCollider = GetComponent<CapsuleCollider>();
-            _ragdollModel.MainRigidbody = rigidbody;
+            _ragdollModel.MainRigidbody = _rigidbody;
 
             //TODO: Will be moved when team management system and game loop system is implemented
             //TODO: Use a builder pattern maybe??
@@ -89,11 +99,14 @@ namespace Styx.Views
                     AnimatorModel = _animatorModel,
                     DashModel = _dashModel,
                     RagdollModel = _ragdollModel,
+                    SlapshotModel = _slapshotModel,
+                    Rigidbody = _rigidbody,
                     Inputs = new Inputs
                     {
                         HorizontalAxis = _horizontalAxis,
                         VerticalAxis = _verticalAxis,
-                        ShootAxis = _shootAxis,
+                        HorizontalShootAxis = _horizontalShootAxis,
+                        VerticalShootAxis = _verticalShootAxis,
                         PassKeyDown = _passKeyDown,
                         DashKeyDown = _dashKeyDown
                     }
@@ -104,7 +117,8 @@ namespace Styx.Views
                     PlayerNormal = _playerNormalState,
                     PlayerPass = _playerPassState,
                     PlayerDash = _playerDashState,
-                    PlayerKnockedDown = _playerKnockedDownState
+                    PlayerKnockedDown = _playerKnockedDownState,
+                    PlayerSlapShot = _playerSlapShotState
                 },
                 StateMachine = new StateMachine<PlayerState>(_playerNormalState)
             };
@@ -118,7 +132,7 @@ namespace Styx.Views
 
         public void FixedUpdate()
         {
-            _rigidbodyModel.Update();
+            PlayerState.Player.UpdateRigidbody();
             PlayerState.StateMachine.FixedUpdate(PlayerState);
         }
     }

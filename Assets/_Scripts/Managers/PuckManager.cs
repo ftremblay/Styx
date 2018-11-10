@@ -34,7 +34,7 @@ namespace Styx.Managers
 
         public void UpdateVelocity (Vector3 velocity)
         {
-            _puckState.Puck.RigidbodyModel.Rigidbody.velocity = velocity;
+            _puckState.Puck.Rigidbody.velocity = velocity;
         }
 
     }

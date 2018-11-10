@@ -15,6 +15,15 @@ namespace Styx.Entities.PuckModule
         public RigidbodyModel RigidbodyModel { get; set; }
         public TransformModel TransformModel { get; set; }
 
+        public Rigidbody Rigidbody { get; set; }
+
+        public void UpdateRigidbody()
+        {
+            Rigidbody.mass = RigidbodyModel.Mass;
+            Rigidbody.drag = RigidbodyModel.Drag;
+            Rigidbody.angularDrag = RigidbodyModel.AngularDrag;
+        }
+
         public void SetPosition (Vector3 pos)
         {
             TransformModel.Transform.position = pos;

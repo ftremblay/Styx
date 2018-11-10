@@ -32,13 +32,13 @@ namespace Styx.States
         private Vector3 CalculatePassVelocity (Player player, Player otherPlayer)
         {
             var Sc = _passSpeed;
-            var Sr = otherPlayer.RigidbodyModel.Rigidbody.velocity.magnitude;
+            var Sr = otherPlayer.Rigidbody.velocity.magnitude;
             var Pc = player.TransformModel.Transform.position;
             var Pr = otherPlayer.TransformModel.Transform.position;
 
             var D = Pc - Pr;
             var d = D.magnitude;
-            var Vr = otherPlayer.RigidbodyModel.Rigidbody.velocity;
+            var Vr = otherPlayer.Rigidbody.velocity;
 
             var a = (Sc * Sc) - (Sr * Sr);
             var b = 2f * Vector3.Dot(D, Vr);

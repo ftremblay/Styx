@@ -12,14 +12,16 @@ namespace Styx.Entities.PlayerModule
         UpdateToCarryPuck,
         UpdateToPass,
         UpdateToDash,
-        UpdateToKnockDown
+        UpdateToKnockDown,
+        UpdateToSlapShot
     }
 
     public class Inputs
     {
         public InputAxisCommand HorizontalAxis { get; set; }
         public InputAxisCommand VerticalAxis { get; set; }
-        public InputAxisCommand ShootAxis { get; set; }
+        public InputAxisCommand HorizontalShootAxis { get; set; }
+        public InputAxisCommand VerticalShootAxis { get; set; }
         public InputKeyDownCommand PassKeyDown { get; set; }
         public InputKeyDownCommand DashKeyDown { get; set; }
     }
@@ -33,13 +35,23 @@ namespace Styx.Entities.PlayerModule
         public TransformModel TransformModel { get; set; }
         public DashModel DashModel { get; set; }
         public RagdollModel RagdollModel { get; set; }
+        public SlapshotModel SlapshotModel { get; set; }
+
+        public Rigidbody Rigidbody { get; set; }
 
         public Inputs Inputs { get; set; }
         //TODO: Add scriptable object model to gather pass speed information
 
         public void AddVelocity(Vector3 value)
         {
-            RigidbodyModel.Rigidbody.velocity += value;
+            Rigidbody.velocity += value;
+        }
+
+        public void UpdateRigidbody()
+        {
+            Rigidbody.mass = RigidbodyModel.Mass;
+            Rigidbody.drag = RigidbodyModel.Drag;
+            Rigidbody.angularDrag = RigidbodyModel.AngularDrag;
         }
 
         public float LinearSpeed
@@ -60,6 +72,7 @@ namespace Styx.Entities.PlayerModule
         public State<PlayerState> PlayerPass { get; set; }
         public State<PlayerState> PlayerDash { get; set; }
         public State<PlayerState> PlayerKnockedDown { get; set; }
+        public State<PlayerState> PlayerSlapShot { get; set; }
     }
 
     public class PlayerState
@@ -86,6 +99,9 @@ namespace Styx.Entities.PlayerModule
                     break;
                 case Message.UpdateToKnockDown:
                     StateMachine.ChangeState(this, States.PlayerKnockedDown);
+                    break;
+                case Message.UpdateToSlapShot:
+                    StateMachine.ChangeState(this, States.PlayerSlapShot);
                     break;
             }
         }
