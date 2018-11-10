@@ -103,7 +103,6 @@ namespace Styx.States.playerState
 
         private void Slapshot(PlayerState playerState)
         {
-            
             _puckState.Reduce(Entities.PuckModule.Message.UpdateToLoose);
             var shotVelocity = (_currentShotDirection * playerState.Player.SlapshotModel.Power * _currentShotDirection.magnitude + new Vector3(0, playerState.Player.SlapshotModel.UpwardVelocity, 0)) * Time.deltaTime;
             Debug.Log("SLAPSHOT - Shot direction: " + _currentShotDirection + ", Shot magnitude: " + shotVelocity.magnitude);
